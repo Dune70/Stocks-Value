@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Valuador</title>
+<style>
+  :root{--bg:#120d10;--card:#1a1417;--line:#2e2529;--ink:#f3eef0;--soft:#d9d1d5;--quiet:#a99fa4;--accent:#ff3d5a;--good:#3ccf7a;--bad:#ff5a6e}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);padding:20px}
+  .wrap{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:16px}
+  .bar-top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+  .bar-top h1{font-size:15px;letter-spacing:.12em;margin:0;font-weight:800}
+  select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit}
+  .asof{margin-left:auto;font-size:12px;color:var(--quiet)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+  .hdr{font-size:12px;font-weight:700;letter-spacing:.09em;display:flex;gap:10px;align-items:center;margin-bottom:10px;text-transform:uppercase}
+  .hdr::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--accent)}
+  .empresa{background:linear-gradient(135deg,#2a1219 0%,#160f13 60%)}
+  .top{display:flex;align-items:center;gap:14px}
+  .mono{width:46px;height:46px;border-radius:10px;background:#2e2529;display:grid;place-items:center;font-weight:800;font-size:13px;overflow:hidden;flex:none}
+  .mono img{width:100%;height:100%;object-fit:contain;background:#fff}
+  .nombre{font-size:26px;font-weight:700;margin:0;line-height:1.1}
+  .meta{font-size:13px;color:var(--quiet);margin-left:6px;font-weight:500}
+  .desc{font-size:14px;color:var(--soft);line-height:1.5;margin:12px 0 0}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px}
+  .lbl{font-size:10.5px;font-weight:700;letter-spacing:.09em;color:var(--quiet);text-transform:uppercase}
+  .val{font-size:22px;font-weight:700;margin-top:4px}
+  .sub{font-size:11.5px;color:var(--quiet);margin-top:4px}
+  .k-precio{grid-row:span 2;display:flex;flex-direction:column;justify-content:center}
+  .k-precio .val{font-size:34px}
+  .k-precio .val small,.k-intr .val small{font-size:15px;font-weight:600;color:var(--soft);margin-right:4px}
+  .k-reco{grid-column:span 3}
+  .k-reco .val{font-size:30px;text-transform:uppercase;letter-spacing:.02em}
+  .lead{font-size:14px;color:var(--soft);margin:0 0 8px;line-height:1.5}
+  .lead b{color:var(--ink)}
+  svg{width:100%;height:auto;display:block;overflow:visible}
+  svg text{font-family:inherit}
+  .foot{display:flex;gap:24px;font-size:11.5px;color:var(--quiet);flex-wrap:wrap}
+  .dash{display:inline-block;width:18px;border-top:1.5px dashed var(--quiet);vertical-align:middle;margin-right:6px}
+  .cols{display:grid;grid-template-columns:1.1fr 1fr;gap:16px}
+  table{width:100%;border-collapse:collapse;font-size:13.5px}
+  th{font-size:10.5px;letter-spacing:.08em;color:var(--quiet);text-align:left;font-weight:700;padding:6px 8px;text-transform:uppercase}
+  td{padding:7px 8px;border-top:1px solid var(--line)}
+  td.r,th.r{text-align:right}
+  tr.hoy td{background:rgba(255,255,255,.06);font-weight:700}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:3px;margin-right:8px;vertical-align:middle}
+  .si{color:var(--good);font-weight:600}.no{color:var(--quiet)}
+  .scen{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .sc{border:1px solid var(--line);border-radius:12px;padding:12px}
+  .sc .val{font-size:20px}
+  .sc.w .lbl{color:var(--ink)}
+  .note{font-size:12.5px;color:var(--soft);line-height:1.5}
+  details{font-size:12.5px;color:var(--quiet)}
+  details li{margin:3px 0}
+  .msg{padding:40px;text-align:center;color:var(--quiet)}
+  .disc{font-size:11px;color:var(--quiet);text-align:center}
+  @media (max-width:760px){.kpis{grid-template-columns:1fr 1fr}.k-precio{grid-row:auto;grid-column:span 2}.k-reco{grid-column:span 2}.cols{grid-template-columns:1fr}.scen{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar-top">
+    <h1>VALUADOR</h1>
+    <select id="pick" aria-label="Elegir empresa"></select>
+    <span class="asof" id="asof"></span>
+  </div>
+  <div id="app"><div class="card msg">Cargando…</div></div>
+  <p class="disc">Herramienta personal de análisis. No es recomendación de inversión.</p>
+</div>
+
+<script>
+const LOGO_TOKEN = "pk_Nsn2X5RzSj-MdBG8xybfNA";      // logo.dev (clave publicable)
+const PRICE_URL = "https://data912.com/live/usa_stocks";
+const COLORS = ["#23b3a3", "#22a85a", "#6aa61e", "#a3b33a", "#c9a03a", "#f07a2e", "#c9434f", "#b0337a"];
+const TOL = 0.08;
+
+const f2 = v => v == null ? "—" : v.toLocaleString("es-AR", {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const f0 = v => v == null ? "—" : v.toLocaleString("es-AR", {maximumFractionDigits: v >= 100 ? 0 : 1});
+const pct = (v, sign) => v == null ? "—" : `${sign && v > 0 ? "+" : ""}${(v * 100).toLocaleString("es-AR", {maximumFractionDigits: 1})}%`;
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+
+let V = null, live = null;
+
+async function getJSON(url) {
+  const r = await fetch(url, {cache: "no-store"});
+  if (!r.ok) throw new Error(`${url}: ${r.status}`);
+  return r.json();
+}
+
+// ---------- precio y recomendación con el precio vigente ----------
+function current() {
+  const price = live?.price ?? V.price;
+  const zones = V.ladder.zones;
+  const idx = zones.findIndex(z => z.to == null || price < z.to);
+  const vol = V.volatility_1y;
+  const band = vol ? [price * Math.exp(-vol), price * Math.exp(vol)] : null;
+  const reach = zones.map(z => band ? ((z.from == null || z.from < band[1]) && (z.to == null || z.to > band[0])) : null);
+  return {price, idx, zone: zones[idx], reach,
+          potential: V.intrinsic / price - 1, mos: (V.intrinsic - price) / V.intrinsic};
+}
+
+function render() {
+  const c = current(), p = V.profile || {}, sc = V.scenarios;
+  const zc = COLORS[c.idx];
+  const when = live ? `${new Date(live.t).toLocaleTimeString("es-AR", {hour: "2-digit", minute: "2-digit"})} h · data912 (~20 s)`
+                    : `cierre del cálculo · ${new Date(V.price_time || V.as_of).toLocaleDateString("es-AR")}`;
+  const rv = V.reverse_dcf || {};
+  const tol = c.zone;
+  const app = document.getElementById("app");
+  app.innerHTML = `
+  <div style="display:flex;flex-direction:column;gap:16px">
+  <header class="card empresa">
+    <div class="top">
+      <div class="mono" id="mono">${esc(V.ticker)}</div>
+      <h2 class="nombre">${esc(p.name || V.ticker)}<span class="meta">${esc(V.ticker)} · ${esc(p.exchange || "")}${p.sector ? " · " + esc(p.sector) : ""}</span></h2>
+    </div>
+    <p class="desc">${esc(p.summary_es || (p.summary_en ? p.summary_en.split(". ").slice(0, 2).join(". ") + "." : ""))}</p>
+  </header>
+
+  <section class="kpis">
+    <div class="kpi k-precio"><div class="lbl">Precio hoy</div><div class="val"><small>US$</small>${f2(c.price)}</div><div class="sub">${when}</div></div>
+    <div class="kpi k-reco" style="background:color-mix(in srgb, ${zc} 16%, var(--card));border-color:color-mix(in srgb, ${zc} 55%, transparent)">
+      <div class="lbl" style="color:${zc}">Recomendación</div><div class="val" style="color:${zc}">${esc(c.zone.zone)}</div>
+      <div class="sub">zona ${c.zone.from == null ? "menos de" : "US$ " + f2(c.zone.from)}${c.zone.from != null && c.zone.to != null ? " – " : " "}${c.zone.to == null ? "o más" : f2(c.zone.to)}</div></div>
+    <div class="kpi k-intr"><div class="lbl">Valor intrínseco</div><div class="val"><small>US$</small>${f2(V.intrinsic)}</div><div class="sub">rango ${f0(V.range?.[0])} – ${f0(V.range?.[1])}${V.weights_modified ? " · ponderación modificada" : ""}</div></div>
+    <div class="kpi"><div class="lbl">Potencial</div><div class="val" style="color:${c.potential >= 0 ? "var(--good)" : "var(--bad)"}">${pct(c.potential, true)}</div><div class="sub">del precio al valor</div></div>
+    <div class="kpi"><div class="lbl">Margen de seguridad</div><div class="val" style="color:${c.mos >= 0 ? "var(--good)" : "var(--bad)"}">${pct(c.mos, true)}</div><div class="sub">sobre el valor</div></div>
+  </section>
+
+  <section class="card">
+    <div class="hdr">Dónde está el precio</div>
+    <p class="lead">${lead(c)}</p>
+    <svg id="bar" viewBox="0 0 900 240" role="img" aria-label="Precio frente a escenarios y zonas"></svg>
+    <div class="foot"><span><span class="dash"></span>Rango del valor intrínseco: US$ ${f0(V.range?.[0])} – ${f0(V.range?.[1])}</span><span>Escenarios: conservador, base y optimista</span></div>
+  </section>
+
+  <div class="cols">
+    <section class="card">
+      <div class="hdr">Escalera de acción</div>
+      <table><thead><tr><th>Zona</th><th class="r">US$</th><th class="r">¿Alcanzable en el año?</th></tr></thead><tbody>
+      ${V.ladder.zones.map((z, i) => `<tr class="${i === c.idx ? "hoy" : ""}"><td><span class="dot" style="background:${COLORS[i]}"></span>${esc(z.zone)}</td>
+        <td class="r">${z.from == null ? "menos de " + f2(z.to) : z.to == null ? "más de " + f2(z.from) : f2(z.from) + " – " + f2(z.to)}</td>
+        <td class="r ${c.reach[i] ? "si" : "no"}">${c.reach[i] == null ? "—" : c.reach[i] ? "Sí" : "No"}</td></tr>`).join("")}
+      </tbody></table>
+      <p class="note" style="margin-top:10px">Banda de tolerancia ±${TOL * 100}%: ${tol.to != null ? `sube de zona recién sobre US$ ${f2(tol.to * (1 + TOL))}` : ""}${tol.to != null && tol.from != null ? " y " : ""}${tol.from != null ? `baja debajo de US$ ${f2(tol.from * (1 - TOL))}` : ""}.
+      "Alcanzable": la zona cae dentro de precio × e^(±volatilidad anual${V.volatility_1y ? " " + pct(V.volatility_1y) : ""}).</p>
+    </section>
+    <section class="card">
+      <div class="hdr">Qué supone el precio</div>
+      <p class="note">A US$ ${f2(V.price)} el mercado paga un <b>margen operativo de largo plazo de ${pct(rv.margin)}</b> (base ${pct(rv.base_margin)}, hoy ${pct(rv.current_margin)})
+      o un <b>crecimiento de ${pct(rv.growth_g1)} anual</b> los primeros años (base ${pct(rv.base_g1)}).${rv.note ? " " + esc(rv.note[0].toUpperCase() + rv.note.slice(1)) + "." : ""}</p>
+      <details style="margin-top:12px"><summary>Notas del cálculo (${(V.notes || []).length + (V.warnings || []).length})</summary>
+        <ul>${[...(V.notes || []), ...(V.warnings || [])].map(n => `<li>${esc(n)}</li>`).join("")}</ul></details>
+    </section>
+  </div>
+
+  <section class="card">
+    <div class="hdr">Escenarios</div>
+    <div class="scen">${Object.entries(sc).map(([k, s]) => `
+      <div class="sc ${s.weight ? "w" : ""}"><div class="lbl">${esc(s.label)}${s.weight ? " · " + Math.round(s.weight * 100) + "%" : ""}</div>
+      <div class="val">US$ ${f0(s.value_per_share)}</div><div class="sub">${esc(s.description)}</div></div>`).join("")}</div>
+  </section>
+  </div>`;
+  logo(p);
+  drawBar(c);
+}
+
+function lead(c) {
+  const z = V.ladder.zones, i = c.idx, prev = z[i - 1], next = z[i + 1];
+  const d = c.price / V.intrinsic - 1;
+  let t = `Hoy está en <b>${esc(c.zone.zone)}</b>: cotiza ${pct(Math.abs(d))} ${d >= 0 ? "por encima" : "por debajo"} del valor intrínseco.`;
+  const parts = [];
+  if (prev) parts.push(`pasa a <b>${esc(prev.zone)}</b> debajo de US$ ${f2(c.zone.from)}`);
+  if (next) parts.push(`a <b>${esc(next.zone)}</b> arriba de US$ ${f2(c.zone.to)}`);
+  return parts.length ? `${t} ${parts.join(" y ").replace(/^p/, "P")}.` : t;
+}
+
+function logo(p) {
+  if (!p.domain) return;
+  const img = new Image();
+  img.alt = p.name || "";
+  img.onload = () => { const m = document.getElementById("mono"); if (m) { m.textContent = ""; m.appendChild(img); } };
+  img.src = `https://img.logo.dev/${encodeURIComponent(p.domain)}?token=${LOGO_TOKEN}&size=92&format=png`;
+}
+
+// ---------- barra ----------
+function drawBar(c) {
+  const NS = "http://www.w3.org/2000/svg", svg = document.getElementById("bar");
+  const el = (tag, a, text) => { const n = document.createElementNS(NS, tag); for (const k in a) n.setAttribute(k, a[k]); if (text != null) n.textContent = text; svg.appendChild(n); return n; };
+  const zones = V.ladder.zones, s = V.scenarios;
+  const top = Math.max(s.todo_bien.value_per_share, c.price, V.range?.[1] || 0);
+  const vMax = top * 1.12, x0 = 20, x1 = 880, by = 118, bh = 26;
+  const X = v => x0 + Math.min(Math.max(v, 0), vMax) / vMax * (x1 - x0);
+
+  zones.forEach((z, i) => {
+    const a = X(z.from ?? 0), b = X(z.to ?? vMax);
+    if (b - a < 0.5) return;
+    el("rect", {x: a + 1, y: by, width: Math.max(b - a - 2, 0.5), height: bh, rx: 5, fill: COLORS[i]});
+  });
+  if (V.range) el("rect", {x: X(V.range[0]), y: by - 9, width: Math.max(X(V.range[1]) - X(V.range[0]), 2), height: bh + 18, rx: 4,
+    fill: "rgba(255,255,255,.07)", stroke: "#f3eef0", "stroke-opacity": .75, "stroke-dasharray": "4 3", "stroke-width": 1.2});
+
+  // límites, alternando dos filas y salteando los que se pisan
+  const lastX = [-99, -99];
+  zones.slice(0, -1).forEach((z, i) => {
+    const x = X(z.to), row = i % 2;
+    if (x - lastX[row] < 52) return;
+    lastX[row] = x;
+    el("text", {x, y: row ? 182 : 166, "text-anchor": "middle", "font-size": 11.5, fill: "#a99fa4"}, f2(z.to));
+  });
+
+  // escenarios
+  const pins = [["CONSERVADOR", s.conservador.value_per_share], ["BASE", s.base.value_per_share], ["OPTIMISTA", s.optimista.value_per_share]]
+    .map(([k, v]) => ({k, v, x: X(v), lx: X(v)}));
+  for (let i = 1; i < pins.length; i++) {
+    const gap = 34 + (pins[i - 1].k.length + pins[i].k.length) * 3.4;
+    if (pins[i].lx - pins[i - 1].lx < gap) pins[i].lx = pins[i - 1].lx + gap;
+  }
+  pins.forEach(p => {
+    el("text", {x: p.lx, y: 60, "text-anchor": "middle", "font-size": 10, "font-weight": 700, "letter-spacing": ".08em", fill: "#a99fa4"}, p.k);
+    el("text", {x: p.lx, y: 77, "text-anchor": "middle", "font-size": 15, "font-weight": 600, fill: "#f3eef0"}, f0(p.v));
+    el("path", {d: `M${p.lx} 83 L${p.lx} 92 L${p.x} 102 L${p.x} ${by - 1}`, fill: "none", stroke: "#a99fa4", "stroke-width": 1.2});
+    el("circle", {cx: p.x, cy: 102, r: 2.6, fill: "#d9d1d5"});
+  });
+
+  const xi = X(V.intrinsic);
+  el("text", {x: xi, y: 18, "text-anchor": "middle", "font-size": 10, "font-weight": 700, "letter-spacing": ".08em", fill: "#f3eef0"}, "VALOR INTRÍNSECO");
+  el("text", {x: xi, y: 36, "text-anchor": "middle", "font-size": 16, "font-weight": 700, fill: "#f3eef0"}, f0(V.intrinsic));
+  el("line", {x1: xi, y1: 42, x2: xi, y2: by - 9, stroke: "#f3eef0", "stroke-width": 1.4});
+
+  const xp = X(c.price), red = "#ff3d5a";
+  el("line", {x1: xp, y1: by - 14, x2: xp, y2: 200, stroke: red, "stroke-width": 2.2});
+  el("path", {d: `M${xp - 7} 204 L${xp} 194 L${xp + 7} 204 Z`, fill: red});
+  const label = `HOY US$ ${f2(c.price)}`, pw = label.length * 7.6 + 30;
+  const px = Math.min(Math.max(xp - pw / 2, 4), 896 - pw);
+  el("rect", {x: px, y: 204, width: pw, height: 30, rx: 15, fill: red});
+  el("text", {x: px + pw / 2, y: 224, "text-anchor": "middle", "font-size": 14, "font-weight": 700, fill: "#fff"}, label);
+}
+
+// ---------- carga ----------
+async function load(ticker) {
+  live = null;
+  try {
+    V = await getJSON(`data/${encodeURIComponent(ticker)}.json`);
+  } catch (e) {
+    document.getElementById("app").innerHTML = `<div class="card msg">No hay valuación para ${esc(ticker)}.</div>`;
+    return;
+  }
+  document.getElementById("asof").textContent = `cálculo: ${new Date(V.as_of).toLocaleString("es-AR", {dateStyle: "short", timeStyle: "short"})}`;
+  render();
+  livePrice(ticker);
+}
+
+async function livePrice(ticker) {
+  try {
+    const all = await getJSON(PRICE_URL);
+    const q = all.find(x => x.symbol === ticker);
+    if (q && q.c && V && V.ticker === ticker) { live = {price: q.c, t: Date.now()}; render(); }
+  } catch (e) { /* sin conexión o bloqueado: queda el precio del cálculo */ }
+}
+
+async function init() {
+  const pick = document.getElementById("pick");
+  let index = [];
+  try { index = await getJSON("data/index.json"); } catch (e) {}
+  if (!index.length) { document.getElementById("app").innerHTML = `<div class="card msg">Todavía no hay valuaciones. Corré la GitHub Action.</div>`; return; }
+  pick.innerHTML = index.map(x => `<option value="${esc(x.ticker)}">${esc(x.ticker)} · ${esc(x.name || "")} · ${esc(x.recommendation)}</option>`).join("");
+  const want = location.hash.slice(1).toUpperCase();
+  const start = index.some(x => x.ticker === want) ? want : index[0].ticker;
+  pick.value = start;
+  pick.onchange = () => { location.hash = pick.value; };
+  window.addEventListener("hashchange", () => { const t = location.hash.slice(1).toUpperCase(); if (t) { pick.value = t; load(t); } });
+  load(start);
+  setInterval(() => V && livePrice(V.ticker), 60000);
+}
+init();
+</script>
+</body>
+</html>

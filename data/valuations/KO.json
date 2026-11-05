@@ -1,0 +1,235 @@
+{
+  "ticker": "KO",
+  "as_of": "2026-11-04T12:03:28+00:00",
+  "price": 94.8,
+  "price_time": "2026-11-03T21:00:02+00:00",
+  "profile": {
+    "name": "The Coca-Cola Company",
+    "exchange": "NYSE",
+    "sector": "Consumer Defensive",
+    "industry": "Beverages - Non-Alcoholic",
+    "sic": "Beverages",
+    "country": "United States",
+    "website": "https://www.coca-colacompany.com",
+    "domain": "coca-colacompany.com",
+    "summary_es": null,
+    "summary_en": "The Coca-Cola Company, a beverage company, manufactures and sells various nonalcoholic beverages in the United States and internationally. The company provides Trademark Coca-Cola, sparkling soft drinks and flavors; water, sports, coffee, and tea; juice, value-added dairy, and plant-based beverages; and emerging beverages. It also offers beverage concentrates and syrups, as well as fountain syrups to fountain retailers comprising restaurants and convenience stores. The company sells its products under the Coca-Cola, Diet Coke/Coca-Cola Light, Coca-Cola Zero Sugar, caffeine free Diet Coke, Cherry Coke, Fanta, Sprite, Simply, Fanta Orange, Fanta Zero Orange, Fanta Zero Sugar, Fanta Apple, Sprite Zero Sugar, Simply Orange, Simply Apple, Simply Grapefruit, Fresca, Schweppes, Thums Up, Aquarius, Ayataka, BODYARMOR, Ciel, Costa, Crystal, Dasani, Fuze Tea, Georgia, glacéau smartwater, glacéau vitaminwater, Gold Peak, I LOHAS, Powerade, Topo Chico, Core Power, Del Valle, fairlife, innocent, Maaza, Minute Maid, Minute Maid Pulpy, Santa Clara, and dogadan brands. It operates through a network of independent bottling partners, distributors, wholesalers, and retailers, as well as through bottling and distribution operators. The Coca-Cola Company was founded in 1886 and is headquartered in Atlanta, Georgia."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 21.000649139118195,
+      "weight": 0.0,
+      "description": "ventas +1% anual los primeros 5 años, margen 21% en 10 años",
+      "assumptions": {
+        "g1": 0.006890141141877831,
+        "margin_target": 0.21028518823206802,
+        "sales_to_capital": 1.455483514261949,
+        "years_to_target": 10,
+        "g_terminal": 0.034100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.08319753186140452,
+      "terminal_share": 0.4270428885709263
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 34.86582292872923,
+      "weight": 0.25,
+      "description": "ventas +2% anual los primeros 5 años, margen 26% en 8 años",
+      "assumptions": {
+        "g1": 0.021890141141877827,
+        "margin_target": 0.2553462999960826,
+        "sales_to_capital": 1.7465802171143392,
+        "years_to_target": 8,
+        "g_terminal": 0.0391,
+        "p_failure": 0.0
+      },
+      "wacc": 0.07819753186140453,
+      "terminal_share": 0.5611535580783684
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 61.08051575197386,
+      "weight": 0.5,
+      "description": "ventas +4% anual los primeros 5 años, margen 30% en 7 años",
+      "assumptions": {
+        "g1": 0.03689014114187783,
+        "margin_target": 0.30040741176009716,
+        "sales_to_capital": 1.940644685682599,
+        "years_to_target": 7,
+        "g_terminal": 0.04410000000000001,
+        "p_failure": 0.0
+      },
+      "wacc": 0.07319753186140453,
+      "terminal_share": 0.6784413915368598
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 101.91600785027829,
+      "weight": 0.25,
+      "description": "ventas +5% anual los primeros 5 años, margen 35% en 6 años",
+      "assumptions": {
+        "g1": 0.046890141141877825,
+        "margin_target": 0.3454685235241117,
+        "sales_to_capital": 2.134709154250859,
+        "years_to_target": 6,
+        "g_terminal": 0.049100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.07069753186140453,
+      "terminal_share": 0.7630123581296894
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 152.30840003947458,
+      "weight": 0.0,
+      "description": "ventas +6% anual los primeros 5 años, margen 39% en 5 años",
+      "assumptions": {
+        "g1": 0.06189014114187783,
+        "margin_target": 0.39052963528812634,
+        "sales_to_capital": 2.425805857103249,
+        "years_to_target": 5,
+        "g_terminal": 0.049100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.06819753186140452,
+      "terminal_share": 0.8036307476182624
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 64.7357155707388,
+  "range": [
+    49.98063763532198,
+    98.47525954104995
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 69.406359757236
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 80.21490345824434
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 98.47525954104995
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 58.14021464610573
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 64.7357155707388
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 74.56834101742011
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 49.98063763532198
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 54.30588070605975
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 60.274636998988974
+    }
+  ],
+  "potential": -0.31713380199642605,
+  "margin_of_safety": -0.4644157273029442,
+  "reverse_dcf": {
+    "margin": 0.4628891574591325,
+    "growth_g1": 0.11004676387332057,
+    "current_margin": 0.30040741176009716,
+    "base_margin": 0.30040741176009716,
+    "base_g1": 0.03689014114187783
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 21.000649139118195,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 21.000649139118195,
+        "to": 34.86582292872923,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 34.86582292872923,
+        "to": 47.97316934035155,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 47.97316934035155,
+        "to": 58.026489964375166,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Mantener",
+        "from": 58.026489964375166,
+        "to": 81.49826180112608,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 81.49826180112608,
+        "to": 101.91600785027829,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Vender",
+        "from": 101.91600785027829,
+        "to": 152.30840003947458,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 152.30840003947458,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Reducir",
+    "zone_index": 5,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 110.06928847830056,
+      "moves_down_below": 74.978400857036
+    },
+    "reach_band_1y": [
+      78.46207030909409,
+      114.53992947925519
+    ]
+  },
+  "recommendation": "Reducir",
+  "volatility_1y": 0.18915408201793132,
+  "notes": [
+    "g1 = crecimiento anual compuesto de los últimos 3 años",
+    "margen objetivo = el actual (supera a la industria)",
+    "ventas/capital = 1.94 (promedio de sobre capital 0.78 y sobre reinversión 3.10; se descartan valores fuera de 0,3–6)",
+    "WACC terminal 7.3% (empresa madura: se mantiene el actual)",
+    "ROIC actual 19.4% > WACC terminal 7.3%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}

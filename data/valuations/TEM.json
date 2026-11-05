@@ -1,0 +1,242 @@
+{
+  "ticker": "TEM",
+  "as_of": "2026-11-04T11:45:36+00:00",
+  "price": 77.8,
+  "price_time": "2026-11-03T21:00:01+00:00",
+  "profile": {
+    "name": "Tempus AI, Inc.",
+    "exchange": "Nasdaq",
+    "sector": "Healthcare",
+    "industry": "Health Information Services",
+    "sic": "Services-Computer Programming, Data Processing, Etc.",
+    "country": "United States",
+    "website": "https://www.tempus.com",
+    "domain": "tempus.com",
+    "summary_es": null,
+    "summary_en": "Tempus AI, Inc. operates as a healthcare technology company in the United States. It offers the Tempus platform, a closed-loop, full-stack, bi-directional integrations between a clinician's desktop and its laboratory diagnostic capabilities, analytics platform, and repository of multimodal data; and Hub, a clinical application for physicians and other healthcare providers for use in the diagnostics product line as an end-to-end application for healthcare providers for NGS tests. The company also provides Lens, a software application for life sciences and advanced precision research; diagnostics services, such as NGS diagnostics, PCR profiling, and other anatomic and molecular pathology tests; and large-panel solid tumor and hematologic testing through multiple assays, with its core clinical assay (xT and xR) offering large panel DNA, RNA full transcriptome, and incidental germline findings through normal blood or saliva analyses. In addition, it provides genetic tests focused on inherited conditions; an nP assay for pharmacogenomic testing for patients with psychiatric conditions, including depression, general anxiety disorder, bipolar disorder, and other relevant diagnoses; Insights, which licenses libraries of linked, de-identified clinical, molecular, and imaging data; Organoids, a tumor derived biological modeling. Further, the company offers Trials for clinical trial matching services; Next, an AI platform; Algos, an algorithm-based diagnostics application. It has Strategic Collaborations with AstraZeneca AB, Pathos AI, Inc., GlaxoSmithKline, Merck, and Recursion Pharmaceuticals, Inc. Additionally, it also has a strategic collaboration with Blood Cancer United to develop registry for pediatric acute myeloid leukemia. The company was formerly known as Tempus Labs, Inc. and changed its name to Tempus AI, Inc. in January 2023. Tempus AI, Inc. was incorporated in 2015 and is headquartered in Chicago, Illinois."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 0.0,
+      "weight": 0.0,
+      "description": "ventas +14% anual los primeros 5 años, margen 10% en 10 años",
+      "assumptions": {
+        "g1": 0.13999999999999999,
+        "margin_target": 0.10296639912999998,
+        "sales_to_capital": 1.125,
+        "years_to_target": 10,
+        "g_terminal": 0.034100000000000005,
+        "p_failure": 0.15
+      },
+      "wacc": 0.10548026498724611,
+      "terminal_share": -1.7098069444326005
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 6.4093412453053284,
+      "weight": 0.25,
+      "description": "ventas +24% anual los primeros 5 años, margen 13% en 8 años",
+      "assumptions": {
+        "g1": 0.24499999999999997,
+        "margin_target": 0.125030627515,
+        "sales_to_capital": 1.35,
+        "years_to_target": 8,
+        "g_terminal": 0.0391,
+        "p_failure": 0.05
+      },
+      "wacc": 0.10048026498724612,
+      "terminal_share": 3.4261358835984996
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 29.2193048931687,
+      "weight": 0.5,
+      "description": "ventas +35% anual los primeros 5 años, margen 15% en 7 años",
+      "assumptions": {
+        "g1": 0.35,
+        "margin_target": 0.1470948559,
+        "sales_to_capital": 1.5,
+        "years_to_target": 7,
+        "g_terminal": 0.04410000000000001,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09548026498724611,
+      "terminal_share": 1.4242104686828065
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 67.14850586127879,
+      "weight": 0.25,
+      "description": "ventas +42% anual los primeros 5 años, margen 17% en 6 años",
+      "assumptions": {
+        "g1": 0.41999999999999993,
+        "margin_target": 0.16915908428499998,
+        "sales_to_capital": 1.6500000000000001,
+        "years_to_target": 6,
+        "g_terminal": 0.049100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09298026498724611,
+      "terminal_share": 1.0589414254442922
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 153.77365534123638,
+      "weight": 0.0,
+      "description": "ventas +52% anual los primeros 5 años, margen 19% en 5 años",
+      "assumptions": {
+        "g1": 0.5249999999999999,
+        "margin_target": 0.19122331266999998,
+        "sales_to_capital": 1.875,
+        "years_to_target": 5,
+        "g_terminal": 0.049100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09048026498724611,
+      "terminal_share": 0.9092067776252002
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 32.99911422323038,
+  "range": [
+    28.697497421915273,
+    37.97523066225746
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 36.74440703086502
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 37.35509169468667
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 37.97523066225746
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 32.45830406503735
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 32.99911422323038
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 33.54835400091794
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 28.697497421915273
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 29.177569407564548
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 29.665178515471343
+    }
+  ],
+  "potential": -0.5758468608839282,
+  "margin_of_safety": -1.3576390406634353,
+  "reverse_dcf": {
+    "margin": 0.2591995474674659,
+    "growth_g1": 0.5576082005993201,
+    "current_margin": -0.1847821910093749,
+    "base_margin": 0.1470948559,
+    "base_g1": 0.35
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 0.0,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 0.0,
+        "to": 6.4093412453053284,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 6.4093412453053284,
+        "to": 17.814323069237016,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 17.814323069237016,
+        "to": 27.758339648510265,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Mantener",
+        "from": 27.758339648510265,
+        "to": 48.183905377223745,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 48.183905377223745,
+        "to": 67.14850586127879,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Vender",
+        "from": 67.14850586127879,
+        "to": 153.77365534123638,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 153.77365534123638,
+        "to": null,
+        "reachable_1y": true
+      }
+    ],
+    "recommendation": "Vender",
+    "zone_index": 6,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 166.0755477685353,
+      "moves_down_below": 61.776625392376495
+    },
+    "reach_band_1y": [
+      36.84952345144107,
+      164.25829788480732
+    ]
+  },
+  "recommendation": "Vender",
+  "volatility_1y": 0.7472987447509093,
+  "notes": [
+    "g1 = crecimiento anual compuesto de los últimos 3 años",
+    "g1 recortado de 58.3% al rango −5% / 35%",
+    "margen objetivo = el de la industria",
+    "ventas/capital = 1.5 (la histórica no es usable)",
+    "sin tasa efectiva (pérdidas): años 1-5 con 0%",
+    "sin dato de pérdidas fiscales acumuladas (NOL): se asume 0"
+  ],
+  "warnings": [
+    "Todo sale mal: valor por acción negativo: revisá supuestos o datos",
+    "Conservador: el valor terminal es 343% del valor operativo",
+    "Base: el valor terminal es 142% del valor operativo",
+    "Optimista: el valor terminal es 106% del valor operativo",
+    "Todo sale bien: el valor terminal es 91% del valor operativo"
+  ]
+}

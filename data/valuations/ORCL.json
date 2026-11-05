@@ -1,0 +1,236 @@
+{
+  "ticker": "ORCL",
+  "as_of": "2026-11-04T12:32:05+00:00",
+  "price": 126.19,
+  "price_time": "2026-11-03T21:04:24+00:00",
+  "profile": {
+    "name": "Oracle Corporation",
+    "exchange": "NYSE",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "sic": "Services-Prepackaged Software",
+    "country": "United States",
+    "website": "https://www.oracle.com",
+    "domain": "oracle.com",
+    "summary_es": null,
+    "summary_en": "Oracle Corporation offers products and services that build, run and support enterprise information technology frameworks worldwide. Its Oracle cloud software as a service offering includes various cloud software applications, including Oracle Fusion cloud enterprise resource planning ERP, Oracle Fusion cloud enterprise performance management EPM, Oracle Fusion cloud supply chain and manufacturing management SCM, Oracle Fusion cloud human capital management HCM, and NetSuite applications suite, Oracle Health applications, as well as Oracle Fusion Sales, Service, and Marketing. The company also offers cloud-based industry solutions for various industries; Oracle cloud license and on-premise license; and Oracle license support services. In addition, it provides cloud and license business' infrastructure technologies, such as the Oracle Database and MySQL Database; Java, a software development language; and middleware, including development tools and others. The company's cloud and license business' infrastructure technologies also comprise cloud-based compute, storage, and networking capabilities; and Oracle autonomous database, as well as AI, Internet-of-Things, machine learning, digital assistant, and blockchain. Further, it provides hardware products and other hardware-related software offerings, including Oracle engineered systems, enterprise servers, storage solutions, industry-specific hardware, virtualization software, operating systems, management software, and related hardware support services, and consulting and advanced customer services. It markets and sells its cloud, license, hardware, support, and services offerings directly to businesses in various industries, government agencies, and educational institutions, as well as through indirect channels. Oracle Corporation has a strategic alliance with Metron, Inc. The company was founded in 1977 and is headquartered in Austin, Texas."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 13.032926842935707,
+      "weight": 0.0,
+      "description": "ventas +10% anual los primeros 5 años, margen 23% en 10 años",
+      "assumptions": {
+        "g1": 0.1,
+        "margin_target": 0.23087759618,
+        "sales_to_capital": 0.6000000000000001,
+        "years_to_target": 10,
+        "g_terminal": 0.034100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10736658683576923,
+      "terminal_share": 0.5808525841172935
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 57.65350425665644,
+      "weight": 0.25,
+      "description": "ventas +18% anual los primeros 5 años, margen 28% en 8 años",
+      "assumptions": {
+        "g1": 0.175,
+        "margin_target": 0.28035136679,
+        "sales_to_capital": 0.7200000000000001,
+        "years_to_target": 8,
+        "g_terminal": 0.0391,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10236658683576924,
+      "terminal_share": 0.730518189549968
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 158.5101968229409,
+      "weight": 0.5,
+      "description": "ventas +25% anual los primeros 5 años, margen 33% en 7 años",
+      "assumptions": {
+        "g1": 0.25,
+        "margin_target": 0.3298251374,
+        "sales_to_capital": 0.8,
+        "years_to_target": 7,
+        "g_terminal": 0.04410000000000001,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09736658683576924,
+      "terminal_share": 0.8022795835441746
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 312.72684904416315,
+      "weight": 0.25,
+      "description": "ventas +30% anual los primeros 5 años, margen 38% en 6 años",
+      "assumptions": {
+        "g1": 0.3,
+        "margin_target": 0.37929890801,
+        "sales_to_capital": 0.8800000000000001,
+        "years_to_target": 6,
+        "g_terminal": 0.049100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09486658683576923,
+      "terminal_share": 0.8126029205932794
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 629.1860456262038,
+      "weight": 0.0,
+      "description": "ventas +38% anual los primeros 5 años, margen 43% en 5 años",
+      "assumptions": {
+        "g1": 0.375,
+        "margin_target": 0.42877267862000007,
+        "sales_to_capital": 1.0,
+        "years_to_target": 5,
+        "g_terminal": 0.049100000000000005,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09236658683576923,
+      "terminal_share": 0.8167213183798947
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 171.85018673667537,
+  "range": [
+    142.37610204254062,
+    215.70711655343808
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 191.87965970276656
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 202.52878290870467
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 215.70711655343808
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 164.67747129401843
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 171.85018673667537
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 180.40862345456014
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 142.37610204254062
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 147.20341512377718
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 152.7704555080826
+    }
+  ],
+  "potential": 0.3618368074861349,
+  "margin_of_safety": 0.26569762654165807,
+  "reverse_dcf": {
+    "margin": 0.2876570746808429,
+    "growth_g1": 0.2097486367951561,
+    "current_margin": 0.3212355104770397,
+    "base_margin": 0.3298251374,
+    "base_g1": 0.25
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 13.032926842935707,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 13.032926842935707,
+        "to": 57.65350425665644,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 57.65350425665644,
+        "to": 108.08185053979868,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 108.08185053979868,
+        "to": 150.58468698179385,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Mantener",
+        "from": 150.58468698179385,
+        "to": 235.61852293355201,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 235.61852293355201,
+        "to": 312.72684904416315,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Vender",
+        "from": 312.72684904416315,
+        "to": 629.1860456262038,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 629.1860456262038,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Sumar de a poco",
+    "zone_index": 3,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 162.63146194033737,
+      "moves_down_below": 99.4353024966148
+    },
+    "reach_band_1y": [
+      70.02059527422765,
+      227.41760531506202
+    ]
+  },
+  "recommendation": "Sumar de a poco",
+  "volatility_1y": 0.588999290685896,
+  "notes": [
+    "margen objetivo = el de la industria",
+    "g1 del base fijado a mano; los demás escenarios se mueven alrededor",
+    "ventas/capital del base fijado a mano; los demás escenarios se mueven alrededor",
+    "hay supuestos modificados a mano (overrides.json)",
+    "WACC terminal 9.4% (converge a rf + ERP)",
+    "ROIC actual 12.6% > WACC terminal 9.4%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}
