@@ -1,0 +1,236 @@
+{
+  "ticker": "PYPL",
+  "as_of": "2026-11-05T23:50:20+00:00",
+  "price": 58.96,
+  "price_time": "2026-11-05T21:00:01+00:00",
+  "profile": {
+    "name": "PayPal Holdings, Inc.",
+    "exchange": "Nasdaq",
+    "sector": "Financial Services",
+    "industry": "Credit Services",
+    "sic": "Services-Business Services, NEC",
+    "country": "United States",
+    "website": "https://www.paypal.com",
+    "domain": "paypal.com",
+    "summary_es": null,
+    "summary_en": "PayPal Holdings, Inc. operates a technology platform that enables digital payments for merchants and consumers worldwide. The company operates a two-sided network at scale that connects merchants and consumers that enables its customers to connect, transact, and send and receive payments through online and in person, as well as transfer and withdraw funds using various funding sources, such as bank accounts, PayPal or Venmo account balance, consumer credit and debit products, credit and debit cards, and cryptocurrencies, as well as other stored value products, including gift cards and eligible rewards. It provides payment solutions under the PayPal, PayPal Credit, Braintree, Venmo, Xoom, Hyperwallet, Honey, and Paidy names. The company was founded in 1998 and is headquartered in San Jose, California."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 51.580091042788496,
+      "weight": 0.0,
+      "description": "ventas +3% anual los primeros 5 años, margen 13% en 10 años",
+      "assumptions": {
+        "g1": 0.025707780931272593,
+        "margin_target": 0.12938707208,
+        "sales_to_capital": 1.1684121542290895,
+        "years_to_target": 10,
+        "g_terminal": 0.034,
+        "p_failure": 0.0
+      },
+      "wacc": 0.07018024522295242,
+      "terminal_share": 0.4324580900267541
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 75.71312400125178,
+      "weight": 0.25,
+      "description": "ventas +4% anual los primeros 5 años, margen 16% en 8 años",
+      "assumptions": {
+        "g1": 0.044988616629727037,
+        "margin_target": 0.15711287324,
+        "sales_to_capital": 1.4020945850749074,
+        "years_to_target": 8,
+        "g_terminal": 0.039,
+        "p_failure": 0.0
+      },
+      "wacc": 0.06518024522295243,
+      "terminal_share": 0.5405497663654579
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 116.45749605179164,
+      "weight": 0.5,
+      "description": "ventas +6% anual los primeros 5 años, margen 18% en 7 años",
+      "assumptions": {
+        "g1": 0.06426945232818149,
+        "margin_target": 0.1848386744,
+        "sales_to_capital": 1.5578828723054525,
+        "years_to_target": 7,
+        "g_terminal": 0.044000000000000004,
+        "p_failure": 0.0
+      },
+      "wacc": 0.06018024522295243,
+      "terminal_share": 0.6293643355167634
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 169.96676723583533,
+      "weight": 0.25,
+      "description": "ventas +8% anual los primeros 5 años, margen 21% en 6 años",
+      "assumptions": {
+        "g1": 0.07712334279381779,
+        "margin_target": 0.21256447556,
+        "sales_to_capital": 1.713671159535998,
+        "years_to_target": 6,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.057680245222952425,
+      "terminal_share": 0.6850598049759008
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 239.97224886132057,
+      "weight": 0.0,
+      "description": "ventas +10% anual los primeros 5 años, margen 24% en 5 años",
+      "assumptions": {
+        "g1": 0.09640417849227223,
+        "margin_target": 0.24029027672000003,
+        "sales_to_capital": 1.9473535903818155,
+        "years_to_target": 5,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.05518024522295243,
+      "terminal_share": 0.7142347258197873
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 119.6487208351676,
+  "range": [
+    103.62864205560254,
+    143.66630615474654
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 126.81231400704495
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 134.26762266392097
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 143.66630615474654
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 114.12153164765276
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 119.6487208351676
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 126.42123401127985
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 103.62864205560254
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 107.80449897562657
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 112.8042946339996
+    }
+  ],
+  "potential": 1.0293202312613228,
+  "margin_of_safety": 0.5072241509274017,
+  "reverse_dcf": {
+    "margin": 0.09465915325151952,
+    "growth_g1": -0.09487301573002643,
+    "current_margin": 0.16993730864557516,
+    "base_margin": 0.1848386744,
+    "base_g1": 0.06426945232818149,
+    "note": "el precio supone que la empresa prácticamente no vuelve a crecer"
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 51.580091042788496,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Convicción",
+        "from": 51.580091042788496,
+        "to": 75.71312400125178,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Comprar",
+        "from": 75.71312400125178,
+        "to": 96.08531002652171,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 96.08531002652171,
+        "to": 110.63462124920206,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Mantener",
+        "from": 110.63462124920206,
+        "to": 143.21213164381348,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Reducir",
+        "from": 143.21213164381348,
+        "to": 169.96676723583533,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Vender",
+        "from": 169.96676723583533,
+        "to": 239.97224886132057,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 239.97224886132057,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Convicción",
+    "zone_index": 1,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 81.77017392135193,
+      "moves_down_below": 47.45368375936542
+    },
+    "reach_band_1y": [
+      38.24499512024143,
+      90.89507238975054
+    ]
+  },
+  "recommendation": "Convicción",
+  "volatility_1y": 0.4328465426993262,
+  "notes": [
+    "g1 = crecimiento anual compuesto de los últimos 3 años",
+    "margen objetivo = el de la industria",
+    "ventas/capital = 1.56 (promedio de sobre capital 1.56; se descartan valores fuera de 0,3–6)",
+    "WACC terminal 9.4% (converge a rf + ERP)",
+    "ROIC actual 21.4% > WACC terminal 9.4%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}
