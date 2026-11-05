@@ -1,0 +1,57 @@
+name: Valuación
+
+on:
+  schedule:
+    - cron: "17 22 * * 1-5"   # lunes a viernes 19:17 (Buenos Aires), después del cierre de EE.UU.
+  workflow_dispatch:
+    inputs:
+      ticker:
+        description: "Ticker a agregar a la lista de seguimiento (opcional)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: valuacion
+  cancel-in-progress: false
+
+jobs:
+  valuar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Agregar ticker a demanda
+        if: ${{ github.event.inputs.ticker != '' }}
+        env:
+          TICKER: ${{ github.event.inputs.ticker }}
+        run: python -m valuador watch add "$TICKER"
+
+      - name: Bajar datos
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          FMP_API_KEY: ${{ secrets.FMP_API_KEY }}
+          VALUADOR_ERP: ${{ vars.VALUADOR_ERP }}
+        run: python -m valuador fetch || echo "algún ticker falló; se valora el resto"
+
+      - name: Valuar
+        env:
+          VALUADOR_ERP: ${{ vars.VALUADOR_ERP }}
+        run: python -m valuador valuar --out docs/data
+
+      - name: Guardar resultados
+        run: |
+          git config user.name "valuador-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/data data/watchlist.json
+          git diff --cached --quiet || git commit -m "Valuación $(date -u +%F)"
+          git push
