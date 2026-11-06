@@ -13,6 +13,9 @@
   .bar-top h1{font-size:15px;letter-spacing:.12em;margin:0;font-weight:800}
   select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:7px 10px;font:inherit}
   .asof{margin-left:auto;font-size:12px;color:var(--quiet)}
+  .add{font-size:13px;color:var(--ink);text-decoration:none;border:1px solid var(--line);border-radius:8px;padding:7px 12px;background:var(--card)}
+  .add:hover{border-color:var(--accent)}
+  .msg a{color:var(--ink)}
   .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
   .hdr{font-size:12px;font-weight:700;letter-spacing:.09em;display:flex;gap:10px;align-items:center;margin-bottom:10px;text-transform:uppercase}
   .hdr::before{content:"";width:18px;height:3px;border-radius:2px;background:var(--accent)}
@@ -64,6 +67,7 @@
   <div class="bar-top">
     <h1>VALUADOR</h1>
     <select id="pick" aria-label="Elegir empresa"></select>
+    <a class="add" id="add" target="_blank" rel="noopener">+ Agregar ticker</a>
     <span class="asof" id="asof"></span>
   </div>
   <div id="app"><div class="card msg">Cargando…</div></div>
@@ -75,6 +79,12 @@ const LOGO_TOKEN = "pk_Nsn2X5RzSj-MdBG8xybfNA";      // logo.dev (clave publicab
 const PRICE_URL = "https://data912.com/live/usa_stocks";
 const COLORS = ["#23b3a3", "#22a85a", "#6aa61e", "#a3b33a", "#c9a03a", "#f07a2e", "#c9434f", "#b0337a"];
 const TOL = 0.08;
+// usuario.github.io/repo  →  github.com/usuario/repo/actions/workflows/valuacion.yml
+const REPO = `https://github.com/${location.hostname.split(".")[0]}/${location.pathname.split("/")[1] || ""}`;
+const ADD_URL = `${REPO}/actions/workflows/valuacion.yml`;
+const addHelp = t => `<div class="card msg">No hay valuación para <b>${esc(t)}</b> todavía.<br><br>
+  Abrí <a href="${ADD_URL}" target="_blank" rel="noopener">la Action Valuación</a> → <b>Run workflow</b>, escribí <b>${esc(t)}</b> y confirmá.
+  En unos 2 minutos queda en la lista y se actualiza cada noche.</div>`;
 
 const f2 = v => v == null ? "—" : v.toLocaleString("es-AR", {minimumFractionDigits: 2, maximumFractionDigits: 2});
 const f0 = v => v == null ? "—" : v.toLocaleString("es-AR", {maximumFractionDigits: v >= 100 ? 0 : 1});
@@ -245,7 +255,7 @@ async function load(ticker) {
   try {
     V = await getJSON(`data/${encodeURIComponent(ticker)}.json`);
   } catch (e) {
-    document.getElementById("app").innerHTML = `<div class="card msg">No hay valuación para ${esc(ticker)}.</div>`;
+    document.getElementById("app").innerHTML = addHelp(ticker);
     return;
   }
   document.getElementById("asof").textContent = `cálculo: ${new Date(V.as_of).toLocaleString("es-AR", {dateStyle: "short", timeStyle: "short"})}`;
@@ -263,11 +273,19 @@ async function livePrice(ticker) {
 
 async function init() {
   const pick = document.getElementById("pick");
+  document.getElementById("add").href = ADD_URL;
   let index = [];
   try { index = await getJSON("data/index.json"); } catch (e) {}
   if (!index.length) { document.getElementById("app").innerHTML = `<div class="card msg">Todavía no hay valuaciones. Corré la GitHub Action.</div>`; return; }
   pick.innerHTML = index.map(x => `<option value="${esc(x.ticker)}">${esc(x.ticker)} · ${esc(x.name || "")} · ${esc(x.recommendation)}</option>`).join("");
   const want = location.hash.slice(1).toUpperCase();
+  if (want && !index.some(x => x.ticker === want)) {
+    pick.innerHTML = `<option>${esc(want)} · sin valuación</option>` + pick.innerHTML;
+    document.getElementById("app").innerHTML = addHelp(want);
+    pick.onchange = () => { location.hash = pick.value; };
+    window.addEventListener("hashchange", () => location.reload());
+    return;
+  }
   const start = index.some(x => x.ticker === want) ? want : index[0].ticker;
   pick.value = start;
   pick.onchange = () => { location.hash = pick.value; };
