@@ -1,0 +1,235 @@
+{
+  "ticker": "GOOGL",
+  "as_of": "2026-11-06T00:32:41+00:00",
+  "price": 282.57,
+  "price_time": "2026-11-05T21:00:01+00:00",
+  "profile": {
+    "name": "Alphabet Inc.",
+    "exchange": "Nasdaq",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "sic": "Services-Computer Programming, Data Processing, Etc.",
+    "country": "United States",
+    "website": "https://abc.xyz",
+    "domain": "abc.xyz",
+    "summary_es": null,
+    "summary_en": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 91.71393985696426,
+      "weight": 0.0,
+      "description": "ventas +5% anual los primeros 5 años, margen 23% en 10 años",
+      "assumptions": {
+        "g1": 0.050046982436863896,
+        "margin_target": 0.23324913287681118,
+        "sales_to_capital": 0.9948666063617367,
+        "years_to_target": 10,
+        "g_terminal": 0.034,
+        "p_failure": 0.0
+      },
+      "wacc": 0.12934195419439418,
+      "terminal_share": 0.40018810475020344
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 135.95548181912721,
+      "weight": 0.25,
+      "description": "ventas +9% anual los primeros 5 años, margen 28% en 8 años",
+      "assumptions": {
+        "g1": 0.08758221926451182,
+        "margin_target": 0.28323108992184215,
+        "sales_to_capital": 1.193839927634084,
+        "years_to_target": 8,
+        "g_terminal": 0.039,
+        "p_failure": 0.0
+      },
+      "wacc": 0.12434195419439417,
+      "terminal_share": 0.5312734782208234
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 218.4508099789626,
+      "weight": 0.5,
+      "description": "ventas +13% anual los primeros 5 años, margen 33% en 7 años",
+      "assumptions": {
+        "g1": 0.12511745609215974,
+        "margin_target": 0.33321304696687315,
+        "sales_to_capital": 1.3264888084823157,
+        "years_to_target": 7,
+        "g_terminal": 0.044000000000000004,
+        "p_failure": 0.0
+      },
+      "wacc": 0.11934195419439417,
+      "terminal_share": 0.6351507134688449
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 331.4793568871139,
+      "weight": 0.25,
+      "description": "ventas +15% anual los primeros 5 años, margen 38% en 6 años",
+      "assumptions": {
+        "g1": 0.1501409473105917,
+        "margin_target": 0.3831950040119041,
+        "sales_to_capital": 1.4591376893305474,
+        "years_to_target": 6,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.11684195419439417,
+      "terminal_share": 0.6968798492960946
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 504.9035547719057,
+      "weight": 0.0,
+      "description": "ventas +19% anual los primeros 5 años, margen 43% en 5 años",
+      "assumptions": {
+        "g1": 0.1876761841382396,
+        "margin_target": 0.4331769610569351,
+        "sales_to_capital": 1.6581110106028945,
+        "years_to_target": 5,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.11434195419439416,
+      "terminal_share": 0.7312801979709928
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 226.0841146660416,
+  "range": [
+    197.29435499796722,
+    269.43607730486946
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 237.4380954538376
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 251.5890609200729
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 269.43607730486946
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 215.4546289716192
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 226.0841146660416
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 239.11079145088257
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 197.29435499796722
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 205.4442675107508
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 215.20282352746995
+    }
+  ],
+  "potential": -0.19990050371220724,
+  "margin_of_safety": -0.24984455638290243,
+  "reverse_dcf": {
+    "margin": 0.43846602321362993,
+    "growth_g1": 0.18085518708903014,
+    "current_margin": 0.33321304696687315,
+    "base_margin": 0.33321304696687315,
+    "base_g1": 0.12511745609215974
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 91.71393985696426,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 91.71393985696426,
+        "to": 135.95548181912721,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 135.95548181912721,
+        "to": 177.2031458990449,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 177.2031458990449,
+        "to": 207.52826948001447,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Mantener",
+        "from": 207.52826948001447,
+        "to": 274.9650834330383,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 274.9650834330383,
+        "to": 331.4793568871139,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Vender",
+        "from": 331.4793568871139,
+        "to": 504.9035547719057,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 504.9035547719057,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Reducir",
+    "zone_index": 5,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 357.997705438083,
+      "moves_down_below": 252.96787675839522
+    },
+    "reach_band_1y": [
+      201.03255197485063,
+      397.1784873426309
+    ]
+  },
+  "recommendation": "Reducir",
+  "volatility_1y": 0.3404594624326303,
+  "notes": [
+    "g1 = crecimiento anual compuesto de los últimos 3 años",
+    "margen objetivo = el actual (supera a la industria)",
+    "ventas/capital = 1.33 (promedio de sobre capital 1.66 y sobre reinversión 1.00; se descartan valores fuera de 0,3–6)",
+    "WACC terminal 9.4% (converge a rf + ERP)",
+    "ROIC actual 23.8% > WACC terminal 9.4%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}

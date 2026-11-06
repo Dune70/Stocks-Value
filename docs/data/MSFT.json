@@ -1,0 +1,235 @@
+{
+  "ticker": "MSFT",
+  "as_of": "2026-11-06T00:32:41+00:00",
+  "price": 535.93,
+  "price_time": "2026-11-05T21:00:01+00:00",
+  "profile": {
+    "name": "Microsoft Corporation",
+    "exchange": "Nasdaq",
+    "sector": "Technology",
+    "industry": "Software - Infrastructure",
+    "sic": "Services-Prepackaged Software",
+    "country": "United States",
+    "website": "https://www.microsoft.com",
+    "domain": "microsoft.com",
+    "summary_es": null,
+    "summary_en": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 153.56859407014642,
+      "weight": 0.0,
+      "description": "ventas +6% anual los primeros 5 años, margen 33% en 10 años",
+      "assumptions": {
+        "g1": 0.06449591663280811,
+        "margin_target": 0.3297311261527804,
+        "sales_to_capital": 0.6694861242991056,
+        "years_to_target": 10,
+        "g_terminal": 0.034,
+        "p_failure": 0.0
+      },
+      "wacc": 0.11524817227076878,
+      "terminal_share": 0.4436655343109665
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 260.3798355487335,
+      "weight": 0.25,
+      "description": "ventas +11% anual los primeros 5 años, margen 40% en 8 años",
+      "assumptions": {
+        "g1": 0.11286785410741419,
+        "margin_target": 0.4003877960426619,
+        "sales_to_capital": 0.8033833491589267,
+        "years_to_target": 8,
+        "g_terminal": 0.039,
+        "p_failure": 0.0
+      },
+      "wacc": 0.11024817227076879,
+      "terminal_share": 0.5934483018527726
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 472.2737416482598,
+      "weight": 0.5,
+      "description": "ventas +16% anual los primeros 5 años, margen 47% en 7 años",
+      "assumptions": {
+        "g1": 0.1612397915820203,
+        "margin_target": 0.4710444659325434,
+        "sales_to_capital": 0.8926481657321408,
+        "years_to_target": 7,
+        "g_terminal": 0.044000000000000004,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10524817227076878,
+      "terminal_share": 0.6969189685390494
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 773.9045776281715,
+      "weight": 0.25,
+      "description": "ventas +19% anual los primeros 5 años, margen 54% en 6 años",
+      "assumptions": {
+        "g1": 0.19348774989842432,
+        "margin_target": 0.5417011358224249,
+        "sales_to_capital": 0.981912982305355,
+        "years_to_target": 6,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10274817227076878,
+      "terminal_share": 0.7507923487691016
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 1267.718564487572,
+      "weight": 0.0,
+      "description": "ventas +24% anual los primeros 5 años, margen 61% en 5 años",
+      "assumptions": {
+        "g1": 0.24185968737303043,
+        "margin_target": 0.6123578057123065,
+        "sales_to_capital": 1.1158102071651759,
+        "years_to_target": 5,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10024817227076878,
+      "terminal_share": 0.7782708240060705
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 494.70797411835616,
+  "range": [
+    421.15735555304025,
+    606.5599943370369
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 519.6856411370632
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 558.0126789210103
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 606.5599943370369
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 465.6430808077725
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 494.70797411835616
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 530.5022353832466
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 421.15735555304025
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 443.6683716744427
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 470.77240895354464
+    }
+  ],
+  "potential": -0.07691680981031812,
+  "margin_of_safety": -0.08332597823010156,
+  "reverse_dcf": {
+    "margin": 0.5332712785132256,
+    "growth_g1": 0.18709746218774248,
+    "current_margin": 0.4710444659325434,
+    "base_margin": 0.4710444659325434,
+    "base_g1": 0.1612397915820203
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 153.56859407014642,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 153.56859407014642,
+        "to": 260.3798355487335,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 260.3798355487335,
+        "to": 366.32678859849665,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 366.32678859849665,
+        "to": 448.66005456584674,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Mantener",
+        "from": 448.66005456584674,
+        "to": 623.0891596382156,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 623.0891596382156,
+        "to": 773.9045776281715,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Vender",
+        "from": 773.9045776281715,
+        "to": 1267.718564487572,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 1267.718564487572,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Mantener",
+    "zone_index": 4,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 672.9362924092729,
+      "moves_down_below": 412.76725020057904
+    },
+    "reach_band_1y": [
+      383.4805108931716,
+      748.9845161388469
+    ]
+  },
+  "recommendation": "Mantener",
+  "volatility_1y": 0.3347147550643723,
+  "notes": [
+    "g1 = crecimiento anual compuesto de los últimos 3 años",
+    "margen objetivo = el actual (supera a la industria)",
+    "ventas/capital = 0.89 (promedio de sobre capital 1.00 y sobre reinversión 0.78; se descartan valores fuera de 0,3–6)",
+    "WACC terminal 9.4% (converge a rf + ERP)",
+    "ROIC actual 29.7% > WACC terminal 9.4%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}

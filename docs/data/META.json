@@ -1,0 +1,235 @@
+{
+  "ticker": "META",
+  "as_of": "2026-11-06T00:32:41+00:00",
+  "price": 605.08,
+  "price_time": "2026-11-05T21:00:02+00:00",
+  "profile": {
+    "name": "Meta Platforms, Inc.",
+    "exchange": "Nasdaq",
+    "sector": "Communication Services",
+    "industry": "Internet Content & Information",
+    "sic": "Services-Computer Programming, Data Processing, Etc.",
+    "country": "United States",
+    "website": "https://www.meta.com",
+    "domain": "meta.com",
+    "summary_es": null,
+    "summary_en": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets, and AI glasses in the United States, Canada, Europe, Asia-Pacific, and internationally. It operates through two segments, Family of Apps (FoA) and Reality Labs (RL). The FoA segment offers Facebook, which enables people to build community through feed, reels, stories, groups, marketplace, and other; Instagram that brings people closer through Instagram feed, stories, reels, live, and messaging; Messenger, a messaging application for people to connect with friends, family, communities, and businesses across platforms and devices through text, audio, and video calls; Meta AI, an assistant that's available across apps, as a stand-alone app, on AI glasses, and on the web; Threads, an application for text-based updates and public conversations; and WhatsApp, a messaging application that is used by people and businesses to communicate and transact. The RL segment provides virtual and augmented reality products, including consumer hardware, software, and content that help people feel connected, as well as Meta Quest devices that enable social experiences across gaming, fitness, entertainment, and more. The segment also includes wearables such as AI glasses like Ray Ban Meta and Oakley Meta glasses; and the Meta Ray Ban Display, which combines AI glasses with an integrated lens display and the Meta Neural Band, a wrist worn device using electromyography that lets people control their AI glasses through neuromuscular signals. Meta Platforms, Inc. has a collaboration with Microsoft Corporation, NVIDIA Corporation, Advanced Micro Devices, Inc., Broadcom Inc., and OpenAI, L.L.C. The company was formerly known as Facebook, Inc. and changed its name to Meta Platforms, Inc. in October 2021. The company was incorporated in 2004 and is headquartered in Menlo Park, California."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 175.7000321726835,
+      "weight": 0.0,
+      "description": "ventas +8% anual los primeros 5 años, margen 23% en 10 años",
+      "assumptions": {
+        "g1": 0.07957532577175704,
+        "margin_target": 0.229986962190352,
+        "sales_to_capital": 0.7415956121879702,
+        "years_to_target": 10,
+        "g_terminal": 0.034,
+        "p_failure": 0.0
+      },
+      "wacc": 0.1284850848058315,
+      "terminal_share": 0.518251768614367
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 330.1542895349546,
+      "weight": 0.25,
+      "description": "ventas +14% anual los primeros 5 años, margen 28% en 8 años",
+      "assumptions": {
+        "g1": 0.1392568201005748,
+        "margin_target": 0.27926988265971314,
+        "sales_to_capital": 0.8899147346255643,
+        "years_to_target": 8,
+        "g_terminal": 0.039,
+        "p_failure": 0.0
+      },
+      "wacc": 0.12348508480583151,
+      "terminal_share": 0.6821252042192847
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 666.8297085939766,
+      "weight": 0.5,
+      "description": "ventas +20% anual los primeros 5 años, margen 33% en 7 años",
+      "assumptions": {
+        "g1": 0.19893831442939258,
+        "margin_target": 0.3285528031290743,
+        "sales_to_capital": 0.9887941495839603,
+        "years_to_target": 7,
+        "g_terminal": 0.044000000000000004,
+        "p_failure": 0.0
+      },
+      "wacc": 0.1184850848058315,
+      "terminal_share": 0.7766288431427837
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 1176.918152830889,
+      "weight": 0.25,
+      "description": "ventas +24% anual los primeros 5 años, margen 38% en 6 años",
+      "assumptions": {
+        "g1": 0.2387259773152711,
+        "margin_target": 0.3778357235984354,
+        "sales_to_capital": 1.0876735645423563,
+        "years_to_target": 6,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.1159850848058315,
+      "terminal_share": 0.8128464275789224
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 2081.670951250702,
+      "weight": 0.0,
+      "description": "ventas +30% anual los primeros 5 años, margen 43% en 5 años",
+      "assumptions": {
+        "g1": 0.2984074716440889,
+        "margin_target": 0.4271186440677966,
+        "sales_to_capital": 1.2359926869799502,
+        "years_to_target": 5,
+        "g_terminal": 0.049,
+        "p_failure": 0.0
+      },
+      "wacc": 0.1134850848058315,
+      "terminal_share": 0.8286149360407661
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 710.1829648884493,
+  "range": [
+    594.0218236884351,
+    887.802987319487
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 750.5722452644291
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 811.058604867368
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 887.802987319487
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 664.5641662859701
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 710.1829648884493
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 766.4542361445834
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 594.0218236884351
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 629.1486418677964
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 671.508825384103
+    }
+  ],
+  "potential": 0.1737009401871641,
+  "margin_of_safety": 0.14799420724623846,
+  "reverse_dcf": {
+    "margin": 0.30188965719501926,
+    "growth_g1": 0.17875511067106442,
+    "current_margin": 0.3285528031290743,
+    "base_margin": 0.3285528031290743,
+    "base_g1": 0.19893831442939258
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 175.7000321726835,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 175.7000321726835,
+        "to": 330.1542895349546,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 330.1542895349546,
+        "to": 498.49199906446563,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 498.49199906446563,
+        "to": 633.4882231642778,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Mantener",
+        "from": 633.4882231642778,
+        "to": 921.8739307124329,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 921.8739307124329,
+        "to": 1176.918152830889,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Vender",
+        "from": 1176.918152830889,
+        "to": 2081.670951250702,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 2081.670951250702,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Sumar de a poco",
+    "zone_index": 3,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 684.16728101742,
+      "moves_down_below": 458.6126391393084
+    },
+    "reach_band_1y": [
+      400.75725820676337,
+      913.5749856116299
+    ]
+  },
+  "recommendation": "Sumar de a poco",
+  "volatility_1y": 0.4120047778106109,
+  "notes": [
+    "g1 = crecimiento anual compuesto de los últimos 3 años",
+    "margen objetivo = el actual (supera a la industria)",
+    "ventas/capital = 0.99 (promedio de sobre capital 1.23 y sobre reinversión 0.75; se descartan valores fuera de 0,3–6)",
+    "WACC terminal 9.4% (converge a rf + ERP)",
+    "ROIC actual 27.6% > WACC terminal 9.4%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}

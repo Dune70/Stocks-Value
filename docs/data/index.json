@@ -1,11 +1,35 @@
 [
   {
+    "ticker": "AMZN",
+    "name": "Amazon.com, Inc.",
+    "price": 260.21,
+    "intrinsic": 522.1827731712809,
+    "recommendation": "Convicción",
+    "as_of": "2026-11-06T00:32:41+00:00"
+  },
+  {
+    "ticker": "GOOGL",
+    "name": "Alphabet Inc.",
+    "price": 282.57,
+    "intrinsic": 226.0841146660416,
+    "recommendation": "Reducir",
+    "as_of": "2026-11-06T00:32:41+00:00"
+  },
+  {
     "ticker": "KO",
     "name": "The Coca-Cola Company",
     "price": 95.73,
     "intrinsic": 64.77518377693733,
     "recommendation": "Reducir",
-    "as_of": "2026-11-06T00:29:32+00:00"
+    "as_of": "2026-11-06T00:32:41+00:00"
+  },
+  {
+    "ticker": "META",
+    "name": "Meta Platforms, Inc.",
+    "price": 605.08,
+    "intrinsic": 710.1829648884493,
+    "recommendation": "Sumar de a poco",
+    "as_of": "2026-11-06T00:32:41+00:00"
   },
   {
     "ticker": "MRVL",
@@ -16,12 +40,28 @@
     "as_of": "2026-11-06T00:29:32+00:00"
   },
   {
+    "ticker": "MSFT",
+    "name": "Microsoft Corporation",
+    "price": 535.93,
+    "intrinsic": 494.70797411835616,
+    "recommendation": "Mantener",
+    "as_of": "2026-11-06T00:32:41+00:00"
+  },
+  {
+    "ticker": "NVDA",
+    "name": "NVIDIA Corporation",
+    "price": 181.6,
+    "intrinsic": 492.857617714006,
+    "recommendation": "Convicción",
+    "as_of": "2026-11-06T00:32:41+00:00"
+  },
+  {
     "ticker": "ORCL",
     "name": "Oracle Corporation",
     "price": 115.16,
     "intrinsic": 172.6621953980503,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-06T00:29:32+00:00"
+    "as_of": "2026-11-06T00:32:41+00:00"
   },
   {
     "ticker": "PYPL",
@@ -29,7 +69,7 @@
     "price": 58.96,
     "intrinsic": 119.6487208351676,
     "recommendation": "Convicción",
-    "as_of": "2026-11-06T00:29:32+00:00"
+    "as_of": "2026-11-06T00:32:41+00:00"
   },
   {
     "ticker": "TEM",
@@ -37,6 +77,6 @@
     "price": 70.43,
     "intrinsic": 33.0527218324746,
     "recommendation": "Vender",
-    "as_of": "2026-11-06T00:29:32+00:00"
+    "as_of": "2026-11-06T00:32:41+00:00"
   }
 ]
