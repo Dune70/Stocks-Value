@@ -1,6 +1,6 @@
 {
   "ticker": "KO",
-  "as_of": "2026-11-05T23:50:20+00:00",
+  "as_of": "2026-11-06T00:29:32+00:00",
   "price": 95.73,
   "price_time": "2026-11-05T21:00:02+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 75.01706327586714
     },
     "reach_band_1y": [
-      79.22525658617938,
-      115.67312363364026
+      79.22526045427819,
+      115.67311798600885
     ]
   },
   "recommendation": "Reducir",
-  "volatility_1y": 0.1892365846843525,
+  "volatility_1y": 0.18923653586029224,
   "notes": [
     "g1 = crecimiento anual compuesto de los últimos 3 años",
     "margen objetivo = el actual (supera a la industria)",

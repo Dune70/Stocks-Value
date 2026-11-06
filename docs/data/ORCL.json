@@ -1,6 +1,6 @@
 {
   "ticker": "ORCL",
-  "as_of": "2026-11-05T23:50:20+00:00",
+  "as_of": "2026-11-06T00:29:32+00:00",
   "price": 115.16,
   "price_time": "2026-11-05T21:04:16+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 99.94531429651968
     },
     "reach_band_1y": [
-      63.662144013856675,
-      208.31572366009908
+      63.66214206204729,
+      208.31573004682394
     ]
   },
   "recommendation": "Sumar de a poco",
-  "volatility_1y": 0.5927323653202322,
+  "volatility_1y": 0.5927323959791025,
   "notes": [
     "margen objetivo = el de la industria",
     "g1 del base fijado a mano; los demás escenarios se mueven alrededor",

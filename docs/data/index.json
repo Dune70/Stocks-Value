@@ -5,7 +5,15 @@
     "price": 95.73,
     "intrinsic": 64.77518377693733,
     "recommendation": "Reducir",
-    "as_of": "2026-11-05T23:50:20+00:00"
+    "as_of": "2026-11-06T00:29:32+00:00"
+  },
+  {
+    "ticker": "MRVL",
+    "name": "Marvell Technology, Inc.",
+    "price": 133.55,
+    "intrinsic": 23.290560983865117,
+    "recommendation": "Venta excepcional",
+    "as_of": "2026-11-06T00:29:32+00:00"
   },
   {
     "ticker": "ORCL",
@@ -13,7 +21,7 @@
     "price": 115.16,
     "intrinsic": 172.6621953980503,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-05T23:50:20+00:00"
+    "as_of": "2026-11-06T00:29:32+00:00"
   },
   {
     "ticker": "PYPL",
@@ -21,7 +29,7 @@
     "price": 58.96,
     "intrinsic": 119.6487208351676,
     "recommendation": "Convicción",
-    "as_of": "2026-11-05T23:50:20+00:00"
+    "as_of": "2026-11-06T00:29:32+00:00"
   },
   {
     "ticker": "TEM",
@@ -29,6 +37,6 @@
     "price": 70.43,
     "intrinsic": 33.0527218324746,
     "recommendation": "Vender",
-    "as_of": "2026-11-05T23:50:20+00:00"
+    "as_of": "2026-11-06T00:29:32+00:00"
   }
 ]
