@@ -2,81 +2,81 @@
   {
     "ticker": "AMZN",
     "name": "Amazon.com, Inc.",
-    "price": 260.21,
-    "intrinsic": 522.1827731712809,
+    "price": 259.3,
+    "intrinsic": 526.6172191846272,
     "recommendation": "Convicción",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "GOOGL",
     "name": "Alphabet Inc.",
-    "price": 282.57,
-    "intrinsic": 226.0841146660416,
+    "price": 284.78,
+    "intrinsic": 227.3237908261973,
     "recommendation": "Reducir",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "KO",
     "name": "The Coca-Cola Company",
-    "price": 95.73,
-    "intrinsic": 64.77518377693733,
+    "price": 95.67,
+    "intrinsic": 65.24455958158,
     "recommendation": "Reducir",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "META",
     "name": "Meta Platforms, Inc.",
-    "price": 605.08,
-    "intrinsic": 710.1829648884493,
+    "price": 610.15,
+    "intrinsic": 714.5804713870739,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "MRVL",
     "name": "Marvell Technology, Inc.",
-    "price": 133.55,
-    "intrinsic": 23.290560983865117,
+    "price": 141.2,
+    "intrinsic": 23.597728951222326,
     "recommendation": "Venta excepcional",
-    "as_of": "2026-11-06T00:29:32+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "MSFT",
     "name": "Microsoft Corporation",
-    "price": 535.93,
-    "intrinsic": 494.70797411835616,
+    "price": 530.61,
+    "intrinsic": 497.48416132093473,
     "recommendation": "Mantener",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "NVDA",
     "name": "NVIDIA Corporation",
-    "price": 181.6,
-    "intrinsic": 492.857617714006,
+    "price": 186.64,
+    "intrinsic": 495.35654272637214,
     "recommendation": "Convicción",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "ORCL",
     "name": "Oracle Corporation",
-    "price": 115.16,
-    "intrinsic": 172.6621953980503,
+    "price": 116.1,
+    "intrinsic": 174.63932177285147,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "PYPL",
     "name": "PayPal Holdings, Inc.",
-    "price": 58.96,
-    "intrinsic": 119.6487208351676,
+    "price": 59.24,
+    "intrinsic": 120.40253259466928,
     "recommendation": "Convicción",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   },
   {
     "ticker": "TEM",
     "name": "Tempus AI, Inc.",
-    "price": 70.43,
-    "intrinsic": 33.0527218324746,
+    "price": 76.05,
+    "intrinsic": 33.492589404838625,
     "recommendation": "Vender",
-    "as_of": "2026-11-06T00:32:41+00:00"
+    "as_of": "2026-11-07T01:58:09+00:00"
   }
 ]

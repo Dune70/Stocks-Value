@@ -1,8 +1,8 @@
 {
   "ticker": "TEM",
-  "as_of": "2026-11-06T00:32:41+00:00",
-  "price": 70.43,
-  "price_time": "2026-11-05T21:00:01+00:00",
+  "as_of": "2026-11-07T01:58:09+00:00",
+  "price": 76.05,
+  "price_time": "2026-11-06T21:00:00+00:00",
   "profile": {
     "name": "Tempus AI, Inc.",
     "exchange": "Nasdaq",
@@ -26,15 +26,15 @@
         "margin_target": 0.10296639912999998,
         "sales_to_capital": 1.125,
         "years_to_target": 10,
-        "g_terminal": 0.034,
+        "g_terminal": 0.0334,
         "p_failure": 0.15
       },
-      "wacc": 0.10544699166282416,
-      "terminal_share": -1.715292909509482
+      "wacc": 0.10479803529119144,
+      "terminal_share": -1.7567696335440495
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 6.429251914891567,
+      "value_per_share": 6.58367759768039,
       "weight": 0.25,
       "description": "ventas +24% anual los primeros 5 años, margen 13% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.125030627515,
         "sales_to_capital": 1.35,
         "years_to_target": 8,
-        "g_terminal": 0.039,
+        "g_terminal": 0.0384,
         "p_failure": 0.05
       },
-      "wacc": 0.10044699166282417,
-      "terminal_share": 3.4151432698531377
+      "wacc": 0.09979803529119145,
+      "terminal_share": 3.3361844894372625
     },
     "base": {
       "label": "Base",
-      "value_per_share": 29.270336706042137,
+      "value_per_share": 29.685481058245117,
       "weight": 0.5,
       "description": "ventas +35% anual los primeros 5 años, margen 15% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.1470948559,
         "sales_to_capital": 1.5,
         "years_to_target": 7,
-        "g_terminal": 0.044000000000000004,
+        "g_terminal": 0.0434,
         "p_failure": 0.0
       },
-      "wacc": 0.09544699166282417,
-      "terminal_share": 1.4232497426063675
+      "wacc": 0.09479803529119145,
+      "terminal_share": 1.4161530435705771
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 67.24096200292257,
+      "value_per_share": 68.01571790518389,
       "weight": 0.25,
       "description": "ventas +42% anual los primeros 5 años, margen 17% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.16915908428499998,
         "sales_to_capital": 1.6500000000000001,
         "years_to_target": 6,
-        "g_terminal": 0.049,
+        "g_terminal": 0.0484,
         "p_failure": 0.0
       },
-      "wacc": 0.09294699166282416,
-      "terminal_share": 1.0587375541207364
+      "wacc": 0.09229803529119145,
+      "terminal_share": 1.0571097796225941
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 153.96227312440695,
+      "value_per_share": 155.56716403433526,
       "weight": 0.0,
       "description": "ventas +52% anual los primeros 5 años, margen 19% en 5 años",
       "assumptions": {
@@ -90,71 +90,71 @@
         "margin_target": 0.19122331266999998,
         "sales_to_capital": 1.875,
         "years_to_target": 5,
-        "g_terminal": 0.049,
+        "g_terminal": 0.0484,
         "p_failure": 0.0
       },
-      "wacc": 0.09044699166282416,
-      "terminal_share": 0.9092235509333825
+      "wacc": 0.08979803529119144,
+      "terminal_share": 0.9091988745543998
     }
   },
   "weights_modified": false,
-  "intrinsic": 33.0527218324746,
+  "intrinsic": 33.492589404838625,
   "range": [
-    27.350419564849876,
-    41.43917665997594
+    27.72867305936411,
+    41.96855407524899
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 38.87196727576372
+      "intrinsic": 39.37188372461581
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 40.06407546787365
+      "intrinsic": 40.57777240783209
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.005,
-      "intrinsic": 41.43917665997594
+      "intrinsic": 41.96855407524899
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 32.51101055436568
+      "intrinsic": 32.94383772434138
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 33.0527218324746
+      "intrinsic": 33.492589404838625
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 33.60287627077584
+      "intrinsic": 34.04989071493423
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 27.350419564849876
+      "intrinsic": 27.72867305936411
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 27.478017434853335
+      "intrinsic": 27.859014404365823
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 27.528855403088286
+      "intrinsic": 27.911830375208588
     }
   ],
-  "potential": -0.5307010956627205,
-  "margin_of_safety": -1.130838130577249,
+  "potential": -0.5595977724544559,
+  "margin_of_safety": -1.2706515486381942,
   "reverse_dcf": {
-    "margin": 0.24201614429351365,
-    "growth_g1": 0.535522400336452,
+    "margin": 0.2532041627152526,
+    "growth_g1": 0.5490791170587979,
     "current_margin": -0.1847821910093749,
     "base_margin": 0.1470948559,
     "base_g1": 0.35
@@ -170,60 +170,60 @@
       {
         "zone": "Convicción",
         "from": 0.0,
-        "to": 6.429251914891567,
+        "to": 6.58367759768039,
         "reachable_1y": false
       },
       {
         "zone": "Comprar",
-        "from": 6.429251914891567,
-        "to": 17.84979431046685,
+        "from": 6.58367759768039,
+        "to": 18.134579327962754,
         "reachable_1y": false
       },
       {
         "zone": "Sumar de a poco",
-        "from": 17.84979431046685,
-        "to": 27.80681987074003,
+        "from": 18.134579327962754,
+        "to": 28.201207005332858,
         "reachable_1y": false
       },
       {
         "zone": "Mantener",
-        "from": 27.80681987074003,
-        "to": 48.25564935448236,
+        "from": 28.201207005332858,
+        "to": 48.850599481714504,
         "reachable_1y": true
       },
       {
         "zone": "Reducir",
-        "from": 48.25564935448236,
-        "to": 67.24096200292257,
+        "from": 48.850599481714504,
+        "to": 68.01571790518389,
         "reachable_1y": true
       },
       {
         "zone": "Vender",
-        "from": 67.24096200292257,
-        "to": 153.96227312440695,
+        "from": 68.01571790518389,
+        "to": 155.56716403433526,
         "reachable_1y": true
       },
       {
         "zone": "Venta excepcional",
-        "from": 153.96227312440695,
+        "from": 155.56716403433526,
         "to": null,
-        "reachable_1y": false
+        "reachable_1y": true
       }
     ],
     "recommendation": "Vender",
     "zone_index": 6,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 166.2792549743595,
-      "moves_down_below": 61.86168504268877
+      "moves_up_above": 168.0125371570821,
+      "moves_down_below": 62.57446047276918
     },
     "reach_band_1y": [
-      33.638294883045,
-      147.4624358115199
+      36.269787700518165,
+      159.4606107914266
     ]
   },
   "recommendation": "Vender",
-  "volatility_1y": 0.7389541621237445,
+  "volatility_1y": 0.7404059187356401,
   "notes": [
     "g1 = crecimiento anual compuesto de los últimos 3 años",
     "g1 recortado de 58.3% al rango −5% / 35%",
@@ -231,11 +231,11 @@
     "ventas/capital = 1.5 (la histórica no es usable)",
     "sin tasa efectiva (pérdidas): años 1-5 con 0%",
     "sin dato de pérdidas fiscales acumuladas (NOL): se asume 0",
-    "WACC terminal 9.4% (converge a rf + ERP)"
+    "WACC terminal 9.3% (converge a rf + ERP)"
   ],
   "warnings": [
     "Todo sale mal: valor por acción negativo: revisá supuestos o datos",
-    "Conservador: el valor terminal es 342% del valor operativo",
+    "Conservador: el valor terminal es 334% del valor operativo",
     "Base: el valor terminal es 142% del valor operativo",
     "Optimista: el valor terminal es 106% del valor operativo",
     "Todo sale bien: el valor terminal es 91% del valor operativo"
