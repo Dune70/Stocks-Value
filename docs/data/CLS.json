@@ -1,0 +1,236 @@
+{
+  "ticker": "CLS",
+  "as_of": "2026-11-07T23:44:45+00:00",
+  "price": 206.68,
+  "price_time": "2026-11-06T21:00:02+00:00",
+  "profile": {
+    "name": "Celestica Inc.",
+    "exchange": "NYSE",
+    "sector": "Technology",
+    "industry": "Electronic Components",
+    "sic": "Printed Circuit Boards",
+    "country": "Canada",
+    "website": "https://www.celestica.com",
+    "domain": "celestica.com",
+    "summary_es": null,
+    "summary_en": "Celestica Inc., together with its subsidiaries, provides supply chain solutions in Asia, North America, and internationally. It operates through two segments, Advanced Technology Solutions, and Connectivity and Cloud Solutions. The company offers a range of product manufacturing and related supply chain services, including design and development, new product introduction, engineering services, component sourcing, electronics manufacturing and assembly, testing, mechanical assembly, systems integration, precision machining, logistics, asset management, product licensing, and after-market repair and return services. It also provides hardware platform solutions, which includes development of infrastructure platforms, and hardware and software design solutions and services, including open-source software that can be used as-is or customized for specific applications; and management of program, including design and supply chain, manufacturing, and after-market support, including IT asset disposition and asset management services. The company offers its products and services to original equipment manufacturers, and cloud-based and other service providers, including hyperscalers, and other companies in aerospace and defense, industrial, HealthTech, capital equipment, communications, and enterprise markets. The company has a strategic collaboration with Advanced Micro Devices, Inc. for the development of Helios, a rack-scale AI platform. The company was incorporated in 1994 and is headquartered in Toronto, Canada."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 149.47063373259775,
+      "weight": 0.0,
+      "description": "ventas +14% anual los primeros 5 años, margen 7% en 10 años",
+      "assumptions": {
+        "g1": 0.13999999999999999,
+        "margin_target": 0.06674266969999999,
+        "sales_to_capital": 3.75,
+        "years_to_target": 10,
+        "g_terminal": 0.0334,
+        "p_failure": 0.0
+      },
+      "wacc": 0.11212420364771747,
+      "terminal_share": 0.5618194976769615
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 323.88965711761995,
+      "weight": 0.25,
+      "description": "ventas +24% anual los primeros 5 años, margen 8% en 8 años",
+      "assumptions": {
+        "g1": 0.24499999999999997,
+        "margin_target": 0.08104467034999999,
+        "sales_to_capital": 4.5,
+        "years_to_target": 8,
+        "g_terminal": 0.0384,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10712420364771748,
+      "terminal_share": 0.7097860542273593
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 777.8875345322768,
+      "weight": 0.5,
+      "description": "ventas +35% anual los primeros 5 años, margen 10% en 7 años",
+      "assumptions": {
+        "g1": 0.35,
+        "margin_target": 0.095346671,
+        "sales_to_capital": 5.0,
+        "years_to_target": 7,
+        "g_terminal": 0.0434,
+        "p_failure": 0.0
+      },
+      "wacc": 0.10212420364771747,
+      "terminal_share": 0.7885568903896639
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 1537.5587041079157,
+      "weight": 0.25,
+      "description": "ventas +42% anual los primeros 5 años, margen 11% en 6 años",
+      "assumptions": {
+        "g1": 0.41999999999999993,
+        "margin_target": 0.10964867164999999,
+        "sales_to_capital": 5.5,
+        "years_to_target": 6,
+        "g_terminal": 0.0484,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09962420364771747,
+      "terminal_share": 0.8197732065642481
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 3229.601859322499,
+      "weight": 0.0,
+      "description": "ventas +52% anual los primeros 5 años, margen 12% en 5 años",
+      "assumptions": {
+        "g1": 0.5249999999999999,
+        "margin_target": 0.1239506723,
+        "sales_to_capital": 6.25,
+        "years_to_target": 5,
+        "g_terminal": 0.0484,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09712420364771747,
+      "terminal_share": 0.8353008951934848
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 854.3058575725223,
+  "range": [
+    717.8266610388537,
+    1063.1976664246822
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 903.4805024468164
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 973.9139502018771
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 1063.1976664246822
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 801.3898754117314
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 854.3058575725223
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 919.4550935028603
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 717.8266610388537
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 758.4414187364063
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 807.2839756943871
+    }
+  ],
+  "potential": 3.1334713449415634,
+  "margin_of_safety": 0.758072594062186,
+  "reverse_dcf": {
+    "margin": 0.030659888101675616,
+    "growth_g1": 0.0607176896506324,
+    "current_margin": 0.0825443494860177,
+    "base_margin": 0.095346671,
+    "base_g1": 0.35
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 149.47063373259775,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Convicción",
+        "from": 149.47063373259775,
+        "to": 323.88965711761995,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Comprar",
+        "from": 323.88965711761995,
+        "to": 550.8885958249484,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 550.8885958249484,
+        "to": 738.9931578056629,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Mantener",
+        "from": 738.9931578056629,
+        "to": 1157.7231193200962,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Reducir",
+        "from": 1157.7231193200962,
+        "to": 1537.5587041079157,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Vender",
+        "from": 1537.5587041079157,
+        "to": 3229.601859322499,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 3229.601859322499,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Convicción",
+    "zone_index": 1,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 349.8008296870296,
+      "moves_down_below": 137.51298303398994
+    },
+    "reach_band_1y": [
+      91.36641782548425,
+      467.5308873506621
+    ]
+  },
+  "recommendation": "Convicción",
+  "volatility_1y": 0.8162937123265617,
+  "notes": [
+    "g1 = mitad tendencia de 3 años (19.6%) y mitad último año (67.5%)",
+    "g1 recortado de 43.5% al rango −5% / 35%",
+    "margen objetivo = el de la industria",
+    "ventas/capital = 5.00 (promedio de sobre capital 6.42 y sobre reinversión 132.50, cada uno recortado a 0,3–5; capital sin goodwill)",
+    "WACC terminal 9.3% (converge a rf + ERP)",
+    "ROIC actual 41.9% > WACC terminal 9.3%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}

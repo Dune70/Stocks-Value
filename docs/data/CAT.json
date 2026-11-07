@@ -1,0 +1,236 @@
+{
+  "ticker": "CAT",
+  "as_of": "2026-11-07T23:44:45+00:00",
+  "price": 558.63,
+  "price_time": "2026-11-06T21:00:03+00:00",
+  "profile": {
+    "name": "Caterpillar Inc.",
+    "exchange": "NYSE",
+    "sector": "Industrials",
+    "industry": "Farm & Heavy Construction Machinery",
+    "sic": "Construction Machinery & Equip",
+    "country": "United States",
+    "website": "https://www.caterpillar.com",
+    "domain": "caterpillar.com",
+    "summary_es": null,
+    "summary_en": "Caterpillar Inc. provides construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives in the United States and internationally. The Construction Industries segment offers asphalt pavers, cold planers, compactors, forestry machines, material handlers, motor graders, pipelayers, road reclaimers, telehandlers, track-type tractors, and track and wheel excavators; backhoe, compact track, skid steer, track-type, and wheel loaders; and related parts and work tools. Its Resource Industries segment provides electric rope and hydraulic shovels, draglines, rotary drills, hard rock vehicles, mining trucks, wheel loaders, off-highway and articulated trucks, wide-body trucks, wheel tractor scrapers and dozers, and landfill and soil compactors; machinery components, and wear and maintenance components; and technology products and services for fleet management, equipment management analytics, autonomous machine capabilities, safety services, and mining performance solutions. The Energy & Transportation segment offers reciprocating engine powered generator sets; reciprocating engines, drivetrain, and integrated systems and solutions; centrifugal gas compressors and related services; and diesel-electric locomotive components, and other rail-related products. Its Financial Products segment provides operating and finance leases, revolving charge accounts, installment sale contracts, repair/rebuild financing, working capital loans, and wholesale financing; and insurance and risk management products and services. The All Other segment offers parts distribution; logistics and distribution services; electronics and control systems; dealer portfolio management; brand management and marketing strategy; and digital investment services. It also provides mining software solutions. The company was formerly known as Caterpillar Tractor Co. Caterpillar Inc. was incorporated in 1925 and is headquartered in Irving, Texas."
+  },
+  "scenarios": {
+    "todo_mal": {
+      "label": "Todo sale mal",
+      "value_per_share": 137.91328167254696,
+      "weight": 0.0,
+      "description": "ventas +5% anual los primeros 5 años, margen 13% en 10 años",
+      "assumptions": {
+        "g1": 0.050022979821136015,
+        "margin_target": 0.12829388090982732,
+        "sales_to_capital": 1.2556963496861195,
+        "years_to_target": 10,
+        "g_terminal": 0.0334,
+        "p_failure": 0.0
+      },
+      "wacc": 0.1043865809970752,
+      "terminal_share": 0.4684915190848775
+    },
+    "conservador": {
+      "label": "Conservador",
+      "value_per_share": 251.34171837781443,
+      "weight": 0.25,
+      "description": "ventas +9% anual los primeros 5 años, margen 16% en 8 años",
+      "assumptions": {
+        "g1": 0.08754021468698803,
+        "margin_target": 0.15578542681907603,
+        "sales_to_capital": 1.5068356196233434,
+        "years_to_target": 8,
+        "g_terminal": 0.0384,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09938658099707522,
+      "terminal_share": 0.6039381747503401
+    },
+    "base": {
+      "label": "Base",
+      "value_per_share": 468.978686534397,
+      "weight": 0.5,
+      "description": "ventas +13% anual los primeros 5 años, margen 18% en 7 años",
+      "assumptions": {
+        "g1": 0.12505744955284004,
+        "margin_target": 0.18327697272832474,
+        "sales_to_capital": 1.6742617995814926,
+        "years_to_target": 7,
+        "g_terminal": 0.0434,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09438658099707521,
+      "terminal_share": 0.7010606748842538
+    },
+    "optimista": {
+      "label": "Optimista",
+      "value_per_share": 774.9166626555842,
+      "weight": 0.25,
+      "description": "ventas +15% anual los primeros 5 años, margen 21% en 6 años",
+      "assumptions": {
+        "g1": 0.15006893946340805,
+        "margin_target": 0.21076851863757343,
+        "sales_to_capital": 1.841687979539642,
+        "years_to_target": 6,
+        "g_terminal": 0.0484,
+        "p_failure": 0.0
+      },
+      "wacc": 0.09188658099707521,
+      "terminal_share": 0.7505466293948687
+    },
+    "todo_bien": {
+      "label": "Todo sale bien",
+      "value_per_share": 1247.4092579189862,
+      "weight": 0.0,
+      "description": "ventas +19% anual los primeros 5 años, margen 24% en 5 años",
+      "assumptions": {
+        "g1": 0.18758617432926006,
+        "margin_target": 0.23826006454682216,
+        "sales_to_capital": 2.0928272494768656,
+        "years_to_target": 5,
+        "g_terminal": 0.0484,
+        "p_failure": 0.0
+      },
+      "wacc": 0.08938658099707521,
+      "terminal_share": 0.7758640619724343
+    }
+  },
+  "weights_modified": false,
+  "intrinsic": 491.0539385255482,
+  "range": [
+    412.2012710167939,
+    610.2514185715024
+  ],
+  "sensitivity": [
+    {
+      "wacc_shift": -0.005,
+      "g_shift": -0.005,
+      "intrinsic": 524.0023950950601
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.0,
+      "intrinsic": 562.1152382438222
+    },
+    {
+      "wacc_shift": -0.005,
+      "g_shift": 0.005,
+      "intrinsic": 610.2514185715024
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": -0.005,
+      "intrinsic": 462.688628425543
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.0,
+      "intrinsic": 491.0539385255482
+    },
+    {
+      "wacc_shift": 0.0,
+      "g_shift": 0.005,
+      "intrinsic": 525.869413861652
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": -0.005,
+      "intrinsic": 412.2012710167939
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.0,
+      "intrinsic": 433.72840104174253
+    },
+    {
+      "wacc_shift": 0.005,
+      "g_shift": 0.005,
+      "intrinsic": 459.54587328004504
+    }
+  ],
+  "potential": -0.12096747663829699,
+  "margin_of_safety": -0.13761433556027985,
+  "reverse_dcf": {
+    "margin": 0.2127335286581447,
+    "growth_g1": 0.15876403761925173,
+    "current_margin": 0.18327697272832474,
+    "base_margin": 0.18327697272832474,
+    "base_g1": 0.12505744955284004
+  },
+  "ladder": {
+    "zones": [
+      {
+        "zone": "Compra excepcional",
+        "from": null,
+        "to": 137.91328167254696,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Convicción",
+        "from": 137.91328167254696,
+        "to": 251.34171837781443,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Comprar",
+        "from": 251.34171837781443,
+        "to": 360.1602024561057,
+        "reachable_1y": false
+      },
+      {
+        "zone": "Sumar de a poco",
+        "from": 360.1602024561057,
+        "to": 445.5297522076771,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Mantener",
+        "from": 445.5297522076771,
+        "to": 621.9476745949906,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Reducir",
+        "from": 621.9476745949906,
+        "to": 774.9166626555842,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Vender",
+        "from": 774.9166626555842,
+        "to": 1247.4092579189862,
+        "reachable_1y": true
+      },
+      {
+        "zone": "Venta excepcional",
+        "from": 1247.4092579189862,
+        "to": null,
+        "reachable_1y": false
+      }
+    ],
+    "recommendation": "Mantener",
+    "zone_index": 4,
+    "tolerance": {
+      "pct": 0.08,
+      "moves_up_above": 671.70348856259,
+      "moves_down_below": 409.88737203106297
+    },
+    "reach_band_1y": [
+      371.09080085673054,
+      840.9464103651601
+    ]
+  },
+  "recommendation": "Mantener",
+  "volatility_1y": 0.40904057885526507,
+  "notes": [
+    "g1 = mitad tendencia de 3 años (4.4%) y mitad último año (20.6%)",
+    "margen objetivo = el actual (supera a la industria)",
+    "ventas/capital = 1.67 (promedio de sobre capital 1.67, cada uno recortado a 0,3–5; capital sin goodwill)",
+    "costo de deuda estimado como rf + 2%",
+    "WACC terminal 9.3% (converge a rf + ERP)",
+    "ROIC actual 22.1% > WACC terminal 9.3%: el base conserva la mitad del exceso"
+  ],
+  "warnings": []
+}
