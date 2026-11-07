@@ -68,6 +68,7 @@
     <h1>VALUADOR</h1>
     <select id="pick" aria-label="Elegir empresa"></select>
     <a class="add" id="add" target="_blank" rel="noopener">+ Agregar ticker</a>
+    <a class="add" href="comparar.html">Comparar con expertos</a>
     <span class="asof" id="asof"></span>
   </div>
   <div id="app"><div class="card msg">Cargando…</div></div>
@@ -159,8 +160,10 @@ function render() {
     </section>
     <section class="card">
       <div class="hdr">Qué supone el precio</div>
-      <p class="note">A US$ ${f2(V.price)} el mercado paga un <b>margen operativo de largo plazo de ${pct(rv.margin)}</b> (base ${pct(rv.base_margin)}, hoy ${pct(rv.current_margin)})
-      o un <b>crecimiento de ${pct(rv.growth_g1)} anual</b> los primeros años (base ${pct(rv.base_g1)}).${rv.note ? " " + esc(rv.note[0].toUpperCase() + rv.note.slice(1)) + "." : ""}</p>
+      <p class="note">${rv.margin == null && rv.growth_g1 == null
+        ? `Con los supuestos actuales ningún margen (hasta 95%) ni crecimiento (hasta 100% anual) llega a US$ ${f2(V.price)}: el modelo y el mercado están muy lejos. Revisá ventas/capital y crecimiento en las notas.`
+        : `A US$ ${f2(V.price)} el mercado paga un <b>margen operativo de largo plazo de ${rv.margin == null ? "fuera de rango" : pct(rv.margin)}</b> (base ${pct(rv.base_margin)}, hoy ${pct(rv.current_margin)})
+      o un <b>crecimiento de ${rv.growth_g1 == null ? "fuera de rango" : pct(rv.growth_g1) + " anual"}</b> los primeros años (base ${pct(rv.base_g1)}).`}${rv.note ? " " + esc(rv.note[0].toUpperCase() + rv.note.slice(1)) + "." : ""}</p>
       <details style="margin-top:12px"><summary>Notas del cálculo (${(V.notes || []).length + (V.warnings || []).length})</summary>
         <ul>${[...(V.notes || []), ...(V.warnings || [])].map(n => `<li>${esc(n)}</li>`).join("")}</ul></details>
     </section>

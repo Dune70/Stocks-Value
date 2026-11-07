@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Valuador · comparación con expertos</title>
+<style>
+  :root{--bg:#120d10;--card:#1a1417;--line:#2e2529;--ink:#f3eef0;--soft:#d9d1d5;--quiet:#a99fa4;--accent:#ff3d5a;--good:#3ccf7a;--warn:#e6b84a;--bad:#ff5a6e}
+  body{margin:0;background:var(--bg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);padding:20px}
+  .wrap{max-width:1100px;margin:0 auto}
+  h1{font-size:15px;letter-spacing:.12em;margin:0 0 4px}
+  p{color:var(--soft);font-size:13.5px;line-height:1.5}
+  a{color:var(--ink)}
+  .kpis{display:flex;gap:12px;margin:14px 0;flex-wrap:wrap}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;min-width:170px}
+  .lbl{font-size:10.5px;font-weight:700;letter-spacing:.09em;color:var(--quiet);text-transform:uppercase}
+  .val{font-size:24px;font-weight:700;margin-top:4px}
+  table{width:100%;border-collapse:collapse;font-size:13px;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th{font-size:10.5px;letter-spacing:.06em;color:var(--quiet);text-align:right;font-weight:700;padding:8px;text-transform:uppercase;border-bottom:1px solid var(--line)}
+  th:first-child,td:first-child{text-align:left}
+  td{padding:7px 8px;border-top:1px solid var(--line);text-align:right;white-space:nowrap}
+  td.g{color:var(--good)}td.w{color:var(--warn)}td.b{color:var(--bad)}
+  .sub{color:var(--quiet);font-size:11.5px}
+  .grp{border-left:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>VALUADOR · COMPARACIÓN CON EXPERTOS</h1>
+  <p>Valores por acción en US$. Diferencia = nuestro / experto − 1. Verde hasta ±15%, amarillo hasta ±35%, rojo más. Los informes tienen fechas distintas, así que una parte de la diferencia es de datos y precios, no de método. <a href="./">Volver al Valuador</a></p>
+  <div class="kpis" id="kpis"></div>
+  <table>
+    <thead><tr>
+      <th>Ticker</th>
+      <th class="grp">Intrínseco<br><span class="sub">experto</span></th><th>nuestro</th><th>dif.</th>
+      <th class="grp" colspan="3">Conservador<br><span class="sub">exp · nuestro · dif.</span></th>
+      <th class="grp" colspan="3">Base<br><span class="sub">exp · nuestro · dif.</span></th>
+      <th class="grp" colspan="3">Optimista<br><span class="sub">exp · nuestro · dif.</span></th>
+      <th class="grp">Recomendación<br><span class="sub">experto · nuestra</span></th>
+    </tr></thead>
+    <tbody id="rows"><tr><td colspan="8">Cargando…</td></tr></tbody>
+  </table>
+</div>
+<script>
+const f = v => v == null ? "—" : v.toLocaleString("es-AR", {maximumFractionDigits: v >= 100 ? 0 : 1});
+const d = (a, b) => a == null || b == null || !b ? null : a / b - 1;
+const cls = x => x == null ? "" : Math.abs(x) <= 0.15 ? "g" : Math.abs(x) <= 0.35 ? "w" : "b";
+const pc = x => x == null ? "—" : `${x > 0 ? "+" : ""}${Math.round(x * 100)}%`;
+
+(async () => {
+  const bench = await (await fetch("benchmark.json", {cache: "no-store"})).json();
+  const rows = [], errs = [];
+  for (const b of bench) {
+    let v = null;
+    try { v = await (await fetch(`data/${b.ticker}.json`, {cache: "no-store"})).json(); } catch (e) {}
+    const s = v?.scenarios || {};
+    const ours = {i: v?.intrinsic, c: s.conservador?.value_per_share, b: s.base?.value_per_share, o: s.optimista?.value_per_share};
+    const di = d(ours.i, b.intrinseco);
+    if (di != null) errs.push(di);
+    const cell = (exp, our) => { const x = d(our, exp); return `<td class="grp">${f(exp)}</td><td>${f(our)}</td><td class="${cls(x)}">${pc(x)}</td>`; };
+    rows.push(`<tr><td><a href="./#${b.ticker}">${b.ticker}</a><div class="sub">${b.fecha}${b.nota ? " · " + b.nota : ""}</div></td>
+      <td class="grp">${f(b.intrinseco)}</td><td>${v ? f(ours.i) : "sin valuar"}</td><td class="${cls(di)}">${pc(di)}</td>
+      ${cell(b.conservador, ours.c)}${cell(b.base, ours.b)}${cell(b.optimista, ours.o)}
+      <td class="grp">${b.recomendacion} · ${v ? v.recommendation : "—"}</td></tr>`);
+  }
+  document.getElementById("rows").innerHTML = rows.join("");
+  const abs = errs.map(Math.abs).sort((a, b) => a - b);
+  const med = abs.length ? abs[Math.floor(abs.length / 2)] : null;
+  const within = errs.filter(x => Math.abs(x) <= 0.15).length;
+  const bias = errs.length ? errs.reduce((a, b) => a + b, 0) / errs.length : null;
+  document.getElementById("kpis").innerHTML = `
+    <div class="kpi"><div class="lbl">Tickers comparados</div><div class="val">${errs.length} / ${bench.length}</div></div>
+    <div class="kpi"><div class="lbl">Desvío mediano (intrínseco)</div><div class="val">${med == null ? "—" : Math.round(med * 100) + "%"}</div></div>
+    <div class="kpi"><div class="lbl">Dentro de ±15%</div><div class="val">${within}</div></div>
+    <div class="kpi"><div class="lbl">Sesgo promedio</div><div class="val">${pc(bias)}</div></div>`;
+})();
+</script>
+</body>
+</html>

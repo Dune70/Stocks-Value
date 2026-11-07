@@ -33,6 +33,8 @@ RULES = {
 DEFAULT_WEIGHTS = {"conservador": 0.25, "base": 0.50, "optimista": 0.25}
 HIGH_GROWTH_YEARS = 5
 SC_DEFAULT = 1.5
+SC_MAX = 5.0
+ROIC_CAP = 0.25   # tope del ROIC que se puede conservar a perpetuidad
 
 
 def _clip(x, lo, hi):
@@ -55,8 +57,17 @@ def base_drivers(data: dict) -> tuple:
         revs = [r["revenue"] for r in fin["annual"] if r.get("revenue")]
         if len(revs) >= 2:
             n = min(3, len(revs) - 1)
-            g1 = (revs[-1] / revs[-1 - n]) ** (1 / n) - 1
-            notes.append(f"g1 = crecimiento anual compuesto de los últimos {n} años")
+            cagr = (revs[-1] / revs[-1 - n]) ** (1 / n) - 1
+            recent = ttm_rev / revs[-1] - 1 if fin["ttm"].get("method") == "ttm" else None
+            last = revs[-1] / revs[-2] - 1
+            # el último dato pesa más: TTM contra el último año fiscal, anualizado, o el último año completo
+            if recent is not None and fin["ttm"]["end"] > fin["annual"][-1]["end"]:
+                from datetime import date
+                months = max(1, (date.fromisoformat(fin["ttm"]["end"]) - date.fromisoformat(fin["annual"][-1]["end"])).days / 30.4)
+                if months >= 3:  # menos de un trimestre nuevo no alcanza para leer tendencia
+                    last = (1 + recent) ** (12 / months) - 1
+            g1 = 0.5 * cagr + 0.5 * last
+            notes.append(f"g1 = mitad tendencia de {n} años ({cagr:.1%}) y mitad último año ({last:.1%})")
         else:
             g1 = 0.03
             notes.append("g1 = 3% por falta de historia")
@@ -86,7 +97,8 @@ def sales_to_capital(fin: dict) -> tuple:
     (capex − amortizaciones) de los últimos años. La segunda corrige empresas con capital inflado por
     adquisiciones (KO) o con una ola de inversión reciente (ORCL)."""
     ann = fin["annual"]
-    stock = [r["sales_to_capital"] for r in ann if r.get("sales_to_capital") is not None]
+    stock = [r.get("sales_to_operating_capital") or r.get("sales_to_capital") for r in ann]
+    stock = [x for x in stock if x is not None]
     stock = median(stock) if stock else None
     marginal = None
     revs = [r for r in ann if r.get("revenue")]
@@ -95,7 +107,7 @@ def sales_to_capital(fin: dict) -> tuple:
         reinv = sum(r.get("net_capex") or 0 for r in revs[1:])
         if reinv > 0 and d_rev > 0:
             marginal = d_rev / reinv
-    vals = [x for x in (stock, marginal) if x is not None and 0.3 <= x <= 6]
+    vals = [min(max(x, 0.3), SC_MAX) for x in (stock, marginal) if x is not None and x > 0]
     if not vals:
         return SC_DEFAULT, f"ventas/capital = {SC_DEFAULT} (la histórica no es usable)"
     sc = sum(vals) / len(vals)
@@ -104,7 +116,7 @@ def sales_to_capital(fin: dict) -> tuple:
         parts.append(f"sobre capital {stock:.2f}")
     if marginal is not None:
         parts.append(f"sobre reinversión {marginal:.2f}")
-    return sc, f"ventas/capital = {sc:.2f} (promedio de {' y '.join(parts)}; se descartan valores fuera de 0,3–6)"
+    return sc, f"ventas/capital = {sc:.2f} (promedio de {' y '.join(parts)}, cada uno recortado a 0,3–{SC_MAX:g}; capital sin goodwill)"
 
 
 def roic_now(data: dict) -> float:
@@ -197,7 +209,7 @@ def terminal(inp, data: dict, scenario: str, fixed: dict, mature: bool) -> tuple
         wT = fixed["wacc_terminal"]
     if "roic_terminal" not in fixed:
         roic = roic_now(data)
-        excess = max(0.0, min(roic, 0.40) - wT) if roic is not None else 0.0
+        excess = max(0.0, min(roic, ROIC_CAP) - wT) if roic is not None else 0.0
         changes["roic_terminal"] = wT + RULES[scenario]["dw"] + RULES[scenario]["moat"] * excess
         if scenario == "base" and excess > 0:
             notes.append(f"ROIC actual {roic:.1%} > WACC terminal {wT:.1%}: el base conserva la mitad del exceso")

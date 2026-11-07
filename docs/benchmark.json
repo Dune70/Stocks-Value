@@ -1,0 +1,13 @@
+[
+  {"ticker": "AVGO", "fecha": "2026-10-22", "precio": 323.55, "conservador": 136.90, "base": 271.17, "optimista": 438.55, "intrinseco": 339.78, "rango": null, "pesos": [0.05, 0.50, 0.45], "recomendacion": "Mantener", "margen_implicito": null},
+  {"ticker": "CAT", "fecha": "2026-11-05", "precio": 553.47, "conservador": 323, "base": 507, "optimista": 786, "intrinseco": 508, "rango": [456, 570], "pesos": null, "recomendacion": "Mantener", "margen_implicito": 0.23},
+  {"ticker": "CLS", "fecha": "2026-11-05", "precio": 208.36, "conservador": 122, "base": 256, "optimista": 475, "intrinseco": 295, "rango": [259, 338], "pesos": null, "recomendacion": "Sumar de a poco", "margen_implicito": 0.061},
+  {"ticker": "KO", "fecha": "2026-10-29", "precio": 93.00, "conservador": 57, "base": 72, "optimista": 91, "intrinseco": 75, "rango": [63, 93], "pesos": null, "recomendacion": "Reducir", "margen_implicito": 0.47},
+  {"ticker": "MELI", "fecha": "2026-11-06", "precio": 1513.66, "conservador": 933, "base": 1722, "optimista": 2992, "intrinseco": 1842, "rango": [1638, 2079], "pesos": null, "recomendacion": "Sumar de a poco", "margen_implicito": 0.107},
+  {"ticker": "MRVL", "fecha": "2026-11-05", "precio": 141.27, "conservador": 81, "base": 155, "optimista": 277, "intrinseco": 177, "rango": [164, 192], "pesos": null, "recomendacion": "Sumar de a poco", "margen_implicito": 0.34},
+  {"ticker": "MSFT", "fecha": "2026-10-29", "precio": 524.59, "conservador": 296.62, "base": 437.08, "optimista": 629.86, "intrinseco": 451, "rango": [408, 504], "pesos": [0.25, 0.50, 0.25], "recomendacion": "Mantener", "margen_implicito": 0.57},
+  {"ticker": "ORCL", "fecha": "2026-11-02", "precio": 119.54, "conservador": 53.01, "base": 111.84, "optimista": 201.30, "intrinseco": 113.66, "rango": [101, 127], "pesos": null, "recomendacion": "Mantener", "margen_implicito": null},
+  {"ticker": "PYPL", "fecha": "2026-10-28", "precio": 56.09, "conservador": 67, "base": 85, "optimista": 107, "intrinseco": 84, "rango": [77, 92], "pesos": [0.30, 0.50, 0.20], "recomendacion": "Sumar de a poco", "margen_implicito": 0.27},
+  {"ticker": "SNDK", "fecha": "2026-11-02", "precio": 1125.00, "conservador": 769, "base": 1080, "optimista": 1535, "intrinseco": 1162, "rango": [1123, 1204], "pesos": null, "recomendacion": "Mantener", "margen_implicito": 0.38, "nota": "precios previos al split 8 a 1 del 20-nov"},
+  {"ticker": "TEM", "fecha": "2026-11-03", "precio": 80.30, "conservador": 22, "base": 50, "optimista": 96, "intrinseco": 55, "rango": [48, 63], "pesos": null, "recomendacion": "Reducir", "margen_implicito": null}
+]

@@ -48,6 +48,8 @@ INSTANT = {
     "equity": ["StockholdersEquity", "StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest"],
     "total_assets": ["Assets"],
     "nol": ["OperatingLossCarryforwards"],
+    "goodwill": ["Goodwill"],
+    "intangibles": ["IntangibleAssetsNetExcludingGoodwill", "FiniteLivedIntangibleAssetsNet"],
 }
 
 ANNUAL_FORMS = {"10-K", "10-K/A", "10-KT"}
@@ -220,6 +222,10 @@ def _derive(row):
         ic = row["equity"] + (row.get("debt") or 0) - (row.get("cash") or 0) - (row.get("short_investments") or 0)
         row["invested_capital"] = ic
         row["sales_to_capital"] = _ratio(rev, ic) if ic > 0 else None
+        # capital operativo: sin goodwill ni intangibles de adquisiciones (no hay que volver a pagarlos para crecer)
+        op_ic = ic - (row.get("goodwill") or 0) - (row.get("intangibles") or 0)
+        row["operating_invested_capital"] = op_ic
+        row["sales_to_operating_capital"] = _ratio(rev, op_ic) if op_ic > 0 else None
     return row
 
 
