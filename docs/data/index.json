@@ -5,7 +5,7 @@
     "price": 259.3,
     "intrinsic": 587.0866532735103,
     "recommendation": "Convicción",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "AVGO",
@@ -13,7 +13,7 @@
     "price": 293.69,
     "intrinsic": 587.1599264792329,
     "recommendation": "Comprar",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "CAT",
@@ -21,7 +21,7 @@
     "price": 558.63,
     "intrinsic": 491.0539385255482,
     "recommendation": "Mantener",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "CLS",
@@ -29,7 +29,7 @@
     "price": 206.68,
     "intrinsic": 854.3058575725223,
     "recommendation": "Convicción",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "GOOGL",
@@ -37,7 +37,7 @@
     "price": 284.78,
     "intrinsic": 299.6495360237339,
     "recommendation": "Mantener",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "KO",
@@ -45,7 +45,7 @@
     "price": 95.67,
     "intrinsic": 49.014299672679044,
     "recommendation": "Vender",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "MELI",
@@ -53,7 +53,7 @@
     "price": 1510.0,
     "intrinsic": 21248.78626639122,
     "recommendation": "Compra excepcional",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "META",
@@ -61,7 +61,7 @@
     "price": 610.15,
     "intrinsic": 892.9466635511675,
     "recommendation": "Comprar",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "MRVL",
@@ -69,7 +69,7 @@
     "price": 141.2,
     "intrinsic": 89.40538018568154,
     "recommendation": "Vender",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "MSFT",
@@ -77,7 +77,7 @@
     "price": 530.61,
     "intrinsic": 550.5635856162797,
     "recommendation": "Mantener",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "NVDA",
@@ -85,7 +85,7 @@
     "price": 186.64,
     "intrinsic": 481.36585376531775,
     "recommendation": "Convicción",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "ORCL",
@@ -93,7 +93,7 @@
     "price": 116.1,
     "intrinsic": 174.63932177285147,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "PYPL",
@@ -101,7 +101,7 @@
     "price": 59.24,
     "intrinsic": 335.23742888601487,
     "recommendation": "Compra excepcional",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "SNDK",
@@ -109,7 +109,7 @@
     "price": 835.06,
     "intrinsic": 9138.832471118565,
     "recommendation": "Compra excepcional",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   },
   {
     "ticker": "TEM",
@@ -117,6 +117,6 @@
     "price": 76.05,
     "intrinsic": 52.700243056882904,
     "recommendation": "Reducir",
-    "as_of": "2026-11-07T23:44:45+00:00"
+    "as_of": "2026-11-08T00:30:25+00:00"
   }
 ]

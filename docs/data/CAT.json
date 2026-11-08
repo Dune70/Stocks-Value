@@ -1,6 +1,6 @@
 {
   "ticker": "CAT",
-  "as_of": "2026-11-07T23:44:45+00:00",
+  "as_of": "2026-11-08T00:30:25+00:00",
   "price": 558.63,
   "price_time": "2026-11-06T21:00:03+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 409.88737203106297
     },
     "reach_band_1y": [
-      371.09080085673054,
-      840.9464103651601
+      371.0907719294301,
+      840.9464759186884
     ]
   },
   "recommendation": "Mantener",
-  "volatility_1y": 0.40904057885526507,
+  "volatility_1y": 0.40904065680734986,
   "notes": [
     "g1 = mitad tendencia de 3 años (4.4%) y mitad último año (20.6%)",
     "margen objetivo = el actual (supera a la industria)",

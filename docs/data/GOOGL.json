@@ -1,6 +1,6 @@
 {
   "ticker": "GOOGL",
-  "as_of": "2026-11-07T23:44:45+00:00",
+  "as_of": "2026-11-08T00:30:25+00:00",
   "price": 284.78,
   "price_time": "2026-11-06T21:00:01+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 250.05347118445272
     },
     "reach_band_1y": [
-      202.7202598556438,
-      400.0569477256525
+      202.7202570120223,
+      400.05695333737845
     ]
   },
   "recommendation": "Mantener",
-  "volatility_1y": 0.3398899539357158,
+  "volatility_1y": 0.33988996796303356,
   "notes": [
     "g1 = mitad tendencia de 3 años (12.5%) y mitad último año (23.3%)",
     "margen objetivo = el actual (supera a la industria)",

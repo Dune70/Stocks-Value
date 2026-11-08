@@ -1,6 +1,6 @@
 {
   "ticker": "META",
-  "as_of": "2026-11-07T23:44:45+00:00",
+  "as_of": "2026-11-08T00:30:25+00:00",
   "price": 610.15,
   "price_time": "2026-11-06T21:00:01+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 357.5458160828527
     },
     "reach_band_1y": [
-      404.090276283585,
-      921.2867627597573
+      404.0902768894154,
+      921.2867613785226
     ]
   },
   "recommendation": "Comprar",
-  "volatility_1y": 0.41206651943181705,
+  "volatility_1y": 0.41206651793257193,
   "notes": [
     "g1 = mitad tendencia de 3 años (19.9%) y mitad último año (27.9%)",
     "margen objetivo = el actual (supera a la industria)",

@@ -1,6 +1,6 @@
 {
   "ticker": "GOOGL",
-  "as_of": "2026-11-04T10:35:33+00:00",
+  "as_of": "2026-11-08T00:30:17+00:00",
   "currency": "USD",
   "cik": 1652044,
   "financials": {
@@ -26,8 +26,12 @@
         "minority_interest": null,
         "equity": 251635000000,
         "total_assets": 359268000000,
+        "nol": null,
+        "goodwill": 22956000000,
+        "intangibles": 1417000000,
         "debt": 15440000000,
         "operating_leases": 13578000000,
+        "net_capex": 14367000000,
         "gross_margin": 0.5693980290098084,
         "operating_margin": 0.3055228868524319,
         "effective_tax_rate": 0.1620230564066392,
@@ -35,6 +39,8 @@
         "sbc_pct_revenue": 0.059680868819307786,
         "invested_capital": 127426000000,
         "sales_to_capital": 2.0218558222026903,
+        "operating_invested_capital": 103053000000,
+        "sales_to_operating_capital": 2.5000436668510377,
         "revenue_growth": null
       },
       {
@@ -57,8 +63,12 @@
         "minority_interest": null,
         "equity": 256144000000,
         "total_assets": 365264000000,
+        "nol": null,
+        "goodwill": 28960000000,
+        "intangibles": 2084000000,
         "debt": 15312000000,
         "operating_leases": 14978000000,
+        "net_capex": 18010000000,
         "gross_margin": 0.5537944250378312,
         "operating_margin": 0.2646127084246701,
         "effective_tax_rate": 0.1592081650964558,
@@ -66,6 +76,8 @@
         "sbc_pct_revenue": 0.06845663211189523,
         "invested_capital": 157694000000,
         "sales_to_capital": 1.7935748982206046,
+        "operating_invested_capital": 126650000000,
+        "sales_to_operating_capital": 2.2332096328464273,
         "revenue_growth": 0.0978081564371577
       },
       {
@@ -88,8 +100,12 @@
         "minority_interest": null,
         "equity": 283379000000,
         "total_assets": 402392000000,
+        "nol": null,
+        "goodwill": 29198000000,
+        "intangibles": null,
         "debt": 13000000000,
         "operating_leases": 15251000000,
+        "net_capex": 20305000000,
         "gross_margin": 0.566250479840205,
         "operating_margin": 0.27421810445226646,
         "effective_tax_rate": 0.13908559562280529,
@@ -97,6 +113,8 @@
         "sbc_pct_revenue": 0.07306583732929074,
         "invested_capital": 185463000000,
         "sales_to_capital": 1.6574411068515014,
+        "operating_invested_capital": 156265000000,
+        "sales_to_operating_capital": 1.9671327552554956,
         "revenue_growth": 0.08682770227269514
       },
       {
@@ -119,8 +137,12 @@
         "minority_interest": null,
         "equity": 325084000000,
         "total_assets": 450256000000,
+        "nol": null,
+        "goodwill": 31885000000,
+        "intangibles": null,
         "debt": 14300000000,
         "operating_leases": 14578000000,
+        "net_capex": 37224000000,
         "gross_margin": 0.5820043540617911,
         "operating_margin": 0.32109777211457696,
         "effective_tax_rate": 0.16439510912657013,
@@ -128,6 +150,8 @@
         "sbc_pct_revenue": 0.065096652172174,
         "invested_capital": 243727000000,
         "sales_to_capital": 1.4361067916152088,
+        "operating_invested_capital": 211842000000,
+        "sales_to_operating_capital": 1.6522597029861879,
         "revenue_growth": 0.13866243322901553
       },
       {
@@ -150,8 +174,12 @@
         "minority_interest": null,
         "equity": 415265000000,
         "total_assets": 595281000000,
+        "nol": null,
+        "goodwill": 33380000000,
+        "intangibles": 1283000000,
         "debt": 49085000000,
         "operating_leases": 15954000000,
+        "net_capex": 70311000000,
         "gross_margin": 0.5965231508603998,
         "operating_margin": 0.32032638592380025,
         "effective_tax_rate": 0.16783146336242177,
@@ -159,6 +187,8 @@
         "sbc_pct_revenue": 0.06194332184809699,
         "invested_capital": 337507000000,
         "sales_to_capital": 1.1935633927592613,
+        "operating_invested_capital": 302844000000,
+        "sales_to_operating_capital": 1.3301765925691116,
         "revenue_growth": 0.15090081081544376
       }
     ],
@@ -177,6 +207,7 @@
       "dna": 27995000000,
       "cfo": 179551000000,
       "capex": 159804000000,
+      "net_capex": 131809000000,
       "gross_margin": 0.6085740122012829,
       "operating_margin": 0.33321304696687315,
       "effective_tax_rate": 0.18058525154969632,
@@ -190,7 +221,10 @@
       "minority_interest": null,
       "equity": 677549000000,
       "total_assets": 1003312000000,
-      "debt": 126118000000,
+      "nol": null,
+      "goodwill": 58117000000,
+      "intangibles": 8817000000,
+      "debt": 127485000000,
       "operating_leases": 20508000000
     },
     "shares_outstanding": null
@@ -208,44 +242,45 @@
     "summary_en": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California."
   },
   "market": {
-    "price": 280.03,
-    "price_time": "2026-11-03T21:00:01+00:00",
+    "price": 284.78,
+    "price_time": "2026-11-06T21:00:01+00:00",
     "beta": 1.226,
-    "market_cap": 3442688655360,
+    "market_cap": 3501085163520,
     "shares_outstanding": 12294000000,
     "shares_source": "yfinance (implied, todas las clases)",
-    "shares_implied_by_mcap": 12293999412.062994,
+    "shares_implied_by_mcap": 12293999450.523212,
     "diluted_shares_wavg": {
       "value": 12324000000,
       "end": "2026-09-30"
     },
     "high_52w": 408.61,
-    "low_52w": 270.7
+    "low_52w": 270.7,
+    "vol_1y": 0.33988996796303356,
+    "days": 251,
+    "min_1y": 273.1611633300781,
+    "max_1y": 402.1211853027344
   },
   "rates": {
-    "risk_free": 0.049100000000000005,
-    "risk_free_date": "2026-11-02",
+    "risk_free": 0.0484,
+    "risk_free_date": "2026-11-05",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
   "industry": {
     "source_industry": "Internet Content & Information",
-    "damodaran_industry": "Information Services",
-    "match_score": 0.39,
+    "damodaran_industry": "Software (Internet)",
+    "match_score": 1.0,
     "candidates": [
-      "Information Services",
-      "Heathcare Information and Technology",
-      "Packaging & Container"
+      "Software (Internet)"
     ],
-    "operating_margin": 0.1188602164,
-    "operating_margin_pre_sbc": 0.1350937519,
-    "unlevered_beta": 0.7563563576,
-    "de_ratio": 0.3316984905,
-    "tax_rate": 0.1816284293
+    "operating_margin": 0.03686142,
+    "operating_margin_pre_sbc": 0.1855228193,
+    "unlevered_beta": 1.5905250877,
+    "de_ratio": 0.1229891134,
+    "tax_rate": 0.0305436621
   },
   "estimates": null,
   "warnings": [
-    "Damodaran: 'Internet Content & Information' se asoció a 'Information Services'. Candidatas: Information Services | Heathcare Information and Technology | Packaging & Container. Fijá la correcta en data/industry_map.json (lista completa: python -m valuador industrias)",
-    "sin consenso de analistas: g1 saldrá de la tendencia histórica"
+    "sin consenso de analistas: g1 saldrÃ¡ de la tendencia histÃ³rica"
   ]
 }

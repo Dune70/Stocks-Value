@@ -1,6 +1,6 @@
 {
   "ticker": "ORCL",
-  "as_of": "2026-11-04T12:00:44+00:00",
+  "as_of": "2026-11-08T00:30:22+00:00",
   "currency": "USD",
   "cik": 1341439,
   "financials": {
@@ -27,6 +27,8 @@
         "equity": -6220000000,
         "total_assets": 109297000000,
         "nol": null,
+        "goodwill": 43811000000,
+        "intangibles": 1440000000,
         "debt": 0,
         "operating_leases": 3658000000,
         "net_capex": 2539000000,
@@ -37,6 +39,8 @@
         "sbc_pct_revenue": 0.06156927426955702,
         "invested_capital": -28122000000,
         "sales_to_capital": null,
+        "operating_invested_capital": -73373000000,
+        "sales_to_operating_capital": null,
         "revenue_growth": null
       },
       {
@@ -60,6 +64,8 @@
         "equity": 1073000000,
         "total_assets": 134384000000,
         "nol": null,
+        "goodwill": 62261000000,
+        "intangibles": 9837000000,
         "debt": 90481000000,
         "operating_leases": 4849000000,
         "net_capex": 6169000000,
@@ -70,6 +76,8 @@
         "sbc_pct_revenue": 0.071005324898907,
         "invested_capital": 81367000000,
         "sales_to_capital": 0.6139343960082098,
+        "operating_invested_capital": 9269000000,
+        "sales_to_operating_capital": 5.389362390764916,
         "revenue_growth": 0.17704995287464656
       },
       {
@@ -93,6 +101,8 @@
         "equity": 8704000000,
         "total_assets": 140976000000,
         "nol": null,
+        "goodwill": 62230000000,
+        "intangibles": 6890000000,
         "debt": 86869000000,
         "operating_leases": 7545000000,
         "net_capex": 3737000000,
@@ -103,6 +113,8 @@
         "sbc_pct_revenue": 0.0750363475009913,
         "invested_capital": 84912000000,
         "sales_to_capital": 0.623716318070473,
+        "operating_invested_capital": 15792000000,
+        "sales_to_operating_capital": 3.353660081053698,
         "revenue_growth": 0.06019537974936942
       },
       {
@@ -126,6 +138,8 @@
         "equity": 20451000000,
         "total_assets": 168361000000,
         "nol": null,
+        "goodwill": 62207000000,
+        "intangibles": 4587000000,
         "debt": 92568000000,
         "operating_leases": 13450000000,
         "net_capex": 17348000000,
@@ -136,6 +150,8 @@
         "sbc_pct_revenue": 0.0814299900695134,
         "invested_capital": 101816000000,
         "sales_to_capital": 0.5637522589769781,
+        "operating_invested_capital": 35022000000,
+        "sales_to_operating_capital": 1.6389412369367826,
         "revenue_growth": 0.08379751137629576
       },
       {
@@ -159,6 +175,8 @@
         "equity": 42508000000,
         "total_assets": 261759000000,
         "nol": null,
+        "goodwill": 62261000000,
+        "intangibles": 3229000000,
         "debt": 129541000000,
         "operating_leases": 30190000000,
         "net_capex": 48040000000,
@@ -169,6 +187,8 @@
         "sbc_pct_revenue": 0.07142539008566295,
         "invested_capital": 140155000000,
         "sales_to_capital": 0.480589347508116,
+        "operating_invested_capital": 74665000000,
+        "sales_to_operating_capital": 0.9021228152414117,
         "revenue_growth": 0.17348734298506943
       }
     ],
@@ -202,6 +222,8 @@
       "equity": 66772000000,
       "total_assets": 303259000000,
       "nol": null,
+      "goodwill": 62267000000,
+      "intangibles": null,
       "debt": 129541000000,
       "operating_leases": 34621000000
     },
@@ -223,27 +245,27 @@
     "summary_en": "Oracle Corporation offers products and services that build, run and support enterprise information technology frameworks worldwide. Its Oracle cloud software as a service offering includes various cloud software applications, including Oracle Fusion cloud enterprise resource planning ERP, Oracle Fusion cloud enterprise performance management EPM, Oracle Fusion cloud supply chain and manufacturing management SCM, Oracle Fusion cloud human capital management HCM, and NetSuite applications suite, Oracle Health applications, as well as Oracle Fusion Sales, Service, and Marketing. The company also offers cloud-based industry solutions for various industries; Oracle cloud license and on-premise license; and Oracle license support services. In addition, it provides cloud and license business' infrastructure technologies, such as the Oracle Database and MySQL Database; Java, a software development language; and middleware, including development tools and others. The company's cloud and license business' infrastructure technologies also comprise cloud-based compute, storage, and networking capabilities; and Oracle autonomous database, as well as AI, Internet-of-Things, machine learning, digital assistant, and blockchain. Further, it provides hardware products and other hardware-related software offerings, including Oracle engineered systems, enterprise servers, storage solutions, industry-specific hardware, virtualization software, operating systems, management software, and related hardware support services, and consulting and advanced customer services. It markets and sells its cloud, license, hardware, support, and services offerings directly to businesses in various industries, government agencies, and educational institutions, as well as through indirect channels. Oracle Corporation has a strategic alliance with Metron, Inc. The company was founded in 1977 and is headquartered in Austin, Texas."
   },
   "market": {
-    "price": 126.19,
-    "price_time": "2026-11-03T21:04:24+00:00",
+    "price": 116.1,
+    "price_time": "2026-11-06T21:03:15+00:00",
     "beta": 1.778,
-    "market_cap": 382545133568,
+    "market_cap": 361965912064,
     "shares_outstanding": 3023736000,
     "shares_source": "EDGAR (2026-09-07)",
-    "shares_implied_by_mcap": 3031501177.3357635,
+    "shares_implied_by_mcap": 3117708114.2463393,
     "diluted_shares_wavg": {
       "value": 3000000000,
       "end": "2026-08-31"
     },
-    "high_52w": 252.4,
-    "low_52w": 114.5,
-    "vol_1y": 0.588999290685896,
+    "high_52w": 250.25,
+    "low_52w": 109.21,
+    "vol_1y": 0.5926201226386655,
     "days": 251,
     "min_1y": 114.56627655029297,
-    "max_1y": 247.00514221191406
+    "max_1y": 246.37844848632812
   },
   "rates": {
-    "risk_free": 0.049100000000000005,
-    "risk_free_date": "2026-11-02",
+    "risk_free": 0.0484,
+    "risk_free_date": "2026-11-05",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
@@ -263,6 +285,7 @@
   "estimates": null,
   "warnings": [
     "EDGAR: deuda del trimestre (7,625 M) es menos de la mitad de la del 10-K (129,541 M): probablemente falta la de largo plazo; se usa la del 10-K",
+    "mercado: acciones: 3,023,736,000 (EDGAR (2026-09-07)) vs capitalización/precio 3,117,708,114; puede faltar una clase de acciones",
     "sin consenso de analistas: g1 saldrá de la tendencia histórica"
   ]
 }

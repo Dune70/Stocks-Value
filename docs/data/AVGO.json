@@ -1,6 +1,6 @@
 {
   "ticker": "AVGO",
-  "as_of": "2026-11-07T23:44:45+00:00",
+  "as_of": "2026-11-08T00:30:25+00:00",
   "price": 293.69,
   "price_time": "2026-11-06T21:00:01+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 212.29126475772233
     },
     "reach_band_1y": [
-      182.19990599608408,
-      473.40208892233903
+      182.19990027196607,
+      473.4021037950662
     ]
   },
   "recommendation": "Comprar",
-  "volatility_1y": 0.4774203203886039,
+  "volatility_1y": 0.4774203518052945,
   "notes": [
     "g1 = mitad tendencia de 3 años (24.4%) y mitad último año (56.0%)",
     "g1 recortado de 40.2% al rango −5% / 35%",

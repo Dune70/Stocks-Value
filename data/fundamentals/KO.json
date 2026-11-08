@@ -1,6 +1,6 @@
 {
   "ticker": "KO",
-  "as_of": "2026-11-04T12:00:33+00:00",
+  "as_of": "2026-11-08T00:30:17+00:00",
   "currency": "USD",
   "cik": 21344,
   "financials": {
@@ -27,6 +27,8 @@
         "equity": 22999000000,
         "total_assets": 94354000000,
         "nol": 2313000000,
+        "goodwill": 19363000000,
+        "intangibles": 574000000,
         "debt": 42761000000,
         "operating_leases": 1471000000,
         "net_capex": -85000000,
@@ -37,6 +39,8 @@
         "sbc_pct_revenue": 0.008718147716983572,
         "invested_capital": 56076000000,
         "sales_to_capital": 0.6893323346886369,
+        "operating_invested_capital": 36139000000,
+        "sales_to_operating_capital": 1.0696200780320428,
         "revenue_growth": null
       },
       {
@@ -60,6 +64,8 @@
         "equity": 24105000000,
         "total_assets": 92763000000,
         "nol": 1605000000,
+        "goodwill": 18782000000,
+        "intangibles": 460000000,
         "debt": 39149000000,
         "operating_leases": 1454000000,
         "net_capex": 224000000,
@@ -70,6 +76,8 @@
         "sbc_pct_revenue": 0.00827829969305181,
         "invested_capital": 53735000000,
         "sales_to_capital": 0.8002977575137248,
+        "operating_invested_capital": 34493000000,
+        "sales_to_operating_capital": 1.246745716522193,
         "revenue_growth": 0.11250808433579097
       },
       {
@@ -93,6 +101,8 @@
         "equity": 25941000000,
         "total_assets": 97703000000,
         "nol": 1705000000,
+        "goodwill": 18358000000,
+        "intangibles": 355000000,
         "debt": 41716000000,
         "operating_leases": 1362000000,
         "net_capex": 724000000,
@@ -103,6 +113,8 @@
         "sbc_pct_revenue": 0.005551427197622066,
         "invested_capital": 58291000000,
         "sales_to_capital": 0.7849239162134807,
+        "operating_invested_capital": 39578000000,
+        "sales_to_operating_capital": 1.1560462883420082,
         "revenue_growth": 0.06394753976374291
       },
       {
@@ -126,6 +138,8 @@
         "equity": 24856000000,
         "total_assets": 100549000000,
         "nol": 1583000000,
+        "goodwill": 18139000000,
+        "intangibles": null,
         "debt": 44162000000,
         "operating_leases": 1213000000,
         "net_capex": 989000000,
@@ -136,6 +150,8 @@
         "sbc_pct_revenue": 0.006077218928624551,
         "invested_capital": 58190000000,
         "sales_to_capital": 0.808747207423956,
+        "operating_invested_capital": 40051000000,
+        "sales_to_operating_capital": 1.175026840778008,
         "revenue_growth": 0.028565808453905668
       },
       {
@@ -159,6 +175,8 @@
         "equity": 32169000000,
         "total_assets": 104816000000,
         "nol": 1600000000,
+        "goodwill": 15491000000,
+        "intangibles": null,
         "debt": 45436000000,
         "operating_leases": 1722000000,
         "net_capex": 1062000000,
@@ -169,6 +187,8 @@
         "sbc_pct_revenue": 0.0058196533238772654,
         "invested_capital": 67335000000,
         "sales_to_capital": 0.7119774263013292,
+        "operating_invested_capital": 51844000000,
+        "sales_to_operating_capital": 0.9247164570634981,
         "revenue_growth": 0.018699135164998618
       }
     ],
@@ -202,6 +222,8 @@
       "equity": 37372000000,
       "total_assets": 107950000000,
       "nol": 1600000000,
+      "goodwill": 15408000000,
+      "intangibles": null,
       "debt": 41546000000,
       "operating_leases": 1722000000
     },
@@ -223,27 +245,27 @@
     "summary_en": "The Coca-Cola Company, a beverage company, manufactures and sells various nonalcoholic beverages in the United States and internationally. The company provides Trademark Coca-Cola, sparkling soft drinks and flavors; water, sports, coffee, and tea; juice, value-added dairy, and plant-based beverages; and emerging beverages. It also offers beverage concentrates and syrups, as well as fountain syrups to fountain retailers comprising restaurants and convenience stores. The company sells its products under the Coca-Cola, Diet Coke/Coca-Cola Light, Coca-Cola Zero Sugar, caffeine free Diet Coke, Cherry Coke, Fanta, Sprite, Simply, Fanta Orange, Fanta Zero Orange, Fanta Zero Sugar, Fanta Apple, Sprite Zero Sugar, Simply Orange, Simply Apple, Simply Grapefruit, Fresca, Schweppes, Thums Up, Aquarius, Ayataka, BODYARMOR, Ciel, Costa, Crystal, Dasani, Fuze Tea, Georgia, glacéau smartwater, glacéau vitaminwater, Gold Peak, I LOHAS, Powerade, Topo Chico, Core Power, Del Valle, fairlife, innocent, Maaza, Minute Maid, Minute Maid Pulpy, Santa Clara, and dogadan brands. It operates through a network of independent bottling partners, distributors, wholesalers, and retailers, as well as through bottling and distribution operators. The Coca-Cola Company was founded in 1886 and is headquartered in Atlanta, Georgia."
   },
   "market": {
-    "price": 94.8,
-    "price_time": "2026-11-03T21:00:02+00:00",
+    "price": 95.67,
+    "price_time": "2026-11-06T21:00:02+00:00",
     "beta": 0.269,
-    "market_cap": 407820369920,
+    "market_cap": 411562999808,
     "shares_outstanding": 4301902335,
     "shares_source": "EDGAR (2026-10-26)",
-    "shares_implied_by_mcap": 4301902636.28692,
+    "shares_implied_by_mcap": 4301902370.732727,
     "diluted_shares_wavg": {
       "value": 4313000000,
       "end": "2026-10-02"
     },
-    "high_52w": 96.26,
+    "high_52w": 97.39,
     "low_52w": 67.27,
-    "vol_1y": 0.18915408201793132,
+    "vol_1y": 0.1881768100698127,
     "days": 251,
     "min_1y": 66.25312042236328,
     "max_1y": 95.83000183105469
   },
   "rates": {
-    "risk_free": 0.049100000000000005,
-    "risk_free_date": "2026-11-02",
+    "risk_free": 0.0484,
+    "risk_free_date": "2026-11-05",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
