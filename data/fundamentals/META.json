@@ -1,6 +1,6 @@
 {
   "ticker": "META",
-  "as_of": "2026-11-08T00:30:19+00:00",
+  "as_of": "2026-11-10T04:09:31+00:00",
   "currency": "USD",
   "cik": 1326801,
   "financials": {
@@ -242,27 +242,27 @@
     "summary_en": "Meta Platforms, Inc. engages in the development of products that enable people to connect and share with friends and family through mobile devices, personal computers, virtual reality (VR) headsets, and AI glasses in the United States, Canada, Europe, Asia-Pacific, and internationally. It operates through two segments, Family of Apps (FoA) and Reality Labs (RL). The FoA segment offers Facebook, which enables people to build community through feed, reels, stories, groups, marketplace, and other; Instagram that brings people closer through Instagram feed, stories, reels, live, and messaging; Messenger, a messaging application for people to connect with friends, family, communities, and businesses across platforms and devices through text, audio, and video calls; Meta AI, an assistant that's available across apps, as a stand-alone app, on AI glasses, and on the web; Threads, an application for text-based updates and public conversations; and WhatsApp, a messaging application that is used by people and businesses to communicate and transact. The RL segment provides virtual and augmented reality products, including consumer hardware, software, and content that help people feel connected, as well as Meta Quest devices that enable social experiences across gaming, fitness, entertainment, and more. The segment also includes wearables such as AI glasses like Ray Ban Meta and Oakley Meta glasses; and the Meta Ray Ban Display, which combines AI glasses with an integrated lens display and the Meta Neural Band, a wrist worn device using electromyography that lets people control their AI glasses through neuromuscular signals. Meta Platforms, Inc. has a collaboration with Microsoft Corporation, NVIDIA Corporation, Advanced Micro Devices, Inc., Broadcom Inc., and OpenAI, L.L.C. The company was formerly known as Facebook, Inc. and changed its name to Meta Platforms, Inc. in October 2021. The company was incorporated in 2004 and is headquartered in Menlo Park, California."
   },
   "market": {
-    "price": 610.15,
-    "price_time": "2026-11-06T21:00:01+00:00",
+    "price": 641.37,
+    "price_time": "2026-11-09T21:00:01+00:00",
     "beta": 1.279,
-    "market_cap": 1560051712000,
+    "market_cap": 1639876001792,
     "shares_outstanding": 2556833034,
     "shares_source": "yfinance (implied, todas las clases)",
-    "shares_implied_by_mcap": 2556833093.501598,
+    "shares_implied_by_mcap": 2556833032.090681,
     "diluted_shares_wavg": {
       "value": 2568000000,
       "end": "2026-09-30"
     },
     "high_52w": 779.82,
     "low_52w": 520.26,
-    "vol_1y": 0.41206651793257193,
+    "vol_1y": 0.4147991368086854,
     "days": 251,
     "min_1y": 524.8189697265625,
     "max_1y": 777.5900268554688
   },
   "rates": {
-    "risk_free": 0.0484,
-    "risk_free_date": "2026-11-05",
+    "risk_free": 0.048600000000000004,
+    "risk_free_date": "2026-11-06",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
