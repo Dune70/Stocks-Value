@@ -1,8 +1,8 @@
 {
   "ticker": "MRVL",
-  "as_of": "2026-11-10T04:09:35+00:00",
-  "price": 154.6,
-  "price_time": "2026-11-09T21:00:00+00:00",
+  "as_of": "2026-11-11T01:58:03+00:00",
+  "price": 154.39,
+  "price_time": "2026-11-10T21:00:01+00:00",
   "profile": {
     "name": "Marvell Technology, Inc.",
     "exchange": "Nasdaq",
@@ -18,7 +18,7 @@
   "scenarios": {
     "todo_mal": {
       "label": "Todo sale mal",
-      "value_per_share": 24.656709744977086,
+      "value_per_share": 24.606021520116247,
       "weight": 0.0,
       "description": "ventas +9% anual los primeros 5 años, margen 25% en 10 años",
       "assumptions": {
@@ -26,15 +26,15 @@
         "margin_target": 0.24729454336999998,
         "sales_to_capital": 2.6809105275479945,
         "years_to_target": 10,
-        "g_terminal": 0.033600000000000005,
+        "g_terminal": 0.0338,
         "p_failure": 0.0
       },
-      "wacc": 0.1252447002532279,
-      "terminal_share": 0.4978716531597092
+      "wacc": 0.12544147244790205,
+      "terminal_share": 0.49737712897252856
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 46.99770682524947,
+      "value_per_share": 46.89376804353154,
       "weight": 0.25,
       "description": "ventas +16% anual los primeros 5 años, margen 30% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.300286231235,
         "sales_to_capital": 3.2170926330575935,
         "years_to_target": 8,
-        "g_terminal": 0.0386,
+        "g_terminal": 0.038799999999999994,
         "p_failure": 0.0
       },
-      "wacc": 0.1202447002532279,
-      "terminal_share": 0.5564388991080599
+      "wacc": 0.12044147244790206,
+      "terminal_share": 0.5559358283098964
     },
     "base": {
       "label": "Base",
-      "value_per_share": 87.03187748273369,
+      "value_per_share": 86.82597238711074,
       "weight": 0.5,
       "description": "ventas +22% anual los primeros 5 años, margen 35% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.3532779191,
         "sales_to_capital": 3.5745473700639927,
         "years_to_target": 7,
-        "g_terminal": 0.04360000000000001,
+        "g_terminal": 0.0438,
         "p_failure": 0.0
       },
-      "wacc": 0.1152447002532279,
-      "terminal_share": 0.6003885186127524
+      "wacc": 0.11544147244790205,
+      "terminal_share": 0.5998794157548891
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 135.5050105494715,
+      "value_per_share": 135.17519040107146,
       "weight": 0.25,
       "description": "ventas +27% anual los primeros 5 años, margen 41% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.406269606965,
         "sales_to_capital": 3.9320021070703923,
         "years_to_target": 6,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.1127447002532279,
-      "terminal_share": 0.6166686434721679
+      "wacc": 0.11294147244790205,
+      "terminal_share": 0.6161527377138415
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 227.95368523443778,
+      "value_per_share": 227.3816277637839,
       "weight": 0.0,
       "description": "ventas +33% anual los primeros 5 años, margen 46% en 5 años",
       "assumptions": {
@@ -90,71 +90,71 @@
         "margin_target": 0.45926129483,
         "sales_to_capital": 4.468184212579991,
         "years_to_target": 5,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.1102447002532279,
-      "terminal_share": 0.6328418619446132
+      "wacc": 0.11044147244790205,
+      "terminal_share": 0.632320406312677
     }
   },
   "weights_modified": false,
-  "intrinsic": 89.14161808504709,
+  "intrinsic": 88.93022580470611,
   "range": [
-    80.25292558164024,
-    101.61163221250504
+    80.06833180471962,
+    101.36187102356374
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 97.45888450527377
+      "intrinsic": 97.22244860145275
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 99.4141428349107
+      "intrinsic": 99.17143736412592
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.005,
-      "intrinsic": 101.61163221250504
+      "intrinsic": 101.36187102356374
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 88.05532071644845
+      "intrinsic": 87.84738969465937
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 89.14161808504709
+      "intrinsic": 88.93022580470611
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 90.24310873869833
+      "intrinsic": 90.02820304819204
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 80.25292558164024
+      "intrinsic": 80.06833180471962
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 80.77848987617682
+      "intrinsic": 80.59224171856245
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 81.20753955870748
+      "intrinsic": 81.019944555755
     }
   ],
-  "potential": -0.423404798932425,
-  "margin_of_safety": -0.7343189782857792,
+  "potential": -0.42398972857888384,
+  "margin_of_safety": -0.7360801527598257,
   "reverse_dcf": {
-    "margin": 0.6219189841009762,
-    "growth_g1": 0.3363255406110217,
+    "margin": 0.6225248404856907,
+    "growth_g1": 0.3365527816333129,
     "current_margin": 0.1652116864014899,
     "base_margin": 0.3532779191,
     "base_g1": 0.22264034836304047
@@ -164,48 +164,48 @@
       {
         "zone": "Compra excepcional",
         "from": null,
-        "to": 24.656709744977086,
+        "to": 24.606021520116247,
         "reachable_1y": false
       },
       {
         "zone": "Convicción",
-        "from": 24.656709744977086,
-        "to": 46.99770682524947,
+        "from": 24.606021520116247,
+        "to": 46.89376804353154,
         "reachable_1y": false
       },
       {
         "zone": "Comprar",
-        "from": 46.99770682524947,
-        "to": 67.01479215399158,
+        "from": 46.89376804353154,
+        "to": 66.85987021532114,
         "reachable_1y": true
       },
       {
         "zone": "Sumar de a poco",
-        "from": 67.01479215399158,
-        "to": 82.68028360859701,
+        "from": 66.85987021532114,
+        "to": 82.4846737677552,
         "reachable_1y": true
       },
       {
         "zone": "Mantener",
-        "from": 82.68028360859701,
-        "to": 111.26844401610259,
+        "from": 82.4846737677552,
+        "to": 111.0005813940911,
         "reachable_1y": true
       },
       {
         "zone": "Reducir",
-        "from": 111.26844401610259,
-        "to": 135.5050105494715,
+        "from": 111.0005813940911,
+        "to": 135.17519040107146,
         "reachable_1y": true
       },
       {
         "zone": "Vender",
-        "from": 135.5050105494715,
-        "to": 227.95368523443778,
+        "from": 135.17519040107146,
+        "to": 227.3816277637839,
         "reachable_1y": true
       },
       {
         "zone": "Venta excepcional",
-        "from": 227.95368523443778,
+        "from": 227.3816277637839,
         "to": null,
         "reachable_1y": true
       }
@@ -214,16 +214,16 @@
     "zone_index": 6,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 246.1899800531928,
-      "moves_down_below": 124.6646097055138
+      "moves_up_above": 245.57215798488664,
+      "moves_down_below": 124.36117516898575
     },
     "reach_band_1y": [
-      66.5641343502728,
-      359.0696436346287
+      66.55361501168767,
+      358.15142567107796
     ]
   },
   "recommendation": "Vender",
-  "volatility_1y": 0.8426752269318908,
+  "volatility_1y": 0.8414740050522774,
   "notes": [
     "g1 = mitad tendencia de 3 años (11.4%) y mitad último año (33.1%)",
     "margen objetivo = el de la industria",

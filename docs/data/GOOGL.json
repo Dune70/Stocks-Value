@@ -1,8 +1,8 @@
 {
   "ticker": "GOOGL",
-  "as_of": "2026-11-10T04:09:35+00:00",
-  "price": 288.15,
-  "price_time": "2026-11-09T21:00:01+00:00",
+  "as_of": "2026-11-11T01:58:03+00:00",
+  "price": 287.38,
+  "price_time": "2026-11-10T21:00:00+00:00",
   "profile": {
     "name": "Alphabet Inc.",
     "exchange": "Nasdaq",
@@ -18,7 +18,7 @@
   "scenarios": {
     "todo_mal": {
       "label": "Todo sale mal",
-      "value_per_share": 98.97401784511996,
+      "value_per_share": 98.81406907897026,
       "weight": 0.0,
       "description": "ventas +7% anual los primeros 5 años, margen 23% en 10 años",
       "assumptions": {
@@ -26,15 +26,15 @@
         "margin_target": 0.23324913287681118,
         "sales_to_capital": 1.1110009745132348,
         "years_to_target": 10,
-        "g_terminal": 0.033600000000000005,
+        "g_terminal": 0.0338,
         "p_failure": 0.0
       },
-      "wacc": 0.12896885909000586,
-      "terminal_share": 0.42638875010733296
+      "wacc": 0.12916375066210647,
+      "terminal_share": 0.42591048844679014
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 160.67605599314032,
+      "value_per_share": 160.38360130696074,
       "weight": 0.25,
       "description": "ventas +13% anual los primeros 5 años, margen 28% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.28323108992184215,
         "sales_to_capital": 1.3332011694158816,
         "years_to_target": 8,
-        "g_terminal": 0.0386,
+        "g_terminal": 0.038799999999999994,
         "p_failure": 0.0
       },
-      "wacc": 0.12396885909000586,
-      "terminal_share": 0.5677732632495754
+      "wacc": 0.12416375066210648,
+      "terminal_share": 0.567377313373812
     },
     "base": {
       "label": "Base",
-      "value_per_share": 285.524741677369,
+      "value_per_share": 284.97482007997775,
       "weight": 0.5,
       "description": "ventas +18% anual los primeros 5 años, margen 33% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.33321304696687315,
         "sales_to_capital": 1.4813346326843129,
         "years_to_target": 7,
-        "g_terminal": 0.04360000000000001,
+        "g_terminal": 0.0438,
         "p_failure": 0.0
       },
-      "wacc": 0.11896885909000586,
-      "terminal_share": 0.6722797200269303
+      "wacc": 0.11916375066210648,
+      "terminal_share": 0.6719801802610323
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 464.4751707832554,
+      "value_per_share": 463.5864060855143,
       "weight": 0.25,
       "description": "ventas +21% anual los primeros 5 años, margen 38% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.3831950040119041,
         "sales_to_capital": 1.6294680959527443,
         "years_to_target": 6,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.11646885909000586,
-      "terminal_share": 0.7296638469298069
+      "wacc": 0.11666375066210648,
+      "terminal_share": 0.7294302724667348
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 772.3878983094169,
+      "value_per_share": 770.9540866805802,
       "weight": 0.0,
       "description": "ventas +27% anual los primeros 5 años, margen 43% en 5 años",
       "assumptions": {
@@ -90,71 +90,71 @@
         "margin_target": 0.4331769610569351,
         "sales_to_capital": 1.851668290855391,
         "years_to_target": 5,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.11396885909000586,
-      "terminal_share": 0.7615567333325131
+      "wacc": 0.11416375066210648,
+      "terminal_share": 0.7613707915567968
     }
   },
   "weights_modified": false,
-  "intrinsic": 299.05017753278344,
+  "intrinsic": 298.4799118881076,
   "range": [
-    258.3120923398877,
-    360.6262959939079
+    257.843392706283,
+    359.9005131260546
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 314.7745636103085
+      "intrinsic": 314.17448204340405
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 335.0437804516454
+      "intrinsic": 334.3882223544044
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.005,
-      "intrinsic": 360.6262959939079
+      "intrinsic": 359.9005131260546
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 283.82184621297637
+      "intrinsic": 283.29400852606295
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 299.05017753278344
+      "intrinsic": 298.4799118881076
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 317.72233550375176
+      "intrinsic": 317.09983374106486
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 258.3120923398877
+      "intrinsic": 257.843392706283
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 269.99419727137166
+      "intrinsic": 269.49234350897177
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 283.9866304663786
+      "intrinsic": 283.4448565795201
     }
   ],
-  "potential": 0.03782813650107042,
-  "margin_of_safety": 0.03644932640639722,
+  "potential": 0.03862451071093198,
+  "margin_of_safety": 0.0371881371107771,
   "reverse_dcf": {
-    "margin": 0.3363646849888007,
-    "growth_g1": 0.18082886317734903,
+    "margin": 0.33610615296812363,
+    "growth_g1": 0.18067104105442622,
     "current_margin": 0.33321304696687315,
     "base_margin": 0.33321304696687315,
     "base_g1": 0.17888857899465016
@@ -164,48 +164,48 @@
       {
         "zone": "Compra excepcional",
         "from": null,
-        "to": 98.97401784511996,
+        "to": 98.81406907897026,
         "reachable_1y": false
       },
       {
         "zone": "Convicción",
-        "from": 98.97401784511996,
-        "to": 160.67605599314032,
+        "from": 98.81406907897026,
+        "to": 160.38360130696074,
         "reachable_1y": false
       },
       {
         "zone": "Comprar",
-        "from": 160.67605599314032,
-        "to": 223.10039883525465,
+        "from": 160.38360130696074,
+        "to": 222.67921069346926,
         "reachable_1y": true
       },
       {
         "zone": "Sumar de a poco",
-        "from": 223.10039883525465,
-        "to": 271.2485045935005,
+        "from": 222.67921069346926,
+        "to": 270.7260790759789,
         "reachable_1y": true
       },
       {
         "zone": "Mantener",
-        "from": 271.2485045935005,
-        "to": 374.9999562303122,
+        "from": 270.7260790759789,
+        "to": 374.280613082746,
         "reachable_1y": true
       },
       {
         "zone": "Reducir",
-        "from": 374.9999562303122,
-        "to": 464.4751707832554,
+        "from": 374.280613082746,
+        "to": 463.5864060855143,
         "reachable_1y": true
       },
       {
         "zone": "Vender",
-        "from": 464.4751707832554,
-        "to": 772.3878983094169,
+        "from": 463.5864060855143,
+        "to": 770.9540866805802,
         "reachable_1y": false
       },
       {
         "zone": "Venta excepcional",
-        "from": 772.3878983094169,
+        "from": 770.9540866805802,
         "to": null,
         "reachable_1y": false
       }
@@ -214,16 +214,16 @@
     "zone_index": 4,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 404.9999527287372,
-      "moves_down_below": 249.54862422602048
+      "moves_up_above": 404.2230621293657,
+      "moves_down_below": 249.06799274990058
     },
     "reach_band_1y": [
-      205.5575592822142,
-      403.92784770325966
+      205.01150842588072,
+      402.8420893740137
     ]
   },
   "recommendation": "Mantener",
-  "volatility_1y": 0.3377550893346137,
+  "volatility_1y": 0.3377392655755354,
   "notes": [
     "g1 = mitad tendencia de 3 años (12.5%) y mitad último año (23.3%)",
     "margen objetivo = el actual (supera a la industria)",

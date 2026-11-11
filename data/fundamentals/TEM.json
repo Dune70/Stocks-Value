@@ -1,6 +1,6 @@
 {
   "ticker": "TEM",
-  "as_of": "2026-11-10T04:09:34+00:00",
+  "as_of": "2026-11-11T01:58:02+00:00",
   "currency": "USD",
   "cik": 1717115,
   "financials": {
@@ -205,24 +205,24 @@
     "summary_en": "Tempus AI, Inc. operates as a healthcare technology company in the United States. It offers the Tempus platform, a closed-loop, full-stack, bi-directional integrations between a clinician's desktop and its laboratory diagnostic capabilities, analytics platform, and repository of multimodal data; and Hub, a clinical application for physicians and other healthcare providers for use in the diagnostics product line as an end-to-end application for healthcare providers for NGS tests. The company also provides Lens, a software application for life sciences and advanced precision research; diagnostics services, such as NGS diagnostics, PCR profiling, and other anatomic and molecular pathology tests; and large-panel solid tumor and hematologic testing through multiple assays, with its core clinical assay (xT and xR) offering large panel DNA, RNA full transcriptome, and incidental germline findings through normal blood or saliva analyses. In addition, it provides genetic tests focused on inherited conditions; an nP assay for pharmacogenomic testing for patients with psychiatric conditions, including depression, general anxiety disorder, bipolar disorder, and other relevant diagnoses; Insights, which licenses libraries of linked, de-identified clinical, molecular, and imaging data; Organoids, a tumor derived biological modeling. Further, the company offers Trials for clinical trial matching services; Next, an AI platform; Algos, an algorithm-based diagnostics application. It has Strategic Collaborations with AstraZeneca AB, Pathos AI, Inc., GlaxoSmithKline, Merck, and Recursion Pharmaceuticals, Inc. Additionally, it also has a strategic collaboration with Blood Cancer United to develop registry for pediatric acute myeloid leukemia. The company was formerly known as Tempus Labs, Inc. and changed its name to Tempus AI, Inc. in January 2023. Tempus AI, Inc. was incorporated in 2015 and is headquartered in Chicago, Illinois."
   },
   "market": {
-    "price": 84.44,
-    "price_time": "2026-11-09T21:00:00+00:00",
+    "price": 80.54,
+    "price_time": "2026-11-10T21:00:00+00:00",
     "beta": 3.613,
-    "market_cap": 15401994240,
+    "market_cap": 14690627584,
     "shares_outstanding": 182401637,
     "shares_source": "yfinance (implied, todas las clases)",
-    "shares_implied_by_mcap": 182401637.13879678,
+    "shares_implied_by_mcap": 182401633.77203873,
     "diluted_shares_wavg": null,
     "high_52w": 89.09,
     "low_52w": 40.77,
-    "vol_1y": 0.7502882897246363,
-    "days": 251,
+    "vol_1y": 0.7517900594395357,
+    "days": 250,
     "min_1y": 41.54999923706055,
     "max_1y": 85.08000183105469
   },
   "rates": {
-    "risk_free": 0.048600000000000004,
-    "risk_free_date": "2026-11-06",
+    "risk_free": 0.048799999999999996,
+    "risk_free_date": "2026-11-09",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },

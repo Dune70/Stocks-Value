@@ -1,8 +1,8 @@
 {
   "ticker": "ORCL",
-  "as_of": "2026-11-10T04:09:35+00:00",
-  "price": 119.79,
-  "price_time": "2026-11-09T21:03:41+00:00",
+  "as_of": "2026-11-11T01:58:03+00:00",
+  "price": 117.98,
+  "price_time": "2026-11-10T21:04:11+00:00",
   "profile": {
     "name": "Oracle Corporation",
     "exchange": "NYSE",
@@ -18,7 +18,7 @@
   "scenarios": {
     "todo_mal": {
       "label": "Todo sale mal",
-      "value_per_share": 13.39407558389421,
+      "value_per_share": 13.290784437447622,
       "weight": 0.0,
       "description": "ventas +10% anual los primeros 5 años, margen 23% en 10 años",
       "assumptions": {
@@ -26,15 +26,15 @@
         "margin_target": 0.23087759618,
         "sales_to_capital": 0.6000000000000001,
         "years_to_target": 10,
-        "g_terminal": 0.033600000000000005,
+        "g_terminal": 0.0338,
         "p_failure": 0.0
       },
-      "wacc": 0.10677136723008797,
-      "terminal_share": 0.5817278924222857
+      "wacc": 0.10687110403441462,
+      "terminal_share": 0.581449990076344
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 58.42445451574286,
+      "value_per_share": 58.19839714709248,
       "weight": 0.25,
       "description": "ventas +18% anual los primeros 5 años, margen 28% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.28035136679,
         "sales_to_capital": 0.7200000000000001,
         "years_to_target": 8,
-        "g_terminal": 0.0386,
+        "g_terminal": 0.038799999999999994,
         "p_failure": 0.0
       },
-      "wacc": 0.10177136723008798,
-      "terminal_share": 0.7311901541648701
+      "wacc": 0.10187110403441463,
+      "terminal_share": 0.7309579877706182
     },
     "base": {
       "label": "Base",
-      "value_per_share": 160.24575742374583,
+      "value_per_share": 159.72417681859378,
       "weight": 0.5,
       "description": "ventas +25% anual los primeros 5 años, margen 33% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.3298251374,
         "sales_to_capital": 0.8,
         "years_to_target": 7,
-        "g_terminal": 0.04360000000000001,
+        "g_terminal": 0.0438,
         "p_failure": 0.0
       },
-      "wacc": 0.09677136723008797,
-      "terminal_share": 0.8028952076360253
+      "wacc": 0.09687110403441462,
+      "terminal_share": 0.8026646635115267
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 315.97427162008245,
+      "value_per_share": 314.9826748437785,
       "weight": 0.25,
       "description": "ventas +30% anual los primeros 5 años, margen 38% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.37929890801,
         "sales_to_capital": 0.8800000000000001,
         "years_to_target": 6,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.09427136723008797,
-      "terminal_share": 0.8133801402022015
+      "wacc": 0.09437110403441462,
+      "terminal_share": 0.8130835172709135
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 635.4301923443164,
+      "value_per_share": 633.5168055718297,
       "weight": 0.0,
       "description": "ventas +38% anual los primeros 5 años, margen 43% en 5 años",
       "assumptions": {
@@ -90,71 +90,71 @@
         "margin_target": 0.42877267862000007,
         "sales_to_capital": 1.0,
         "years_to_target": 5,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.09177136723008797,
-      "terminal_share": 0.8175847057069816
+      "wacc": 0.09187110403441462,
+      "terminal_share": 0.8172534235263852
     }
   },
   "weights_modified": false,
-  "intrinsic": 173.72256024582924,
+  "intrinsic": 173.15735640701465,
   "range": [
-    143.91700565996737,
-    218.08695074214302
+    143.45783104295188,
+    217.35825905538093
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 193.8815981507346
+      "intrinsic": 193.28306227038507
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 204.69762638721537
+      "intrinsic": 204.04171744110744
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.005,
-      "intrinsic": 218.08695074214302
+      "intrinsic": 217.35825905538093
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 166.4254302172329
+      "intrinsic": 165.9037010669565
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 173.72256024582924
+      "intrinsic": 173.15735640701465
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 182.43372405957786
+      "intrinsic": 181.8149309717256
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 143.91700565996737
+      "intrinsic": 143.45783104295188
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 148.83901785941907
+      "intrinsic": 148.3461752434898
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 154.51957557216397
+      "intrinsic": 153.98617845981812
     }
   ],
-  "potential": 0.45022589736897256,
-  "margin_of_safety": 0.31045225311848385,
+  "potential": 0.46768398378551135,
+  "margin_of_safety": 0.3186544167220804,
   "reverse_dcf": {
-    "margin": 0.27741836130545716,
-    "growth_g1": 0.19888593964532275,
+    "margin": 0.27563969371076213,
+    "growth_g1": 0.19684104889965948,
     "current_margin": 0.3212355104770397,
     "base_margin": 0.3298251374,
     "base_g1": 0.25
@@ -164,48 +164,48 @@
       {
         "zone": "Compra excepcional",
         "from": null,
-        "to": 13.39407558389421,
+        "to": 13.290784437447622,
         "reachable_1y": false
       },
       {
         "zone": "Convicción",
-        "from": 13.39407558389421,
-        "to": 58.42445451574286,
+        "from": 13.290784437447622,
+        "to": 58.19839714709248,
         "reachable_1y": false
       },
       {
         "zone": "Comprar",
-        "from": 58.42445451574286,
-        "to": 109.33510596974435,
+        "from": 58.19839714709248,
+        "to": 108.96128698284312,
         "reachable_1y": true
       },
       {
         "zone": "Sumar de a poco",
-        "from": 109.33510596974435,
-        "to": 152.23346955255852,
+        "from": 108.96128698284312,
+        "to": 151.73796797766408,
         "reachable_1y": true
       },
       {
         "zone": "Mantener",
-        "from": 152.23346955255852,
-        "to": 238.11001452191414,
+        "from": 151.73796797766408,
+        "to": 237.35342583118614,
         "reachable_1y": true
       },
       {
         "zone": "Reducir",
-        "from": 238.11001452191414,
-        "to": 315.97427162008245,
+        "from": 237.35342583118614,
+        "to": 314.9826748437785,
         "reachable_1y": false
       },
       {
         "zone": "Vender",
-        "from": 315.97427162008245,
-        "to": 635.4301923443164,
+        "from": 314.9826748437785,
+        "to": 633.5168055718297,
         "reachable_1y": false
       },
       {
         "zone": "Venta excepcional",
-        "from": 635.4301923443164,
+        "from": 633.5168055718297,
         "to": null,
         "reachable_1y": false
       }
@@ -214,16 +214,16 @@
     "zone_index": 3,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 164.4121471167632,
-      "moves_down_below": 100.5882974921648
+      "moves_up_above": 163.87700541587722,
+      "moves_down_below": 100.24438402421568
     },
     "reach_band_1y": [
-      66.16842820308719,
-      216.86542191930894
+      65.17582165789223,
+      213.5650927895053
     ]
   },
   "recommendation": "Sumar de a poco",
-  "volatility_1y": 0.5935367759217998,
+  "volatility_1y": 0.5934265518859665,
   "notes": [
     "margen objetivo = el de la industria",
     "g1 del base fijado a mano; los demás escenarios se mueven alrededor",

@@ -1,6 +1,6 @@
 {
   "ticker": "AVGO",
-  "as_of": "2026-11-10T04:09:27+00:00",
+  "as_of": "2026-11-11T01:57:52+00:00",
   "currency": "USD",
   "cik": 1730168,
   "financials": {
@@ -245,27 +245,27 @@
     "summary_en": "Broadcom Inc. designs, develops, and supplies various semiconductor devices and infrastructure software solutions internationally. The company operates in two segments: Semiconductor Solutions and Infrastructure Software. The company offers networking connectivity, such as custom silicon solutions, ethernet switching & routing, ethernet NIC controllers, physical layer devices, and fiber optic components; wireless device connectivity, including RF semiconductor devices, connectivity solutions, custom touch controllers, and inductive charging ASICS; servers and storage system solutions, such as PCIE switches, SAS & raid products, fibre channel products, and HDD & SSD solutions; broadband solutions, includes set-top box, and broadband access; and industrial. The company also offers a private cloud software portfolio, including the VMware Cloud Foundation, Edge, vSphere foundation, telco cloud platform, private AI, live recovery, application networking and security, application development and data services; mainframe software, such as AIOPS & automation, database & data management, DEVX & DEVOPS, cybersecurity & compliance management, beyond code programs, foundational & open mainframe solutions; cybersecurity, such as endpoint, network, information, application security, and identity & access management; enterprise software; and fc san management. Its products are used in various applications in enterprise and data center networking, including artificial intelligence networking and connectivity, home connectivity, set-top boxes, broadband access, telecommunication equipment, wireless device and base stations, data center servers and storage systems, factory automation, power generation and alternative energy systems, and electronic displays. Broadcom Inc. was founded in 1961 and is headquartered in Palo Alto, California."
   },
   "market": {
-    "price": 319.48,
-    "price_time": "2026-11-09T21:00:01+00:00",
+    "price": 331.98,
+    "price_time": "2026-11-10T21:00:01+00:00",
     "beta": 1.508,
-    "market_cap": 1525079343104,
+    "market_cap": 1584749740032,
     "shares_outstanding": 4773629865,
     "shares_source": "EDGAR (2026-08-28)",
-    "shares_implied_by_mcap": 4773630096.106173,
+    "shares_implied_by_mcap": 4773630158.539671,
     "diluted_shares_wavg": {
       "value": 4884000000,
       "end": "2026-08-02"
     },
     "high_52w": 495.0,
     "low_52w": 289.77,
-    "vol_1y": 0.4842691194112914,
+    "vol_1y": 0.48550172312667966,
     "days": 251,
     "min_1y": 291.5299987792969,
     "max_1y": 479.9350891113281
   },
   "rates": {
-    "risk_free": 0.048600000000000004,
-    "risk_free_date": "2026-11-06",
+    "risk_free": 0.048799999999999996,
+    "risk_free_date": "2026-11-09",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },

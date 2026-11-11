@@ -1,8 +1,8 @@
 {
   "ticker": "AMZN",
-  "as_of": "2026-11-10T04:09:35+00:00",
-  "price": 266.93,
-  "price_time": "2026-11-09T21:00:01+00:00",
+  "as_of": "2026-11-11T01:58:03+00:00",
+  "price": 270.87,
+  "price_time": "2026-11-10T21:00:01+00:00",
   "profile": {
     "name": "Amazon.com, Inc.",
     "exchange": "Nasdaq",
@@ -18,7 +18,7 @@
   "scenarios": {
     "todo_mal": {
       "label": "Todo sale mal",
-      "value_per_share": 185.98474750871708,
+      "value_per_share": 185.53760530453187,
       "weight": 0.0,
       "description": "ventas +5% anual los primeros 5 años, margen 28% en 10 años",
       "assumptions": {
@@ -26,15 +26,15 @@
         "margin_target": 0.28173802586999996,
         "sales_to_capital": 2.177720525966264,
         "years_to_target": 10,
-        "g_terminal": 0.033600000000000005,
+        "g_terminal": 0.0338,
         "p_failure": 0.0
       },
-      "wacc": 0.07699970092114382,
-      "terminal_share": 0.5451695315155538
+      "wacc": 0.07721551992296372,
+      "terminal_share": 0.5446891271782818
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 330.5380872698666,
+      "value_per_share": 329.6849309304215,
       "weight": 0.25,
       "description": "ventas +9% anual los primeros 5 años, margen 34% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.342110459985,
         "sales_to_capital": 2.6132646311595167,
         "years_to_target": 8,
-        "g_terminal": 0.0386,
+        "g_terminal": 0.038799999999999994,
         "p_failure": 0.0
       },
-      "wacc": 0.07199970092114383,
-      "terminal_share": 0.5856385646120955
+      "wacc": 0.07221551992296373,
+      "terminal_share": 0.5851085284427475
     },
     "base": {
       "label": "Base",
-      "value_per_share": 570.0868104623034,
+      "value_per_share": 568.4466701675717,
       "weight": 0.5,
       "description": "ventas +14% anual los primeros 5 años, margen 40% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.4024828941,
         "sales_to_capital": 2.9036273679550186,
         "years_to_target": 7,
-        "g_terminal": 0.04360000000000001,
+        "g_terminal": 0.0438,
         "p_failure": 0.0
       },
-      "wacc": 0.06699970092114382,
-      "terminal_share": 0.6289882300959903
+      "wacc": 0.06721551992296372,
+      "terminal_share": 0.628397169561195
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 870.4298580617613,
+      "value_per_share": 867.6753665847738,
       "weight": 0.25,
       "description": "ventas +16% anual los primeros 5 años, margen 46% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.462855328215,
         "sales_to_capital": 3.1939901047505206,
         "years_to_target": 6,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.06449970092114382,
-      "terminal_share": 0.6565159364711978
+      "wacc": 0.06471551992296372,
+      "terminal_share": 0.6558611957017827
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 1365.510104635235,
+      "value_per_share": 1360.9656540469396,
       "weight": 0.0,
       "description": "ventas +20% anual los primeros 5 años, margen 52% en 5 años",
       "assumptions": {
@@ -90,71 +90,71 @@
         "margin_target": 0.52322776233,
         "sales_to_capital": 3.629534209943773,
         "years_to_target": 5,
-        "g_terminal": 0.048600000000000004,
+        "g_terminal": 0.048799999999999996,
         "p_failure": 0.0
       },
-      "wacc": 0.061999700921143826,
-      "terminal_share": 0.67806610381651
+      "wacc": 0.06221551992296372,
+      "terminal_share": 0.6773930606255428
     }
   },
   "weights_modified": false,
-  "intrinsic": 585.2853915640587,
+  "intrinsic": 583.5634094625847,
   "range": [
-    516.2059773971464,
-    685.1313652130382
+    514.7799595894718,
+    682.9599990625486
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 633.4636018142376
+      "intrinsic": 631.6251214079124
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 656.8519428803108
+      "intrinsic": 654.8659342151809
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.005,
-      "intrinsic": 685.1313652130382
+      "intrinsic": 682.9599990625486
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 569.3267303235635
+      "intrinsic": 567.7152201458521
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 585.2853915640587
+      "intrinsic": 583.5634094625847
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 603.8032656035666
+      "intrinsic": 601.9465266248491
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 516.2059773971464
+      "intrinsic": 514.7799595894718
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 527.1540866846606
+      "intrinsic": 525.6435644254426
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 539.3588262506202
+      "intrinsic": 537.7476757330863
     }
   ],
-  "potential": 1.192654971580784,
-  "margin_of_safety": 0.5439318940001514,
+  "potential": 1.1544039925520901,
+  "margin_of_safety": 0.5358345029729509,
   "reverse_dcf": {
-    "margin": 0.1955388466523041,
-    "growth_g1": 0.00313428898981632,
+    "margin": 0.19878320812675132,
+    "growth_g1": 0.006078448544393766,
     "current_margin": 0.13087384241117053,
     "base_margin": 0.4024828941,
     "base_g1": 0.13509039815167134,
@@ -165,48 +165,48 @@
       {
         "zone": "Compra excepcional",
         "from": null,
-        "to": 185.98474750871708,
+        "to": 185.53760530453187,
         "reachable_1y": false
       },
       {
         "zone": "Convicción",
-        "from": 185.98474750871708,
-        "to": 330.5380872698666,
+        "from": 185.53760530453187,
+        "to": 329.6849309304215,
         "reachable_1y": true
       },
       {
         "zone": "Comprar",
-        "from": 330.5380872698666,
-        "to": 450.312448866085,
+        "from": 329.6849309304215,
+        "to": 449.0658005489966,
         "reachable_1y": true
       },
       {
         "zone": "Sumar de a poco",
-        "from": 450.312448866085,
-        "to": 541.5824699391883,
+        "from": 449.0658005489966,
+        "to": 540.0243366591931,
         "reachable_1y": false
       },
       {
         "zone": "Mantener",
-        "from": 541.5824699391883,
-        "to": 720.2583342620323,
+        "from": 540.0243366591931,
+        "to": 718.0610183761728,
         "reachable_1y": false
       },
       {
         "zone": "Reducir",
-        "from": 720.2583342620323,
-        "to": 870.4298580617613,
+        "from": 718.0610183761728,
+        "to": 867.6753665847738,
         "reachable_1y": false
       },
       {
         "zone": "Vender",
-        "from": 870.4298580617613,
-        "to": 1365.510104635235,
+        "from": 867.6753665847738,
+        "to": 1360.9656540469396,
         "reachable_1y": false
       },
       {
         "zone": "Venta excepcional",
-        "from": 1365.510104635235,
+        "from": 1360.9656540469396,
         "to": null,
         "reachable_1y": false
       }
@@ -215,16 +215,16 @@
     "zone_index": 1,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 356.98113425145596,
-      "moves_down_below": 171.10596770801973
+      "moves_up_above": 356.05972540485527,
+      "moves_down_below": 170.6945968801693
     },
     "reach_band_1y": [
-      190.8148369073428,
-      373.40715247734573
+      193.57317584782305,
+      379.032665960288
     ]
   },
   "recommendation": "Convicción",
-  "volatility_1y": 0.33568293418264933,
+  "volatility_1y": 0.33598339024962937,
   "notes": [
     "g1 = mitad tendencia de 3 años (11.7%) y mitad último año (15.3%)",
     "margen objetivo = el de la industria",
