@@ -1,6 +1,6 @@
 {
   "ticker": "PYPL",
-  "as_of": "2026-11-11T01:58:00+00:00",
+  "as_of": "2026-11-12T03:04:56+00:00",
   "currency": "USD",
   "cik": 1633917,
   "financials": {
@@ -245,23 +245,23 @@
     "summary_en": "PayPal Holdings, Inc. operates a technology platform that enables digital payments for merchants and consumers worldwide. The company operates a two-sided network at scale that connects merchants and consumers that enables its customers to connect, transact, and send and receive payments through online and in person, as well as transfer and withdraw funds using various funding sources, such as bank accounts, PayPal or Venmo account balance, consumer credit and debit products, credit and debit cards, and cryptocurrencies, as well as other stored value products, including gift cards and eligible rewards. It provides payment solutions under the PayPal, PayPal Credit, Braintree, Venmo, Xoom, Hyperwallet, Honey, and Paidy names. The company was founded in 1998 and is headquartered in San Jose, California."
   },
   "market": {
-    "price": 58.78,
-    "price_time": "2026-11-10T21:00:00+00:00",
+    "price": 59.48,
+    "price_time": "2026-11-11T21:00:00+00:00",
     "beta": 1.316,
-    "market_cap": 48826093568,
+    "market_cap": 49407553536,
     "shares_outstanding": 830658298,
     "shares_source": "EDGAR (2026-10-21)",
-    "shares_implied_by_mcap": 830658277.7815584,
+    "shares_implied_by_mcap": 830658263.887021,
     "diluted_shares_wavg": {
       "value": 887000000,
       "end": "2026-09-30"
     },
     "high_52w": 67.99,
     "low_52w": 38.46,
-    "vol_1y": 0.43361406324893054,
-    "days": 250,
-    "min_1y": 38.738338470458984,
-    "max_1y": 66.65666198730469
+    "vol_1y": 0.4334233878103063,
+    "days": 251,
+    "min_1y": 38.73834228515625,
+    "max_1y": 66.45885467529297
   },
   "rates": {
     "risk_free": 0.048799999999999996,

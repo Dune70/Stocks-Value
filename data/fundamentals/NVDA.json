@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "as_of": "2026-11-11T01:57:59+00:00",
+  "as_of": "2026-11-12T03:04:55+00:00",
   "currency": "USD",
   "cik": 1045810,
   "financials": {
@@ -245,20 +245,20 @@
     "summary_en": "NVIDIA Corporation operates as a data center scale AI infrastructure company in the United States, Taiwan, China, Hong Kong, Europe, and internationally. It operates through Compute & Networking, and Graphics segments. The Compute & Networking segment provides data center accelerated computing and networking platforms and artificial intelligence solutions and software, and automotive platforms and autonomous and electric vehicle solutions, including software. The Graphics segment offers GeForce GPUs for gaming and PCs; Quadro/NVIDIA RTX GPUs for enterprise workstation graphics. The company's products are used in gaming, professional visualization, data center, and automotive markets. It sells its products to original equipment manufacturers, original device manufacturers, system integrators and distributors, independent software vendors, cloud service providers, add-in board manufacturers, distributors, automotive manufacturers and tier-1 automotive suppliers, and other ecosystem participants. It has a collaboration with Cisco to develop Ultra-Dense Small Form Factor Pluggable (USFP), a high-density optical module pluggable transceiver. It has a collaboration with ChipAgents to develop Build-A-Chip-Bench, a benchmark for AI agents carrying chip design tasks and The Company has a strategic alliance with MediaTek to build the next generations of AI computing platforms. NVIDIA Corporation was incorporated in 1993 and is headquartered in Santa Clara, California."
   },
   "market": {
-    "price": 168.89,
-    "price_time": "2026-11-10T21:00:01+00:00",
+    "price": 173.73,
+    "price_time": "2026-11-11T21:00:00+00:00",
     "beta": 2.247,
-    "market_cap": 4078186790912,
+    "market_cap": 4195058188288,
     "shares_outstanding": 24100000000,
     "shares_source": "EDGAR (2026-08-21)",
-    "shares_implied_by_mcap": 24146999768.559418,
+    "shares_implied_by_mcap": 24146999299.41864,
     "diluted_shares_wavg": {
       "value": 24338000000,
       "end": "2026-07-26"
     },
     "high_52w": 243.37,
     "low_52w": 164.27,
-    "vol_1y": 0.38560993475087374,
+    "vol_1y": 0.38667301598718873,
     "days": 251,
     "min_1y": 164.79331970214844,
     "max_1y": 239.24000549316406

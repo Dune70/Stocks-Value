@@ -1,6 +1,6 @@
 {
   "ticker": "MSFT",
-  "as_of": "2026-11-11T01:57:58+00:00",
+  "as_of": "2026-11-12T03:04:55+00:00",
   "currency": "USD",
   "cik": 789019,
   "financials": {
@@ -245,20 +245,20 @@
     "summary_en": "Microsoft Corporation, a technology company, develops and supports a portfolio of technology solutions for individuals and businesses worldwide. Its products include operating systems, server applications, business solution applications, software development tools, desktop and server management tools, and video games; and devices, such as PCs, tablets, gaming and entertainment consoles, other intelligent devices, and related accessories. The company's Productivity and Business Processes segment offers Microsoft 365 Commercial, Enterprise Mobility + Security, Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, Microsoft 365 Copilot, and Windows Commercial on-premises and Office licensed on-premises. This segment also provides Microsoft 365 Consumer products and cloud services; LinkedIn, including talent solutions, marketing solutions, subscriptions, and sales solutions; Dynamics 365, a set of cloud-based applications; and on-premises ERP and CRM applications. Its Intelligent Cloud segment offers server products and cloud services; cloud and AI consumption-based services, GitHub cloud services, health and life sciences cloud services, as well as virtual desktop offerings, and other cloud services; SQL Server, Windows Server, Visual Studio, System Center, and related client access licenses; and enterprise support services, industry solutions, Microsoft partner network, and learning experience. The company's More Personal Computing segment provides Windows OEM licensing and devices comprising Surface and PC accessories; XBOX hardware, and XBOX first- and third-party content and services; XBOX Game Pass and other subscriptions; XBOX Cloud Gaming, advertising, and other cloud services; and search advertising consisting of Bing, Copilot, Microsoft News, Microsoft Edge, and third-party affiliates. It sells its products through partners and retail networks. The company was founded in 1975 and is headquartered in Redmond, Washington."
   },
   "market": {
-    "price": 533.16,
-    "price_time": "2026-11-10T21:00:01+00:00",
+    "price": 521.125,
+    "price_time": "2026-11-11T21:00:00+00:00",
     "beta": 1.045,
-    "market_cap": 3959349575680,
+    "market_cap": 3869975511040,
     "shares_outstanding": 7426194552,
     "shares_source": "EDGAR (2026-10-22)",
-    "shares_implied_by_mcap": 7426193967.439418,
+    "shares_implied_by_mcap": 7426194312.381866,
     "diluted_shares_wavg": {
       "value": 7446000000,
       "end": "2026-09-30"
     },
     "high_52w": 559.15,
     "low_52w": 349.2,
-    "vol_1y": 0.3361969242548119,
+    "vol_1y": 0.33695875478986376,
     "days": 251,
     "min_1y": 352.1670227050781,
     "max_1y": 555.7999877929688

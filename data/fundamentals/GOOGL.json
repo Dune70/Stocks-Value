@@ -1,6 +1,6 @@
 {
   "ticker": "GOOGL",
-  "as_of": "2026-11-11T01:57:55+00:00",
+  "as_of": "2026-11-12T03:04:52+00:00",
   "currency": "USD",
   "cik": 1652044,
   "financials": {
@@ -242,20 +242,20 @@
     "summary_en": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California."
   },
   "market": {
-    "price": 287.38,
-    "price_time": "2026-11-10T21:00:00+00:00",
+    "price": 293.45,
+    "price_time": "2026-11-11T21:00:00+00:00",
     "beta": 1.226,
-    "market_cap": 3533049692160,
+    "market_cap": 3607674224640,
     "shares_outstanding": 12294000000,
     "shares_source": "yfinance (implied, todas las clases)",
-    "shares_implied_by_mcap": 12293999903.124783,
+    "shares_implied_by_mcap": 12293999743.193048,
     "diluted_shares_wavg": {
       "value": 12324000000,
       "end": "2026-09-30"
     },
     "high_52w": 408.61,
     "low_52w": 270.7,
-    "vol_1y": 0.3377392655755354,
+    "vol_1y": 0.3380109145309495,
     "days": 251,
     "min_1y": 273.1611633300781,
     "max_1y": 402.1211853027344

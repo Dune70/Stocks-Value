@@ -1,6 +1,6 @@
 {
   "ticker": "CAT",
-  "as_of": "2026-11-11T01:57:53+00:00",
+  "as_of": "2026-11-12T03:04:51+00:00",
   "currency": "USD",
   "cik": 18230,
   "financials": {
@@ -245,20 +245,20 @@
     "summary_en": "Caterpillar Inc. provides construction and mining equipment, off-highway diesel and natural gas engines, industrial gas turbines, and diesel-electric locomotives in the United States and internationally. The Construction Industries segment offers asphalt pavers, cold planers, compactors, forestry machines, material handlers, motor graders, pipelayers, road reclaimers, telehandlers, track-type tractors, and track and wheel excavators; backhoe, compact track, skid steer, track-type, and wheel loaders; and related parts and work tools. Its Resource Industries segment provides electric rope and hydraulic shovels, draglines, rotary drills, hard rock vehicles, mining trucks, wheel loaders, off-highway and articulated trucks, wide-body trucks, wheel tractor scrapers and dozers, and landfill and soil compactors; machinery components, and wear and maintenance components; and technology products and services for fleet management, equipment management analytics, autonomous machine capabilities, safety services, and mining performance solutions. The Energy & Transportation segment offers reciprocating engine powered generator sets; reciprocating engines, drivetrain, and integrated systems and solutions; centrifugal gas compressors and related services; and diesel-electric locomotive components, and other rail-related products. Its Financial Products segment provides operating and finance leases, revolving charge accounts, installment sale contracts, repair/rebuild financing, working capital loans, and wholesale financing; and insurance and risk management products and services. The All Other segment offers parts distribution; logistics and distribution services; electronics and control systems; dealer portfolio management; brand management and marketing strategy; and digital investment services. It also provides mining software solutions. The company was formerly known as Caterpillar Tractor Co. Caterpillar Inc. was incorporated in 1925 and is headquartered in Irving, Texas."
   },
   "market": {
-    "price": 584.57,
-    "price_time": "2026-11-10T21:00:02+00:00",
+    "price": 601.61,
+    "price_time": "2026-11-11T21:00:02+00:00",
     "beta": 1.64,
-    "market_cap": 267495833600,
+    "market_cap": 275293241344,
     "shares_outstanding": 457594174,
     "shares_source": "EDGAR (2026-09-30)",
-    "shares_implied_by_mcap": 457594186.4960569,
+    "shares_implied_by_mcap": 457594191.16038626,
     "diluted_shares_wavg": {
       "value": 463200000,
       "end": "2026-09-30"
     },
     "high_52w": 1073.46,
     "low_52w": 537.08,
-    "vol_1y": 0.415431886313335,
+    "vol_1y": 0.41633041478274924,
     "days": 251,
     "min_1y": 541.5250244140625,
     "max_1y": 1060.40625
