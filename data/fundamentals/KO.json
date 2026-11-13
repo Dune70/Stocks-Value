@@ -1,6 +1,6 @@
 {
   "ticker": "KO",
-  "as_of": "2026-11-12T03:04:53+00:00",
+  "as_of": "2026-11-13T02:39:40+00:00",
   "currency": "USD",
   "cik": 21344,
   "financials": {
@@ -245,27 +245,27 @@
     "summary_en": "The Coca-Cola Company, a beverage company, manufactures and sells various nonalcoholic beverages in the United States and internationally. The company provides Trademark Coca-Cola, sparkling soft drinks and flavors; water, sports, coffee, and tea; juice, value-added dairy, and plant-based beverages; and emerging beverages. It also offers beverage concentrates and syrups, as well as fountain syrups to fountain retailers comprising restaurants and convenience stores. The company sells its products under the Coca-Cola, Diet Coke/Coca-Cola Light, Coca-Cola Zero Sugar, caffeine free Diet Coke, Cherry Coke, Fanta, Sprite, Simply, Fanta Orange, Fanta Zero Orange, Fanta Zero Sugar, Fanta Apple, Sprite Zero Sugar, Simply Orange, Simply Apple, Simply Grapefruit, Fresca, Schweppes, Thums Up, Aquarius, Ayataka, BODYARMOR, Ciel, Costa, Crystal, Dasani, Fuze Tea, Georgia, glacéau smartwater, glacéau vitaminwater, Gold Peak, I LOHAS, Powerade, Topo Chico, Core Power, Del Valle, fairlife, innocent, Maaza, Minute Maid, Minute Maid Pulpy, Santa Clara, and dogadan brands. It operates through a network of independent bottling partners, distributors, wholesalers, and retailers, as well as through bottling and distribution operators. The Coca-Cola Company was founded in 1886 and is headquartered in Atlanta, Georgia."
   },
   "market": {
-    "price": 97.57,
-    "price_time": "2026-11-11T21:00:02+00:00",
+    "price": 97.44,
+    "price_time": "2026-11-12T21:00:02+00:00",
     "beta": 0.269,
-    "market_cap": 419736616960,
+    "market_cap": 419177365504,
     "shares_outstanding": 4301902335,
     "shares_source": "EDGAR (2026-10-26)",
-    "shares_implied_by_mcap": 4301902397.868197,
+    "shares_implied_by_mcap": 4301902355.336617,
     "diluted_shares_wavg": {
       "value": 4313000000,
       "end": "2026-10-02"
     },
-    "high_52w": 97.82,
+    "high_52w": 98.38,
     "low_52w": 67.27,
-    "vol_1y": 0.18787963089086704,
+    "vol_1y": 0.1877464365227763,
     "days": 251,
     "min_1y": 66.25312042236328,
     "max_1y": 97.56999969482422
   },
   "rates": {
-    "risk_free": 0.048799999999999996,
-    "risk_free_date": "2026-11-09",
+    "risk_free": 0.049800000000000004,
+    "risk_free_date": "2026-11-10",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },

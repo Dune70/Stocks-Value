@@ -1,6 +1,6 @@
 {
   "ticker": "SNDK",
-  "as_of": "2026-11-12T03:04:57+00:00",
+  "as_of": "2026-11-13T02:39:46+00:00",
   "currency": "USD",
   "cik": 2023554,
   "financials": {
@@ -208,27 +208,27 @@
     "summary_en": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the Americas, Europe, the Middle East, Africa, Asia, and internationally. The company provides solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California."
   },
   "market": {
-    "price": 977.69,
-    "price_time": "2026-11-11T21:00:01+00:00",
+    "price": 937.46,
+    "price_time": "2026-11-12T21:00:00+00:00",
     "beta": null,
-    "market_cap": 139114889216,
+    "market_cap": 133390589952,
     "shares_outstanding": 142289365,
     "shares_source": "EDGAR (2026-10-26)",
-    "shares_implied_by_mcap": 142289364.94798964,
+    "shares_implied_by_mcap": 142289366.96179035,
     "diluted_shares_wavg": {
       "value": 154000000,
       "end": "2026-10-02"
     },
     "high_52w": 2354.39,
     "low_52w": 183.0,
-    "vol_1y": 1.1408169950561546,
+    "vol_1y": 1.1310277442573171,
     "days": 251,
     "min_1y": 194.3800048828125,
     "max_1y": 2335.0
   },
   "rates": {
-    "risk_free": 0.048799999999999996,
-    "risk_free_date": "2026-11-09",
+    "risk_free": 0.049800000000000004,
+    "risk_free_date": "2026-11-10",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
