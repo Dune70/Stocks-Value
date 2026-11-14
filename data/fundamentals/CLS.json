@@ -1,6 +1,6 @@
 {
   "ticker": "CLS",
-  "as_of": "2026-11-13T02:39:39+00:00",
+  "as_of": "2026-11-14T02:29:23+00:00",
   "currency": "USD",
   "cik": 1030894,
   "financials": {
@@ -208,27 +208,27 @@
     "summary_en": "Celestica Inc., together with its subsidiaries, provides supply chain solutions in Asia, North America, and internationally. It operates through two segments, Advanced Technology Solutions, and Connectivity and Cloud Solutions. The company offers a range of product manufacturing and related supply chain services, including design and development, new product introduction, engineering services, component sourcing, electronics manufacturing and assembly, testing, mechanical assembly, systems integration, precision machining, logistics, asset management, product licensing, and after-market repair and return services. It also provides hardware platform solutions, which includes development of infrastructure platforms, and hardware and software design solutions and services, including open-source software that can be used as-is or customized for specific applications; and management of program, including design and supply chain, manufacturing, and after-market support, including IT asset disposition and asset management services. The company offers its products and services to original equipment manufacturers, and cloud-based and other service providers, including hyperscalers, and other companies in aerospace and defense, industrial, HealthTech, capital equipment, communications, and enterprise markets. The company has a strategic collaboration with Advanced Micro Devices, Inc. for the development of Helios, a rack-scale AI platform. The company was incorporated in 1994 and is headquartered in Toronto, Canada."
   },
   "market": {
-    "price": 254.03,
-    "price_time": "2026-11-12T21:02:23+00:00",
+    "price": 240.34,
+    "price_time": "2026-11-13T21:00:02+00:00",
     "beta": 1.345,
-    "market_cap": 32036182016,
+    "market_cap": 30309711872,
     "shares_outstanding": 126111808,
     "shares_source": "EDGAR (2026-10-21)",
-    "shares_implied_by_mcap": 126111805.75522576,
+    "shares_implied_by_mcap": 126111807.73903637,
     "diluted_shares_wavg": {
       "value": 117900000,
       "end": "2026-09-30"
     },
     "high_52w": 474.03,
     "low_52w": 197.5,
-    "vol_1y": 0.810833955032107,
+    "vol_1y": 0.8103807044752623,
     "days": 251,
     "min_1y": 205.63999938964844,
     "max_1y": 472.3999938964844
   },
   "rates": {
-    "risk_free": 0.049800000000000004,
-    "risk_free_date": "2026-11-10",
+    "risk_free": 0.051,
+    "risk_free_date": "2026-11-12",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
