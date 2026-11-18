@@ -2,121 +2,121 @@
   {
     "ticker": "AMZN",
     "name": "Amazon.com, Inc.",
-    "price": 257.75,
-    "intrinsic": 562.0036531666303,
+    "price": 257.89,
+    "intrinsic": 564.384296636777,
     "recommendation": "Convicción",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "AVGO",
     "name": "Broadcom Inc.",
-    "price": 333.4,
-    "intrinsic": 569.7055002684306,
+    "price": 341.6,
+    "intrinsic": 571.2473366879175,
     "recommendation": "Comprar",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "CAT",
     "name": "Caterpillar Inc.",
-    "price": 570.49,
-    "intrinsic": 472.9273724241395,
+    "price": 570.79,
+    "intrinsic": 474.6459073771083,
     "recommendation": "Mantener",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "CLS",
     "name": "Celestica Inc.",
-    "price": 238.48,
-    "intrinsic": 827.2077167472206,
+    "price": 236.47,
+    "intrinsic": 829.7992554254389,
     "recommendation": "Convicción",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "GOOGL",
     "name": "Alphabet Inc.",
-    "price": 283.72,
-    "intrinsic": 290.8577050298488,
+    "price": 280.2,
+    "intrinsic": 291.72057216763704,
     "recommendation": "Mantener",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "KO",
     "name": "The Coca-Cola Company",
-    "price": 99.48,
-    "intrinsic": 47.29673260726633,
+    "price": 98.79,
+    "intrinsic": 47.46184609839758,
     "recommendation": "Venta excepcional",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "MELI",
     "name": "MercadoLibre, Inc.",
-    "price": 1462.12,
-    "intrinsic": 20391.500378221117,
+    "price": 1436.83,
+    "intrinsic": 20474.043929326264,
     "recommendation": "Compra excepcional",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "META",
     "name": "Meta Platforms, Inc.",
-    "price": 626.41,
-    "intrinsic": 863.3945659598448,
+    "price": 618.87,
+    "intrinsic": 866.3284263537395,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "MRVL",
     "name": "Marvell Technology, Inc.",
-    "price": 145.36,
-    "intrinsic": 86.18211186686395,
+    "price": 148.74,
+    "intrinsic": 86.47099262887244,
     "recommendation": "Vender",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "MSFT",
     "name": "Microsoft Corporation",
-    "price": 517.99,
-    "intrinsic": 534.5770963374872,
+    "price": 506.24,
+    "intrinsic": 536.0973241465742,
     "recommendation": "Mantener",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "NVDA",
     "name": "NVIDIA Corporation",
-    "price": 156.14,
-    "intrinsic": 467.1613950794316,
+    "price": 155.46,
+    "intrinsic": 468.53216639754635,
     "recommendation": "Convicción",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "ORCL",
     "name": "Oracle Corporation",
-    "price": 119.09,
-    "intrinsic": 164.09437325958305,
+    "price": 115.0,
+    "intrinsic": 165.33616021098905,
     "recommendation": "Sumar de a poco",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "PYPL",
     "name": "PayPal Holdings, Inc.",
-    "price": 58.83,
-    "intrinsic": 327.37146119155597,
+    "price": 58.11,
+    "intrinsic": 329.145400688759,
     "recommendation": "Compra excepcional",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "SNDK",
     "name": "Sandisk Corporation",
-    "price": 809.11,
-    "intrinsic": 8864.006229241259,
+    "price": 797.24,
+    "intrinsic": 8890.216035676882,
     "recommendation": "Compra excepcional",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   },
   {
     "ticker": "TEM",
     "name": "Tempus AI, Inc.",
-    "price": 64.76,
-    "intrinsic": 50.360420703378225,
+    "price": 63.43,
+    "intrinsic": 50.57128628041246,
     "recommendation": "Mantener",
-    "as_of": "2026-11-17T04:33:09+00:00"
+    "as_of": "2026-11-18T03:43:45+00:00"
   }
 ]

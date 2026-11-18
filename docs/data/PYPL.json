@@ -1,8 +1,8 @@
 {
   "ticker": "PYPL",
-  "as_of": "2026-11-17T04:33:09+00:00",
-  "price": 58.83,
-  "price_time": "2026-11-16T21:00:01+00:00",
+  "as_of": "2026-11-18T03:43:45+00:00",
+  "price": 58.11,
+  "price_time": "2026-11-17T21:00:01+00:00",
   "profile": {
     "name": "PayPal Holdings, Inc.",
     "exchange": "Nasdaq",
@@ -18,7 +18,7 @@
   "scenarios": {
     "todo_mal": {
       "label": "Todo sale mal",
-      "value_per_share": 68.20671233622484,
+      "value_per_share": 68.4911220123261,
       "weight": 0.0,
       "description": "ventas +2% anual los primeros 5 años, margen 13% en 10 años",
       "assumptions": {
@@ -26,15 +26,15 @@
         "margin_target": 0.12938707208,
         "sales_to_capital": 2.63683403602913,
         "years_to_target": 10,
-        "g_terminal": 0.036500000000000005,
+        "g_terminal": 0.0362,
         "p_failure": 0.0
       },
-      "wacc": 0.07253401629339075,
-      "terminal_share": 0.5059647815094444
+      "wacc": 0.07221539963748543,
+      "terminal_share": 0.5071373646840986
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 128.1538089151587,
+      "value_per_share": 128.7425919350312,
       "weight": 0.25,
       "description": "ventas +4% anual los primeros 5 años, margen 16% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.15711287324,
         "sales_to_capital": 3.1642008432349558,
         "years_to_target": 8,
-        "g_terminal": 0.0415,
+        "g_terminal": 0.0412,
         "p_failure": 0.0
       },
-      "wacc": 0.06753401629339076,
-      "terminal_share": 0.6801149913454091
+      "wacc": 0.06721539963748542,
+      "terminal_share": 0.681031197393636
     },
     "base": {
       "label": "Base",
-      "value_per_share": 272.4692946798972,
+      "value_per_share": 273.83996009042386,
       "weight": 0.5,
       "description": "ventas +5% anual los primeros 5 años, margen 18% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.1848386744,
         "sales_to_capital": 3.5157787147055064,
         "years_to_target": 7,
-        "g_terminal": 0.04650000000000001,
+        "g_terminal": 0.046200000000000005,
         "p_failure": 0.0
       },
-      "wacc": 0.06253401629339075,
-      "terminal_share": 0.812877131535985
+      "wacc": 0.06221539963748542,
+      "terminal_share": 0.8134990126877202
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 636.3934464912709,
+      "value_per_share": 640.1590906391572,
       "weight": 0.25,
       "description": "ventas +7% anual los primeros 5 años, margen 21% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.21256447556,
         "sales_to_capital": 3.8673565861760575,
         "years_to_target": 6,
-        "g_terminal": 0.051500000000000004,
+        "g_terminal": 0.0512,
         "p_failure": 0.0
       },
-      "wacc": 0.06003401629339075,
-      "terminal_share": 0.9028197164377851
+      "wacc": 0.05971539963748542,
+      "terminal_share": 0.9032298978916865
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 1202.549821041024,
+      "value_per_share": 1210.4676819836563,
       "weight": 0.0,
       "description": "ventas +8% anual los primeros 5 años, margen 24% en 5 años",
       "assumptions": {
@@ -90,66 +90,66 @@
         "margin_target": 0.24029027672000003,
         "sales_to_capital": 4.394723393381883,
         "years_to_target": 5,
-        "g_terminal": 0.051500000000000004,
+        "g_terminal": 0.0512,
         "p_failure": 0.0
       },
-      "wacc": 0.057534016293390756,
-      "terminal_share": 0.9362278940394015
+      "wacc": 0.057215399637485426,
+      "terminal_share": 0.936539192589045
     }
   },
   "weights_modified": false,
-  "intrinsic": 327.37146119155597,
+  "intrinsic": 329.145400688759,
   "range": [
-    196.01358062304968,
-    615.982274175238
+    196.8666493917796,
+    620.7859735684349
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 350.9013653360375
+      "intrinsic": 352.7922418195884
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 615.982274175238
+      "intrinsic": 620.7859735684349
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 249.49177251542034
+      "intrinsic": 250.67006642060832
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 327.37146119155597
+      "intrinsic": 329.145400688759
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 572.9755439668152
+      "intrinsic": 577.4739350151322
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 196.01358062304968
+      "intrinsic": 196.8666493917796
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 233.21546249871886
+      "intrinsic": 234.3216597907133
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 304.9254054263633
+      "intrinsic": 306.5879895974987
     }
   ],
-  "potential": 4.564702722956926,
-  "margin_of_safety": 0.8202958810585612,
+  "potential": 4.66417829442022,
+  "margin_of_safety": 0.823451885159565,
   "reverse_dcf": {
-    "margin": 0.036122724913085824,
-    "growth_g1": -0.18859477420288878,
+    "margin": 0.03543040502287213,
+    "growth_g1": -0.19119480683432283,
     "current_margin": 0.16993730864557516,
     "base_margin": 0.1848386744,
     "base_g1": 0.05488135744057421,
@@ -160,48 +160,48 @@
       {
         "zone": "Compra excepcional",
         "from": null,
-        "to": 68.20671233622484,
+        "to": 68.4911220123261,
         "reachable_1y": true
       },
       {
         "zone": "Convicción",
-        "from": 68.20671233622484,
-        "to": 128.1538089151587,
+        "from": 68.4911220123261,
+        "to": 128.7425919350312,
         "reachable_1y": true
       },
       {
         "zone": "Comprar",
-        "from": 128.1538089151587,
-        "to": 200.31155179752795,
+        "from": 128.7425919350312,
+        "to": 201.2912760127275,
         "reachable_1y": false
       },
       {
         "zone": "Sumar de a poco",
-        "from": 200.31155179752795,
-        "to": 258.8458299459023,
+        "from": 201.2912760127275,
+        "to": 260.14796208590263,
         "reachable_1y": false
       },
       {
         "zone": "Mantener",
-        "from": 258.8458299459023,
-        "to": 454.43137058558403,
+        "from": 260.14796208590263,
+        "to": 456.99952536479054,
         "reachable_1y": false
       },
       {
         "zone": "Reducir",
-        "from": 454.43137058558403,
-        "to": 636.3934464912709,
+        "from": 456.99952536479054,
+        "to": 640.1590906391572,
         "reachable_1y": false
       },
       {
         "zone": "Vender",
-        "from": 636.3934464912709,
-        "to": 1202.549821041024,
+        "from": 640.1590906391572,
+        "to": 1210.4676819836563,
         "reachable_1y": false
       },
       {
         "zone": "Venta excepcional",
-        "from": 1202.549821041024,
+        "from": 1210.4676819836563,
         "to": null,
         "reachable_1y": false
       }
@@ -210,22 +210,22 @@
     "zone_index": 0,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 73.66324932312283,
+      "moves_up_above": 73.9704117733122,
       "moves_down_below": null
     },
     "reach_band_1y": [
-      38.218247745971276,
-      90.55802147195075
+      37.76039745828553,
+      89.42628593171906
     ]
   },
   "recommendation": "Compra excepcional",
-  "volatility_1y": 0.4313388376361195,
+  "volatility_1y": 0.43107689895712564,
   "notes": [
     "g1 = mitad tendencia de 3 años (6.4%) y mitad último año (4.5%)",
     "margen objetivo = el de la industria",
     "ventas/capital = 3.52 (promedio de sobre capital 3.52, cada uno recortado a 0,3–5; capital sin goodwill)",
-    "WACC terminal 6.3% (empresa madura: se mantiene el actual)",
-    "ROIC actual 21.4% > WACC terminal 6.3%: el base conserva la mitad del exceso"
+    "WACC terminal 6.2% (empresa madura: se mantiene el actual)",
+    "ROIC actual 21.4% > WACC terminal 6.2%: el base conserva la mitad del exceso"
   ],
   "warnings": [
     "Optimista: el valor terminal es 90% del valor operativo",
