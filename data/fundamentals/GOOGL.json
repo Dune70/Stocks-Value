@@ -1,6 +1,6 @@
 {
   "ticker": "GOOGL",
-  "as_of": "2026-11-18T03:43:36+00:00",
+  "as_of": "2026-11-19T03:34:25+00:00",
   "currency": "USD",
   "cik": 1652044,
   "financials": {
@@ -242,27 +242,27 @@
     "summary_en": "Alphabet Inc. offers various products and platforms in the United States, Europe, the Middle East, Africa, the Asia-Pacific, Canada, and Latin America. It operates through Google Services, Google Cloud, and Other Bets segments. The Google Services segment provides products and services, including ads, Android, Chrome, devices, Gmail, Google Drive, Google Maps, Google Photos, Google Play, Search, and YouTube. It is also involved in the sale of apps and in-app purchases and digital content in Google Play and YouTube; and devices, as well as the provision of YouTube consumer subscription services, such as YouTube TV, YouTube Music and Premium, NFL Sunday Ticket, and Google One. The Google Cloud segment offers consumption-based fees and subscriptions for AI solutions, including AI infrastructure, Vertex AI platform, and Gemini enterprise. It also provides cybersecurity, and data and analytics services; Google Workspace that include cloud-based communication and collaboration tools for enterprises, such as Calendar, Gmail, Docs, Drive, and Meet; and other enterprise services. The Other Bets segment sells transportation and internet services. Alphabet Inc. was incorporated in 1998 and is headquartered in Mountain View, California."
   },
   "market": {
-    "price": 280.2,
-    "price_time": "2026-11-17T21:00:00+00:00",
+    "price": 282.44,
+    "price_time": "2026-11-18T21:00:01+00:00",
     "beta": 1.226,
-    "market_cap": 3444778729472,
+    "market_cap": 3472317218816,
     "shares_outstanding": 12294000000,
     "shares_source": "yfinance (implied, todas las clases)",
-    "shares_implied_by_mcap": 12293999748.294077,
+    "shares_implied_by_mcap": 12293999500.12746,
     "diluted_shares_wavg": {
       "value": 12324000000,
       "end": "2026-09-30"
     },
     "high_52w": 408.61,
     "low_52w": 272.11,
-    "vol_1y": 0.3387016018630319,
+    "vol_1y": 0.3374824628823585,
     "days": 251,
     "min_1y": 273.1611633300781,
     "max_1y": 402.1211853027344
   },
   "rates": {
-    "risk_free": 0.0512,
-    "risk_free_date": "2026-11-16",
+    "risk_free": 0.051,
+    "risk_free_date": "2026-11-17",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },

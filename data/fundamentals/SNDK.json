@@ -1,6 +1,6 @@
 {
   "ticker": "SNDK",
-  "as_of": "2026-11-18T03:43:44+00:00",
+  "as_of": "2026-11-19T03:34:31+00:00",
   "currency": "USD",
   "cik": 2023554,
   "financials": {
@@ -208,27 +208,23 @@
     "summary_en": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the Americas, Europe, the Middle East, Africa, Asia, and internationally. The company provides solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California."
   },
   "market": {
-    "price": 797.24,
-    "price_time": "2026-11-17T21:00:00+00:00",
+    "price": 776.22,
+    "price_time": "2026-11-18T21:00:00+00:00",
     "beta": null,
-    "market_cap": 113438769152,
+    "market_cap": 110447845376,
     "shares_outstanding": 142289365,
     "shares_source": "EDGAR (2026-10-26)",
-    "shares_implied_by_mcap": 142289359.7310722,
+    "shares_implied_by_mcap": 142289357.88307437,
     "diluted_shares_wavg": {
       "value": 154000000,
       "end": "2026-10-02"
     },
     "high_52w": 2354.39,
-    "low_52w": 183.0,
-    "vol_1y": 1.1322297333932851,
-    "days": 251,
-    "min_1y": 194.3800048828125,
-    "max_1y": 2335.0
+    "low_52w": 183.0
   },
   "rates": {
-    "risk_free": 0.0512,
-    "risk_free_date": "2026-11-16",
+    "risk_free": 0.051,
+    "risk_free_date": "2026-11-17",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
@@ -251,6 +247,7 @@
   "warnings": [
     "EDGAR: debt del balance tomado del último 10-K (2026-07-03)",
     "mercado: yfinance sin beta: se usará la beta de la industria (Damodaran)",
+    "volatilidad: historia de precios insuficiente",
     "Damodaran: 'Computer Hardware' se asoció a 'Computer Services'. Candidatas: Computer Services | Computers/Peripherals | Rubber& Tires. Fijá la correcta en data/industry_map.json (lista completa: python -m valuador industrias)",
     "sin consenso de analistas: g1 saldrá de la tendencia histórica"
   ]

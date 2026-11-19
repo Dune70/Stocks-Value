@@ -1,6 +1,6 @@
 {
   "ticker": "MELI",
-  "as_of": "2026-11-18T03:43:37+00:00",
+  "as_of": "2026-11-19T03:34:27+00:00",
   "currency": "USD",
   "cik": 1099590,
   "financials": {
@@ -245,27 +245,27 @@
     "summary_en": "MercadoLibre, Inc. operates online commerce platforms in Brazil, Mexico, Argentina, and internationally. The company operates Mercado Libre Marketplace, an online commerce platform that can be accessed through mobile app or website; and Mercado Pago, a financial technology solution platform, which offers comprehensive set of financial technology services to users and other users of its e-commerce platform. It also provides Mercado Fondo that allows users to invest funds deposited in their Mercado Pago accounts; Mercado Credito, which grants loans and obtains better funding alternatives; and Mercado Mercado Envios that facilitates the shipping of goods from the Company and sellers to buyers. In addition, the company provides Mercado Libre Classifieds, where users can list vehicles, properties, and services; Mercado Ads, an advertising platform, which enables retailers and brands to promote their products and services on the platform. MercadoLibre, Inc. was incorporated in 1999 and is headquartered in Montevideo, Uruguay."
   },
   "market": {
-    "price": 1436.83,
-    "price_time": "2026-11-17T21:00:01+00:00",
+    "price": 1423.11,
+    "price_time": "2026-11-18T21:00:01+00:00",
     "beta": 1.39,
-    "market_cap": 72842682368,
+    "market_cap": 72147124224,
     "shares_outstanding": 50696802,
     "shares_source": "EDGAR (2026-11-04)",
-    "shares_implied_by_mcap": 50696799.459922194,
+    "shares_implied_by_mcap": 50696800.826359175,
     "diluted_shares_wavg": {
       "value": 50697234,
       "end": "2026-09-30"
     },
     "high_52w": 2342.0,
-    "low_52w": 1427.21,
-    "vol_1y": 0.42675246354679386,
+    "low_52w": 1417.3986,
+    "vol_1y": 0.4267033876411676,
     "days": 251,
-    "min_1y": 1436.8299560546875,
+    "min_1y": 1423.1099853515625,
     "max_1y": 2295.0
   },
   "rates": {
-    "risk_free": 0.0512,
-    "risk_free_date": "2026-11-16",
+    "risk_free": 0.051,
+    "risk_free_date": "2026-11-17",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
