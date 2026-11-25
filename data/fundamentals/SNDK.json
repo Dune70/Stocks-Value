@@ -1,6 +1,6 @@
 {
   "ticker": "SNDK",
-  "as_of": "2026-11-24T06:06:12+00:00",
+  "as_of": "2026-11-25T04:55:30+00:00",
   "currency": "USD",
   "cik": 2023554,
   "financials": {
@@ -208,27 +208,27 @@
     "summary_en": "Sandisk Corporation develops, manufactures, and sells data storage devices and solutions using NAND flash technology in the Americas, Europe, the Middle East, Africa, Asia, and internationally. The company provides solid state drives for desktop and notebook PCs, gaming consoles, and set top boxes; and flash-based embedded storage products for mobile phones, tablets, notebook PCs and other portable and wearable devices, automotive applications, Internet of Things, industrial, and connected home applications, as well as removable cards, universal serial bus drives, and wafers and components. It sells its products to computer manufacturers and original equipment manufacturers, datacenters, private cloud customers, cloud service providers, resellers, distributors, and retailers through its sales personnel, dealers, distributors, retailers, and subsidiaries. Sandisk Corporation was incorporated in 2024 and is based in Milpitas, California."
   },
   "market": {
-    "price": 87.71,
-    "price_time": "2026-11-23T21:00:00+00:00",
+    "price": 77.95,
+    "price_time": "2026-11-24T21:00:00+00:00",
     "beta": null,
-    "market_cap": 99841597440,
+    "market_cap": 88731639808,
     "shares_outstanding": 142289365,
     "shares_source": "EDGAR (2026-10-26)",
-    "shares_implied_by_mcap": 1138314872.1924524,
+    "shares_implied_by_mcap": 1138314814.7273893,
     "diluted_shares_wavg": {
       "value": 154000000,
       "end": "2026-10-02"
     },
     "high_52w": 294.29874,
     "low_52w": 23.4625,
-    "vol_1y": 1.1065270113096117,
-    "days": 249,
+    "vol_1y": 1.1082461546745286,
+    "days": 248,
     "min_1y": 24.297500610351562,
     "max_1y": 291.875
   },
   "rates": {
     "risk_free": 0.0492,
-    "risk_free_date": "2026-11-20",
+    "risk_free_date": "2026-11-23",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
@@ -250,7 +250,7 @@
   "estimates": null,
   "warnings": [
     "EDGAR: debt del balance tomado del último 10-K (2026-07-03)",
-    "mercado: acciones: 142,289,365 (EDGAR (2026-10-26)) vs capitalización/precio 1,138,314,872; puede faltar una clase de acciones",
+    "mercado: acciones: 142,289,365 (EDGAR (2026-10-26)) vs capitalización/precio 1,138,314,815; puede faltar una clase de acciones",
     "mercado: yfinance sin beta: se usará la beta de la industria (Damodaran)",
     "Damodaran: 'Computer Hardware' se asoció a 'Computer Services'. Candidatas: Computer Services | Computers/Peripherals | Rubber& Tires. Fijá la correcta en data/industry_map.json (lista completa: python -m valuador industrias)",
     "sin consenso de analistas: g1 saldrá de la tendencia histórica"
