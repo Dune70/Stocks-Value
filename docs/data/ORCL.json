@@ -1,8 +1,8 @@
 {
   "ticker": "ORCL",
-  "as_of": "2026-11-25T04:55:31+00:00",
-  "price": 109.5,
-  "price_time": "2026-11-24T21:04:22+00:00",
+  "as_of": "2026-11-26T04:11:15+00:00",
+  "price": 103.88,
+  "price_time": "2026-11-25T21:02:32+00:00",
   "profile": {
     "name": "Oracle Corporation",
     "exchange": "NYSE",
@@ -18,7 +18,7 @@
   "scenarios": {
     "todo_mal": {
       "label": "Todo sale mal",
-      "value_per_share": 13.161721382600755,
+      "value_per_share": 13.317928218018466,
       "weight": 0.0,
       "description": "ventas +10% anual los primeros 5 años, margen 23% en 10 años",
       "assumptions": {
@@ -26,15 +26,15 @@
         "margin_target": 0.23087759618,
         "sales_to_capital": 0.6000000000000001,
         "years_to_target": 10,
-        "g_terminal": 0.0342,
+        "g_terminal": 0.034100000000000005,
         "p_failure": 0.0
       },
-      "wacc": 0.10681514791719589,
-      "terminal_share": 0.5810313246507577
+      "wacc": 0.10641645310711025,
+      "terminal_share": 0.5813528103443977
     },
     "conservador": {
       "label": "Conservador",
-      "value_per_share": 57.901189018408914,
+      "value_per_share": 58.223338617419365,
       "weight": 0.25,
       "description": "ventas +18% anual los primeros 5 años, margen 28% en 8 años",
       "assumptions": {
@@ -42,15 +42,15 @@
         "margin_target": 0.28035136679,
         "sales_to_capital": 0.7200000000000001,
         "years_to_target": 8,
-        "g_terminal": 0.0392,
+        "g_terminal": 0.0391,
         "p_failure": 0.0
       },
-      "wacc": 0.1018151479171959,
-      "terminal_share": 0.7305621926390357
+      "wacc": 0.10141645310711025,
+      "terminal_share": 0.7307705924343114
     },
     "base": {
       "label": "Base",
-      "value_per_share": 159.00513429583404,
+      "value_per_share": 159.70443071181055,
       "weight": 0.5,
       "description": "ventas +25% anual los primeros 5 años, margen 33% en 7 años",
       "assumptions": {
@@ -58,15 +58,15 @@
         "margin_target": 0.3298251374,
         "sales_to_capital": 0.8,
         "years_to_target": 7,
-        "g_terminal": 0.0442,
+        "g_terminal": 0.04410000000000001,
         "p_failure": 0.0
       },
-      "wacc": 0.09681514791719589,
-      "terminal_share": 0.8022309004838744
+      "wacc": 0.09641645310711025,
+      "terminal_share": 0.8023854061639698
     },
     "optimista": {
       "label": "Optimista",
-      "value_per_share": 313.5741500152905,
+      "value_per_share": 314.8503081779496,
       "weight": 0.25,
       "description": "ventas +30% anual los primeros 5 años, margen 38% en 6 años",
       "assumptions": {
@@ -74,15 +74,15 @@
         "margin_target": 0.37929890801,
         "sales_to_capital": 0.8800000000000001,
         "years_to_target": 6,
-        "g_terminal": 0.0492,
+        "g_terminal": 0.049100000000000005,
         "p_failure": 0.0
       },
-      "wacc": 0.09431514791719589,
-      "terminal_share": 0.8125118270569333
+      "wacc": 0.09391645310711025,
+      "terminal_share": 0.8126952132332317
     },
     "todo_bien": {
       "label": "Todo sale bien",
-      "value_per_share": 630.7769652268264,
+      "value_per_share": 633.2161021013337,
       "weight": 0.0,
       "description": "ventas +38% anual los primeros 5 años, margen 43% en 5 años",
       "assumptions": {
@@ -90,71 +90,71 @@
         "margin_target": 0.42877267862000007,
         "sales_to_capital": 1.0,
         "years_to_target": 5,
-        "g_terminal": 0.0492,
+        "g_terminal": 0.049100000000000005,
         "p_failure": 0.0
       },
-      "wacc": 0.09181514791719589,
-      "terminal_share": 0.8166097483912508
+      "wacc": 0.09141645310711025,
+      "terminal_share": 0.8168095843798826
     }
   },
   "weights_modified": false,
-  "intrinsic": 172.37140190634187,
+  "intrinsic": 173.12062705474753,
   "range": [
-    142.83389952741433,
-    216.31978104550737
+    143.46258457099808,
+    217.25118290492094
   ],
   "sensitivity": [
     {
       "wacc_shift": -0.005,
       "g_shift": -0.005,
-      "intrinsic": 192.46492312003767
+      "intrinsic": 193.27773748177339
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.0,
-      "intrinsic": 203.126696266278
+      "intrinsic": 203.9921163651764
     },
     {
       "wacc_shift": -0.005,
       "g_shift": 0.005,
-      "intrinsic": 216.31978104550737
+      "intrinsic": 217.25118290492094
     },
     {
       "wacc_shift": 0.0,
       "g_shift": -0.005,
-      "intrinsic": 165.1926794303222
+      "intrinsic": 165.90412736068905
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.0,
-      "intrinsic": 172.37140190634187
+      "intrinsic": 173.12062705474753
     },
     {
       "wacc_shift": 0.0,
       "g_shift": 0.005,
-      "intrinsic": 180.93613956576826
+      "intrinsic": 181.73128931641907
     },
     {
       "wacc_shift": 0.005,
       "g_shift": -0.005,
-      "intrinsic": 142.83389952741433
+      "intrinsic": 143.46258457099808
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.0,
-      "intrinsic": 147.66299417192374
+      "intrinsic": 148.3192626760899
     },
     {
       "wacc_shift": 0.005,
       "g_shift": 0.005,
-      "intrinsic": 153.23121935138673
+      "intrinsic": 153.92015422980558
     }
   ],
-  "potential": 0.5741680539391951,
-  "margin_of_safety": 0.3647438102319496,
+  "potential": 0.6665443497761603,
+  "margin_of_safety": 0.39995596268751343,
   "reverse_dcf": {
-    "margin": 0.26540403194323203,
-    "growth_g1": 0.1849255308428489,
+    "margin": 0.25740647184449916,
+    "growth_g1": 0.1753079734515982,
     "current_margin": 0.3212355104770397,
     "base_margin": 0.3298251374,
     "base_g1": 0.25
@@ -164,66 +164,66 @@
       {
         "zone": "Compra excepcional",
         "from": null,
-        "to": 13.161721382600755,
+        "to": 13.317928218018466,
         "reachable_1y": false
       },
       {
         "zone": "Convicción",
-        "from": 13.161721382600755,
-        "to": 57.901189018408914,
-        "reachable_1y": false
+        "from": 13.317928218018466,
+        "to": 58.223338617419365,
+        "reachable_1y": true
       },
       {
         "zone": "Comprar",
-        "from": 57.901189018408914,
-        "to": 108.45316165712148,
+        "from": 58.223338617419365,
+        "to": 108.96388466461495,
         "reachable_1y": true
       },
       {
         "zone": "Sumar de a poco",
-        "from": 108.45316165712148,
-        "to": 151.05487758104232,
+        "from": 108.96388466461495,
+        "to": 151.71920917622,
         "reachable_1y": true
       },
       {
         "zone": "Mantener",
-        "from": 151.05487758104232,
-        "to": 236.28964215556226,
+        "from": 151.71920917622,
+        "to": 237.2773694448801,
         "reachable_1y": true
       },
       {
         "zone": "Reducir",
-        "from": 236.28964215556226,
-        "to": 313.5741500152905,
+        "from": 237.2773694448801,
+        "to": 314.8503081779496,
         "reachable_1y": false
       },
       {
         "zone": "Vender",
-        "from": 313.5741500152905,
-        "to": 630.7769652268264,
+        "from": 314.8503081779496,
+        "to": 633.2161021013337,
         "reachable_1y": false
       },
       {
         "zone": "Venta excepcional",
-        "from": 630.7769652268264,
+        "from": 633.2161021013337,
         "to": null,
         "reachable_1y": false
       }
     ],
-    "recommendation": "Sumar de a poco",
-    "zone_index": 3,
+    "recommendation": "Comprar",
+    "zone_index": 2,
     "tolerance": {
       "pct": 0.08,
-      "moves_up_above": 163.1392677875257,
-      "moves_down_below": 99.77690872455177
+      "moves_up_above": 117.68099543778416,
+      "moves_down_below": 53.56547152802582
     },
     "reach_band_1y": [
-      59.354918303816035,
-      202.00937584694015
+      56.273157709513,
+      191.76202010387212
     ]
   },
-  "recommendation": "Sumar de a poco",
-  "volatility_1y": 0.6123895621513646,
+  "recommendation": "Comprar",
+  "volatility_1y": 0.6130187378186055,
   "notes": [
     "margen objetivo = el de la industria",
     "g1 del base fijado a mano; los demás escenarios se mueven alrededor",
