@@ -1,6 +1,6 @@
 {
   "ticker": "MRVL",
-  "as_of": "2026-11-26T04:11:15+00:00",
+  "as_of": "2026-11-27T04:18:06+00:00",
   "price": 130.93,
   "price_time": "2026-11-25T21:00:02+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 101.86153920239849
     },
     "reach_band_1y": [
-      54.63695329215205,
-      313.75587156801333
+      54.63695579019557,
+      313.7558572228543
     ]
   },
   "recommendation": "Reducir",
-  "volatility_1y": 0.8739523751922227,
+  "volatility_1y": 0.8739523294714546,
   "notes": [
     "g1 = mitad tendencia de 3 años (11.4%) y mitad último año (33.1%)",
     "margen objetivo = el de la industria",

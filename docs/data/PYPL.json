@@ -1,6 +1,6 @@
 {
   "ticker": "PYPL",
-  "as_of": "2026-11-26T04:11:15+00:00",
+  "as_of": "2026-11-27T04:18:06+00:00",
   "price": 57.81,
   "price_time": "2026-11-25T21:00:01+00:00",
   "profile": {
@@ -214,12 +214,12 @@
       "moves_down_below": null
     },
     "reach_band_1y": [
-      37.4287012739749,
-      89.28966237799365
+      37.42870057029246,
+      89.28966405669388
     ]
   },
   "recommendation": "Compra excepcional",
-  "volatility_1y": 0.43472394724261737,
+  "volatility_1y": 0.4347239660432284,
   "notes": [
     "g1 = mitad tendencia de 3 años (6.4%) y mitad último año (4.5%)",
     "margen objetivo = el de la industria",

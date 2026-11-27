@@ -1,6 +1,6 @@
 {
   "ticker": "NVDA",
-  "as_of": "2026-11-26T04:11:15+00:00",
+  "as_of": "2026-11-27T04:18:06+00:00",
   "price": 149.3,
   "price_time": "2026-11-25T21:00:01+00:00",
   "profile": {
@@ -218,12 +218,12 @@
       "moves_down_below": 78.7817377933044
     },
     "reach_band_1y": [
-      90.21751157379076,
-      247.07498146596689
+      90.21750568474022,
+      247.07499759406798
     ]
   },
   "recommendation": "Convicción",
-  "volatility_1y": 0.5037341547033062,
+  "volatility_1y": 0.503734219979444,
   "notes": [
     "g1 = mitad tendencia de 3 años (100.0%) y mitad último año (97.1%)",
     "g1 recortado de 98.6% al rango −5% / 35%",
