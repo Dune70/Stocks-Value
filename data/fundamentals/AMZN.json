@@ -1,6 +1,6 @@
 {
   "ticker": "AMZN",
-  "as_of": "2026-11-27T04:17:57+00:00",
+  "as_of": "2026-11-28T03:56:50+00:00",
   "currency": "USD",
   "cik": 1018724,
   "financials": {
@@ -245,27 +245,27 @@
     "summary_en": "Amazon.com, Inc. engages in the retail sale of consumer products, advertising, and subscriptions service through online and physical stores in North America and internationally. The company operates through three segments: North America, International, and Amazon Web Services (AWS). It also manufactures and sells electronic devices, including Kindle, fire tablets, fire TVs, echo, ring, blink, and eero; and develops and produces media content. In addition, the company offers programs that enable sellers to sell their products in its stores; and programs that allow authors, independent publishers, musicians, filmmakers, Twitch streamers, skill and app developers, and others to publish and sell content. Further, it provides compute, storage, Artificial intelligence, database, analytics, machine learning, and other services, as well as advertising services through programs, such as sponsored ads, display, and video advertising. Additionally, the company offers Amazon Prime, a membership program. The company's products offered through its stores include merchandise and content purchased for resale and products offered by third-party sellers. It serves consumers, sellers, developers, enterprises, content creators, advertisers, and employees. The company was incorporated in 1994 and is headquartered in Seattle, Washington."
   },
   "market": {
-    "price": 244.43,
-    "price_time": "2026-11-25T21:00:02+00:00",
+    "price": 254.12,
+    "price_time": "2026-11-27T18:00:01+00:00",
     "beta": 1.503,
-    "market_cap": 2643055345664,
+    "market_cap": 2747834564608,
     "shares_outstanding": 10813138306,
     "shares_source": "EDGAR (2026-10-21)",
-    "shares_implied_by_mcap": 10813138099.513153,
+    "shares_implied_by_mcap": 10813137748.339367,
     "diluted_shares_wavg": {
       "value": 10903000000,
       "end": "2026-09-30"
     },
     "high_52w": 287.2,
     "low_52w": 196.0,
-    "vol_1y": 0.341021402963257,
+    "vol_1y": 0.34278298543845664,
     "days": 251,
     "min_1y": 198.7899932861328,
     "max_1y": 284.0199890136719
   },
   "rates": {
-    "risk_free": 0.049100000000000005,
-    "risk_free_date": "2026-11-24",
+    "risk_free": 0.048499999999999995,
+    "risk_free_date": "2026-11-25",
     "erp": 0.045,
     "erp_source": "manual (VALUADOR_ERP)"
   },
